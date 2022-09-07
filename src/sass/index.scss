@@ -1,2 +1,15 @@
-@import './common';
-@import './example';
+@import './base/common';
+@import './base/reset';
+
+// @import './components/button';
+
+@import './header/header.scss';
+// @import './layouts/main-page/main-page-hero';
+// @import './layouts/main-page/main-page-gallery';
+// @import './layouts/main-page/main-page-more-photo';
+
+// @import './layouts/modeling-page/modeling-hero';
+// @import './layouts/modeling-page/modeling-methods-of-creations';
+// @import './layouts/modeling-page/modeling-hero-create-model';
+
+@import './footer/footer.scss';

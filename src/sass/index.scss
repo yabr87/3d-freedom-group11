@@ -1,15 +1,21 @@
 @import './base/common';
 @import './base/reset';
+@import './base/mixins';
 
-// @import './components/button';
+@import './components/btn';
+@import './components/form';
 
 @import './header/header.scss';
-// @import './layouts/main-page/main-page-hero';
-// @import './layouts/main-page/main-page-gallery';
-// @import './layouts/main-page/main-page-more-photo';
 
-// @import './layouts/modeling-page/modeling-hero';
-// @import './layouts/modeling-page/modeling-methods-of-creations';
-// @import './layouts/modeling-page/modeling-hero-create-model';
+@import './main/main-hero';
+@import './main/main-gallery';
+@import './main/main-photo';
+
+@import './modeling/modeling-hero';
+@import './modeling/modeling-methods';
+@import './modeling/modeling-create';
+
+@import './scanning/scanning-hero';
+@import './scanning/scanning-process';
 
 @import './footer/footer.scss';

@@ -23,3 +23,12 @@
     @content;
   }
 }
+
+@mixin fonts($fw, $fs, $lh, $ls, $tt, $ta) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  text-transform: $tt;
+  text-align: $ta;
+}

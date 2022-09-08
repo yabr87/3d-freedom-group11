@@ -1,15 +1,75 @@
 <header>
   <div class="container">
-    <ul>
-      <li>
-        <a href="./index.html"><img src="images/logotest.png" alt="" /></a>
+    <div class="header-petal left"></div>
+    <div class="header-petal right"></div>
+    <a href="./index.html" class="header-logo"> </a>
+
+    <nav class="navigation">
+      <ul class="navigation-list list">
+        <li class="navigation-item">
+          <a href="./index.html" class="navigation-link link current">Головна</a>
+        </li>
+        <li class="navigation-item">
+          Послуги
+          <ul class="services-list list">
+            <li  class="services-item">
+              <a href="./modeling.html" class="services-link link">3D Моделювання</a>
+            </li>
+            <li class="services-item">
+              <a href="./scanning.html" class="services-link link">3D Сканування</a>
+            </li>
+            <li class="services-item">
+              <a href="./printing.html" class="services-link link">3D Друк</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navigation-item">
+          <a href="./order.html" class="navigation-link link">Замовити</a>
+        </li>
+        <li class="navigation-item">
+          <a href="./contacts.html" class="navigation-link link">Контакти</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button
+          class="menu-open js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-open-icon" width="32" height="32">
+            <use href="./images/icon.svg#menu-open"></use>
+          </svg>
+    </button>
+
+    <div class="mobile-tel">
+      <svg class="tel-icon" width="24" height="24">
+        <use href="./images/icon.svg#call"></use>
+      </svg>
+    </div>
+
+    <ul class="lang list">
+      <li class="lang-item"><a href="#" class="lang-link link">Ukr</a></li>
+      <li class="lang-item"><a href="#" class="lang-link link">Eng</a></li>
+      <li class="lang-item"><a href="#" class="lang-link link">Rus</a></li>
+    </ul>
+
+    <ul class="tel-list list">
+      <li class="tel-item">
+        <a href="tel:+380936432288" class="tel">
+          <svg class="tel-list-icon" width="14" height="14">
+            <use href="./images/icon.svg#call"></use></svg
+          >+38 (093) 643 22 88</a
+        >
       </li>
-      <li><a href="./index.html">маин</a></li>
-      <li><a href="./modeling.html">modeling</a></li>
-      <li><a href="./scanning.html">scanning</a></li>
-      <li><a href="./printing.html">printing</a></li>
-      <li><a href="./order.html">order</a></li>
-      <li><a href="./contacts.html">cantacts</a></li>
+      <li class="tel-item">
+        <a href="tel:+380503454423" class="tel">
+          <svg class="tel-list-icon" width="14" height="14">
+            <use href="./images/icon.svg#call"></use></svg
+          >+38 (050) 345 44 23</a
+        >
+      </li>
     </ul>
   </div>
 </header>

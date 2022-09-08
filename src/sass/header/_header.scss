@@ -1,7 +1,64 @@
 header {
-  background-color: silver;
-  & ul {
+  background-color: transparent;
+  height: 74px;
+  background-color: #fff;
+
+  .container {
+    position: relative;
     display: flex;
-    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  @include desktop {
+    height: 130px;
+    // min-width: 1600px;
   }
 }
+
+.lang {
+  @media screen and (min-width: 768px) and (max-width: 1439.5px) {
+    margin-left: auto;
+    margin-right: 43px;
+  }
+  // @include desktop {
+  //   margin-right: 119px;
+  // }
+}
+
+.lang-item:first-child {
+  transform: translateY(100%);
+}
+
+.lang-item:last-child {
+  transform: translateY(-100%);
+}
+
+.lang-item:first-child, .lang-item:last-child {  
+  opacity: 0;
+  transition-property: transform opacity;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+
+  .lang:hover &,
+  .lang:focus-within & {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.lang-link {
+  padding: 0 3px;
+  @include fonts (700, 14px, 1.28, 0.01, uppercase, null);  
+  color: #bdbdbd;
+  border-radius: 3px;
+  outline: none;
+
+  &:hover, &:focus {
+    color: #fff;
+    background-color: rgba(72, 121, 150, 0.5);
+  }
+}
+
+

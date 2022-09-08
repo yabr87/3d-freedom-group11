@@ -1,26 +1,20 @@
-.video {
-  position: relative;
-  padding-bottom: 56.25%;
-  padding-top: 25px;
-  height: 0;
+.contact-info {
+  display: block;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: capitalize;
+  color: #2b2b2b;
+  margin-bottom: 8px;
 }
-.video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
+.info{
+  margin-bottom: 24px;
 }
-
-.contacts-title {
-  margin-bottom: 16px;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-
-  color: #487996;
+.work-time {
+  margin-bottom: 8px;
 }
-.contacts-text{
-  margin-top:  16px;
+.contacts{
+  margin-bottom: 60px;
+}
+.weekday-work{
+  margin-bottom: 8px;
 }

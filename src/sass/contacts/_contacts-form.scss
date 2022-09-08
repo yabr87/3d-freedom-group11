@@ -1,3 +1,24 @@
-.contacts-form {
-  background-color: chartreuse;
+.contact-field {
+  margin-bottom: 44px;
+}
+.contact-input.name {
+  width: 100%;
+  height: 44px;
+  border: transparent;
+  border-bottom: 1px solid #487996;
+  padding: 0;
+}
+.contact-input.mail {
+  width: 100%;
+  height: 24px;
+  border: transparent;
+  border-bottom: 1px solid #487996;
+  padding: 0;
+}
+.modal__item.text {
+  margin-bottom: 4px;
+}
+.modal__text::placeholder {
+  padding-left: 22px;
+  padding-top: 20px;
 }

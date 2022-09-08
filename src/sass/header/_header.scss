@@ -1,0 +1,7 @@
+header {
+  background-color: silver;
+  & ul {
+    display: flex;
+    gap: 30px;
+  }
+}

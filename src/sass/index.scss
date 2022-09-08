@@ -5,7 +5,8 @@
 @import './components/btn';
 @import './components/form';
 
-@import './header/header.scss';
+@import './header/header';
+@import './header/mobile-menu';
 
 @import './main/main-hero';
 @import './main/main-gallery';
@@ -21,8 +22,12 @@
 @import './printing/printing-examples';
 @import './printing/printing-process';
 
-@import './order/order-hero.scss';
-@import './order/оrder-form.scss';
-@import './order/оrder-contacts.scss';
+@import './order/order-hero';
+@import './order/оrder-form';
+@import './order/оrder-contacts';
 
-@import './footer/footer.scss';
+@import './contacts/contacts-hero';
+@import './contacts/contacts';
+@import './contacts/contacts-form';
+
+@import './footer/footer';

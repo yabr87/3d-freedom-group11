@@ -23,7 +23,7 @@ header {
 .navigation {
   @media screen and (max-width: 1439.5px) {
     display: none;
-  }  
+  }
 }
 
 .menu-open {
@@ -62,7 +62,7 @@ header {
   transform: translateY(-100%);
 }
 
-.lang-item:nth-child(odd) {  
+.lang-item:nth-child(odd) {
   opacity: 0;
   transition-property: transform opacity;
   transition-duration: 250ms;
@@ -78,12 +78,13 @@ header {
 .lang-link {
   padding: 0 3px;
   // font-family: Caviar Dreams, sans-serif;
-  @include fonts (700, 14px, 1.28, 0.01, uppercase, null);  
+  @include fonts(700, 14px, 1.28, 0.01, uppercase, null);
   color: #bdbdbd;
   border-radius: 3px;
   outline: none;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: #fff;
     background-color: rgba(72, 121, 150, 0.5);
   }
@@ -109,8 +110,8 @@ header {
     border-radius: 2px;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     padding: 16px 7px;
-  background-color: #ffffff;
-  z-index: 1;
+    background-color: #ffffff;
+    z-index: 1;
   }
 }
 
@@ -131,7 +132,7 @@ header {
 
 .tel {
   text-decoration: none;
-  @include fonts (null, 16px, 1.25, 0.01, null, null);
+  @include fonts(null, 16px, 1.25, 0.01, null, null);
   color: #2b2b2b;
 
   svg {
@@ -141,7 +142,7 @@ header {
     @include desktop {
       margin-right: 8px;
     }
-  }  
+  }
 }
 
 .tel-list-icon {
@@ -191,4 +192,3 @@ header {
     }
   }
 }
-

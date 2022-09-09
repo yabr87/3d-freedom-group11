@@ -1,5 +1,22 @@
+.contacts-form {
+  margin-top: 40px;
+}
+
+textarea {
+  width: 100%;
+  height: 199px;
+  left: 20px;
+  border: 1px solid #487996;
+  border-radius: 50px 0px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
 .contact-field {
   margin-bottom: 44px;
+}
+.contact-field.text {
+  margin-bottom: 0;
 }
 .contact-input.name {
   width: 100%;
@@ -15,10 +32,27 @@
   border-bottom: 1px solid #487996;
   padding: 0;
 }
-.modal__item.text {
-  margin-bottom: 4px;
+.contact-item.text {
+  display: block;
 }
-.modal__text::placeholder {
+.contact-text::placeholder {
   padding-left: 22px;
   padding-top: 20px;
+}
+.btn-form {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.hint{
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+color: #CDCDCD;
+}
+.attachment{
+  border: transparent;
+  width: 22px;
+  height: 20px;
+  background-color: transparent;
+  bottom: 0;
 }

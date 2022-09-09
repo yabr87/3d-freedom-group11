@@ -1,8 +1,33 @@
 <header>
   <div class="container">
-    <div class="header-petal left"></div>
-    <div class="header-petal right"></div>
-    <a href="./index.html" class="header-logo"> </a>
+    <a href="./index.html" class="header-logo">
+      <picture>
+        <source
+          srcset="./images/header/logo-footer-desktop.png 1x, 
+          ./images/header/logo-footer-desktop@2x.png 2x"
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            ./images/header/logo-tab.png    1x,
+            ./images/header/logo-tab@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/header/logo-mob.png    1x,
+            ./images/header/logo-mob@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
+        <img
+          src="./images/header/logo-footer-desktop.png"
+          alt="Логотип компанії"
+          class="logo-image"
+        />
+      </picture>
+    </a>
 
     <nav class="navigation">
       <ul class="navigation-list list">
@@ -43,17 +68,19 @@
           </svg>
     </button>
 
-    <div class="mobile-tel">
-      <svg class="tel-icon" width="24" height="24">
-        <use href="./images/icon.svg#call"></use>
-      </svg>
-    </div>
+    
 
     <ul class="lang list">
       <li class="lang-item"><a href="#" class="lang-link link">Ukr</a></li>
       <li class="lang-item"><a href="#" class="lang-link link">Eng</a></li>
       <li class="lang-item"><a href="#" class="lang-link link">Rus</a></li>
     </ul>
+
+    <div class="mobile-tel">
+      <svg class="tel-icon" width="24" height="24">
+        <use href="./images/icon.svg#call"></use>
+      </svg>
+    </div>
 
     <ul class="tel-list list">
       <li class="tel-item">
@@ -70,6 +97,10 @@
           >+38 (050) 345 44 23</a
         >
       </li>
+      <div class="polygon"></div>
     </ul>
+
+    <div class="header-petal left"></div>
+    <div class="header-petal right"></div>
   </div>
 </header>

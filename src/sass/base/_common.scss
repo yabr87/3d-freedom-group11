@@ -1,4 +1,4 @@
-@import '~node_modules/modern-normalize/modern-normalize.css';
+@import "~node_modules/modern-normalize/modern-normalize.css";
 
 .container {
   width: 100%;
@@ -17,4 +17,39 @@
   @media screen and (min-width: 1440px) {
     max-width: 1440px;
   }
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-style: normal;
+  src: url("/src/fonts/OpenSans-Light.woff2") format("woff2"),
+    url("/src/fonts/OpenSans-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/src/fonts/OpenSans-Regular.woff2") format("woff2"),
+    url("/src/fonts/OpenSans-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 500;
+  font-style: normal;
+  src: url("/src/fonts/OpenSans-Medium.woff2") format("woff2"),
+    url("/src/fonts/OpenSans-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/src/fonts/OpenSans-Bold.woff2") format("woff2"),
+    url("/src/fonts/OpenSans-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Caviard Dreams";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/src/fonts/caviardreams.woff2") format("woff2"),
+    url("/src/fonts/caviardreams.woff") format("woff");
 }

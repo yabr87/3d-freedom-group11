@@ -1,11 +1,40 @@
 .btn {
   display: block;
+  font-family: inherit;
   margin-left: auto;
   margin-right: auto;
-  width: 280px;
-  height: 56px;
+  padding: 16px 32px;
+  border: none;
   background: #f5f5fa;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #487996;
+
   box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
     5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
   border-radius: 30.5px;
+  transition: color 250ms ease, background-color 250ms ease;
+}
+
+.send-mobile-btn {
+  @media screen and (max-width: 479px) {
+    padding: 16px 83px;
+  }
+}
+
+.btn.send-mobile-btn {
+  @include tablet {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: rgba(72, 121, 150, 0.5);
+  color: #fff;
 }

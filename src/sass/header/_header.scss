@@ -64,7 +64,7 @@ header {
 
 .lang-item:nth-child(odd) {
   opacity: 0;
-  transition-property: transform opacity;
+  transition-property: transform, opacity;
   transition-duration: 250ms;
   transition-timing-function: linear;
 
@@ -103,6 +103,7 @@ header {
 }
 
 .tel-list {
+  transform: scale(0);
   @media screen and (max-width: 767.5px) {
     position: absolute;
     top: 60px;
@@ -115,7 +116,12 @@ header {
   }
 }
 
-.polygon {
+.mobile-tel:hover + .tel-list {
+  transform: scale(1);
+}
+
+.tel-list::before {
+  content: '';
   position: absolute;
   bottom: 78%;
   left: 50%;
@@ -139,17 +145,16 @@ header {
     display: inline-block;
     margin-right: 4px;
 
+    @media screen and (max-width: 767.5px) {
+      display: none;
+    }
+
     @include desktop {
       margin-right: 8px;
     }
   }
 }
 
-.tel-list-icon {
-  @media screen and (max-width: 767.5px) {
-    display: none;
-  }
-}
 
 .header-petal {
   position: absolute;
@@ -192,3 +197,4 @@ header {
     }
   }
 }
+

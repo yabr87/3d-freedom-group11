@@ -18,3 +18,8 @@
 .weekday-work{
   margin-bottom: 8px;
 }
+.contacts-pg-down{
+  @include tablet{
+display: flex;
+  }
+}

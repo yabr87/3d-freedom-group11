@@ -1,15 +1,16 @@
 <section class="contacts-form">
   <div class="container">
-    <p class="contacts-title">ЗВ’ЯЖІТЬСЯ З НАМИ</p>
     <form class="contact-form">
+      <div class="contwrapper">
+      <p class="contacts-title">ЗВ’ЯЖІТЬСЯ З НАМИ</p>
       <div class="contact-field">
         <label for="contact-name" class="contact-label">
           <span class="contact-item">Ім'я</span>
         </label>
-        <div class="contact-wrap">
+        <div class="contact-wrap-input">
           <input
             type="text"
-            class="contact-input name"
+            class="contact-input"
             name="contact-name"
             id="contact-name"
             placeholder="Олексій"
@@ -18,36 +19,41 @@
       </div>
       <div class="contact-field">
         <label for="contact-mail" class="contact-label">
-          <span class="contact-item"></span>
+          <span class="contact-item">Пошта</span>
         </label>
-        <div class="contact-wrap">
+        <div class="contact-wrap-input">
           <input
             type="email"
-            class="contact-input mail"
+            class="contact-input"
             name="contact-mail"
             id="contact-mail"
             placeholder="Email"
           />
         </div>
       </div>
+    </div>
       <div class="contact-field text">
         <label for="contact-text" class="contact-label">
           <span class="contact-item text">Повідомлення</span>
         </label>
-        <textarea
-          name="contact-text"
-          id="contact-text"
-          class="contact-text"
-          placeholder="Залишіть своє повідомлення"
-        ></textarea>
-        <button class="attachment" type="button">
-          <svg>
-            <use>X</use>
+        <div class="textarea-wrap">
+          <textarea
+            name="contact-text"
+            id="contact-text"
+            class="contact-text"
+            placeholder="Залишіть своє повідомлення"
+          ></textarea>
+        </div>
+        <button class="text-btn" type="button">
+          <svg width="18" height="18">
+            <use href="/src/images/icon.svg#paper-clip"></use>
           </svg>
         </button>
-        <p class="hint">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
+        <p class="hint">
+          *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+        </p>
       </div>
-        <button type="submit" class="btn send-mobile-btn">Відправити</button>
+      <button type="submit" class="btn send-mobile-btn">Відправити</button>
+    </form>
   </div>
 </section>
-

@@ -1,11 +1,20 @@
-.contacts-hero{
+.contact-wrap{
   margin-top: 40px;
+  @include tablet{
+    margin-top:0;
+    display: flex;
+    column-gap:32px;
+  }
 }
 .video {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 25px;
   height: 0;
+  @include tablet{
+   width: 336px;
+   height: 261px;
+  }
 }
 .video iframe {
   position: absolute;
@@ -27,3 +36,9 @@
 .contacts-text{
   margin-top:  16px;
 }
+.contacts-text.first{
+  @include tablet{
+    margin-top:  0;
+  }
+}
+

@@ -18,6 +18,7 @@
     max-width: 1440px;
   }
 }
+
 @font-face {
   font-family: "Open Sans";
   font-weight: 300;
@@ -46,10 +47,14 @@
   src: url("/src/fonts/OpenSans-Bold.woff2") format("woff2"),
     url("/src/fonts/OpenSans-Bold.woff") format("woff");
 }
+
 @font-face {
   font-family: "Caviard Dreams";
   font-weight: 400;
   font-style: normal;
   src: url("/src/fonts/caviardreams.woff2") format("woff2"),
     url("/src/fonts/caviardreams.woff") format("woff");
+}
+body {
+  font-family: "Open Sans", sans-serif;
 }

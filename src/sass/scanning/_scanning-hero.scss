@@ -1,3 +1,7 @@
+.scanning-hero{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 .scanning-title {
   font-weight: 700;
   font-size: 21px;
@@ -6,8 +10,21 @@
   margin-bottom: 16px;
 }
 
+.scanning-list{
+  @media screen and (min-width: 1440px){
+  flex-direction: column;
+    column-count: 2;
+    max-width: 1100px;
+    column-gap: 75px;
+  }
+}
+
 .hero-scanning {
-  padding-bottom: 16px;
+  margin-bottom: 16px;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+      width: 515px;
+      row-gap: 24px;
+    }
 }
 
 .text {
@@ -15,15 +32,21 @@
   font-size: 16px;
   line-height: 1.25;
   color: #2B2B2B;
+  @media screen and (min-width: 1440px){
+    font-size: 20px;
+  }
 }
 
 .hero-scanning-img {
   text-align: center;
-  margin-bottom: 45px;
+  width: 435px;
 }
 
-.creation{
-  // @include tablet{
-  //   position: absolute;
-  // }
+.scanning{
+  @media screen and (min-width: 768px) and (max-width: 1439px){
+    position: absolute;
+    top: 25%;
+    right: 6%;
+    width: 241px;
+  }
 }

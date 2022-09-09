@@ -14,6 +14,12 @@
   padding: 15px 19px;
 }
 
+.scanning-img-item{
+  @media screen and (min-width: 1440px) {
+    display: inline-block;
+    }
+}
+
 .scanning-process {
   display: flex;
   flex-wrap: wrap;
@@ -25,7 +31,7 @@
 }
 
 .scanning-process>.scanning-img {
-  flex-basis: calc((100% - 60px) / 2);
+  width: calc((100% - 40px) / 2);
   @include tablet{
     flex-basis: calc((100% - 96px) / 4);
   }
@@ -38,10 +44,14 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 21px;
+  margin-top: 16px;
 }
 
-.btn{
+.padding-btn{
   margin-top: 40px;
   margin-bottom: 60px;
+  @media screen and (min-width: 1440px){
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
 }

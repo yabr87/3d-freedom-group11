@@ -1,3 +1,10 @@
-.printing-process {
-  background-color: tomato;
+.printing-process-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.printing-process-block {
+  margin-bottom: 24px;
 }

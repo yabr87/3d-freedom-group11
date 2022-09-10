@@ -29,3 +29,16 @@ button {
 ul {
   list-style: none;
 }
+
+.link {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 4px;
+  transition: color 250ms ease, background-color 250ms ease;
+}
+
+.link:hover,
+.link:focus {
+  color: #fff;
+  background-color: rgba(72, 121, 150, 0.5);
+}

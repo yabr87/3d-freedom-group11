@@ -2,7 +2,7 @@
   <div class="container">
     <form class="contact-form">
       <div class="contwrapper">
-      <p class="contacts-title">ЗВ’ЯЖІТЬСЯ З НАМИ</p>
+      <p class="contacts-title form">ЗВ’ЯЖІТЬСЯ З НАМИ</p>
       <div class="contact-field">
         <label for="contact-name" class="contact-label">
           <span class="contact-item">Ім'я</span>
@@ -36,7 +36,6 @@
         <label for="contact-text" class="contact-label">
           <span class="contact-item text">Повідомлення</span>
         </label>
-
         <div class="textarea-wrap">
           <textarea
             name="contact-text"
@@ -44,26 +43,17 @@
             class="contact-text"
             placeholder="Залишіть своє повідомлення"
           ></textarea>
+          <button class="text-btn" type="button">
+            <svg width="22" height="20">
+              <use href="/src/images/icon.svg#paper-clip"></use>
+            </svg>
+          </button>
         </div>
-        <button class="text-btn" type="button">
-          <svg width="18" height="18">
-            <use href="/src/images/icon.svg#paper-clip"></use>
-          </svg>
-        </button>
         <p class="hint">
           *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
         </p>
-
-        <textarea
-          name="contact-text"
-          id="contact-text"
-          class="contact-text"
-          placeholder="Залишіть своє повідомлення"
-        ></textarea>
-
-        <p class="hint">*Прикріпіть зображення / креслення / STL / Obj / CAD-модель</p>
       </div>
-      <button type="submit" class="btn send-mobile-btn">Відправити</button>
+      <button type="submit" class="btn send-mobile-btn btn-form">Відправити</button>
     </form>
   </div>
 </section>

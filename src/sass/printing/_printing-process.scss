@@ -1,10 +1,80 @@
 .printing-process-container {
+  margin-top: 38px;
+  margin-bottom: 60px;
+  @include tablet {
+    margin-top: 40px;
+  }
+  @include desktop {
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+}
+.printing-process-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 50px;
+  @include tablet {
+    gap: 60px;
+  }
+  @include desktop {
+    gap: 100px;
+  }
 }
-.printing-process-block {
+.printing-process-item {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  @include desktop {
+    gap: 85px;
+  }
+}
+.printing-process-image {
+  filter: drop-shadow(20px 20px 80px rgba(0, 0, 0, 0.15));
+  border-radius: 50px 0px;
+  margin-bottom: 20px;
+  @include tablet {
+    margin-bottom: 0;
+  }
+}
+.printing-process-text-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   margin-bottom: 24px;
+  @include tablet {
+    width: 336px;
+    margin-bottom: 56px;
+  }
+  @include desktop {
+    width: 734px;
+    gap: 24px;
+  }
+}
+.printing-process-text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: #2b2b2b;
+  @include desktop {
+    font-size: 18px;
+    line-height: calc(23 / 18);
+  }
+}
+.printing-process-text-header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: #487996;
+  @include desktop {
+    font-size: 18px;
+    line-height: calc(23 / 18);
+  }
+}
+.printing-process-btn {
+  margin: 0;
 }

@@ -1,59 +1,59 @@
 <section class="contacts-form">
   <div class="container">
-    <form class="contact-form">
-      <div class="contwrapper">
-      <p class="contacts-title form">ЗВ’ЯЖІТЬСЯ З НАМИ</p>
-      <div class="contact-field">
-        <label for="contact-name" class="contact-label">
-          <span class="contact-item">Ім'я</span>
-        </label>
-        <div class="contact-wrap-input">
-          <input
-            type="text"
-            class="contact-input"
-            name="contact-name"
-            id="contact-name"
-            placeholder="Олексій"
-          />
+      <form class="contact-form">
+        <div class="contwrapper">
+        <p class="contacts-title form">Зв’яжіться з нами</p>
+        <div class="contact-field">
+          <label for="contact-name" class="contact-label">
+            <span class="contact-item">Ім'я</span>
+          </label>
+          <div class="contact-wrap-input">
+            <input
+              type="text"
+              class="contact-input"
+              name="contact-name"
+              id="contact-name"
+              placeholder="Олексій"
+            />
+          </div>
+        </div>
+        <div class="contact-field">
+          <label for="contact-mail" class="contact-label">
+            <span class="contact-item">Пошта</span>
+          </label>
+          <div class="contact-wrap-input">
+            <input
+              type="email"
+              class="contact-input"
+              name="contact-mail"
+              id="contact-mail"
+              placeholder="Email"
+            />
+          </div>
         </div>
       </div>
-      <div class="contact-field">
-        <label for="contact-mail" class="contact-label">
-          <span class="contact-item">Пошта</span>
-        </label>
-        <div class="contact-wrap-input">
-          <input
-            type="email"
-            class="contact-input"
-            name="contact-mail"
-            id="contact-mail"
-            placeholder="Email"
-          />
+        <div class="contact-field text">
+          <label for="contact-text" class="contact-label">
+            <span class="contact-item text">Повідомлення</span>
+          </label>
+          <div class="textarea-wrap">
+            <textarea
+              name="contact-text"
+              id="contact-text"
+              class="contact-text"
+              placeholder="Залишіть своє повідомлення"
+            ></textarea>
+            <button class="text-btn" type="button">
+              <svg width="22" height="20">
+                <use href="/src/images/icon.svg#paper-clip"></use>
+              </svg>
+            </button>
+          </div>
+          <p class="hint">
+            *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+          </p>
         </div>
-      </div>
-    </div>
-      <div class="contact-field text">
-        <label for="contact-text" class="contact-label">
-          <span class="contact-item text">Повідомлення</span>
-        </label>
-        <div class="textarea-wrap">
-          <textarea
-            name="contact-text"
-            id="contact-text"
-            class="contact-text"
-            placeholder="Залишіть своє повідомлення"
-          ></textarea>
-          <button class="text-btn" type="button">
-            <svg width="22" height="20">
-              <use href="/src/images/icon.svg#paper-clip"></use>
-            </svg>
-          </button>
-        </div>
-        <p class="hint">
-          *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
-        </p>
-      </div>
-      <button type="submit" class="btn send-mobile-btn btn-form">Відправити</button>
-    </form>
+        <button type="submit" class="btn send-mobile-btn btn-form">Відправити</button>
+      </form>
   </div>
 </section>

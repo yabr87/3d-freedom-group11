@@ -1,39 +1,139 @@
 <section class="contacts">
-  <div class="container">
+  <div class="container wrap-desc">
     <ul class="contacts-pg-down">
       <li>
-        <div class="contact-part ">
-          <p class="contacts-title">ТЕЛЕФОНИ</p>
-          <a href="tel:+380957384551" class="contact-info link">
-            +38 (095) -73-84-551
-          </a>
-          <a href="+380980025235" class="contact-info link">
-            +38 (098) -00-25-235
-          </a>
+        <div class="contact-part">
+          <p class="contacts-title">Телефони</p>
+          <ul class="contacts-list">
+            <li>
+              <a href="tel:+380957384551" class="contact-info link">
+                +38 (095) -73-84-551
+              </a>
+            </li>
+            <li>
+              <a href="+380980025235" class="contact-info link">
+                +38 (098) -00-25-235
+              </a>
+            </li>
+          </ul>
         </div>
       </li>
       <li>
-        <div class="contact-part ">
-          <p class="contacts-title">Email</p>
+        <div class="contact-part">
+          <p class="contacts-title small-text">Email</p>
           <a href="mailto:3dfreedom.info@gmail.com" class="contact-info link">
             3dfreedom.info@gmail.com
           </a>
         </div>
       </li>
       <li class="contacts-pg-down-item">
-        <div class="contact-part info">
+        <div class="contact-part">
           <p class="contacts-title">Робочий час</p>
-          <div class="weekday-work">
-            <p>
-              Пн-пт:<br />
-              з 8:00 до 19:00
-            </p>
-          </div>
-          <div class="weekend-work">
-            <p>Сб, Нд: <br />з 10:00 до 17:00</p>
-          </div>
+          <ul>
+            <li>
+              <div class="weekday-work">
+                <p>Пн-пт:<br />з 8:00 до 19:00</p>
+              </div>
+            </li>
+            <li>
+              <div class="weekend-work">
+                <p>Сб, Нд: <br />з 10:00 до 17:00</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </li>
     </ul>
+    <div class="wrap-form-contact">
+      <form class="contact-form-desk">
+        <div class="contwrapper">
+          <p class="contacts-title form desk">Зв’яжіться з нами</p>
+          <div class="contact-field">
+            <label for="contact-name" class="contact-label">
+              <span class="contact-item">Ім'я</span>
+            </label>
+            <div class="contact-wrap-input">
+              <input
+                type="text"
+                class="contact-input"
+                name="contact-name"
+                id="contact-name"
+                placeholder="Олексій"
+              />
+            </div>
+          </div>
+          <div class="contact-field">
+            <label for="contact-mail" class="contact-label">
+              <span class="contact-item"></span>
+            </label>
+            <div class="contact-wrap-input">
+              <input
+                type="email"
+                class="contact-input contact-input-mail"
+                name="contact-mail"
+                id="contact-mail"
+                placeholder="Email"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="contact-field text">
+          <label for="contact-text" class="contact-label">
+            <span class="contact-item text">Повідомлення</span>
+          </label>
+          <div class="textarea-wrap">
+            <textarea
+              name="contact-text"
+              id="contact-text"
+              class="contact-text"
+              placeholder="Залишіть своє повідомлення"
+            ></textarea>
+            <button class="text-btn" type="button">
+              <svg width="22" height="20">
+                <use href="/src/images/icon.svg#paper-clip"></use>
+              </svg>
+            </button>
+          </div>
+          <p class="hint">
+            *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+          </p>
+        </div>
+        <button type="submit" class="btn send-mobile-btn btn-form">
+          Відправити
+        </button>
+      </form>
+      <ul class="contacts-pg-down-desktop">
+        <li>
+          <div class="contact-part">
+            <p class="contacts-title">Телефони</p>
+            <a href="tel:+380957384551" class="contact-info link">
+              +38 (095) -73-84-551
+            </a>
+            <a href="+380980025235" class="contact-info link">
+              +38 (098) -00-25-235
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="contact-part">
+            <p class="contacts-title small-text">Email</p>
+            <a href="mailto:3dfreedom.info@gmail.com" class="contact-info link">
+              3dfreedom.info@gmail.com
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="contact-part">
+            <p class="contacts-title">Робочий час</p>
+            <div class="weekday-work">
+              <p class="contact-info link">Пн-пт:з 8:00 до 19:00</p>
+            </div>
+            <div class="weekend-work">
+              <p class="contact-info link">Сб, Нд:з 10:00 до 17:00</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
   </div>
 </section>

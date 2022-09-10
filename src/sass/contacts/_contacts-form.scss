@@ -24,6 +24,10 @@ textarea {
   right: 21px;
   bottom: 23px;
   background-color: transparent;
+  @include desktop {
+    right: 61px;
+    bottom: 18px;
+  }
 }
 .contact-field {
   margin-bottom: 44px;
@@ -38,13 +42,21 @@ textarea {
   border-bottom: 1px solid #487996;
   padding: 0;
 }
-
+.contact-input-mail {
+  height: 24px;
+}
 .contact-item.text {
   display: block;
 }
 .contact-text::placeholder {
   padding-left: 22px;
   padding-top: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  @include desktop {
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
 .btn-form {
   margin-top: 40px;
@@ -54,6 +66,10 @@ textarea {
   font-size: 16px;
   line-height: 1.25;
   color: #cdcdcd;
+  @include desktop {
+    font-size: 18px;
+    line-height: 20px;
+  }
 }
 
 .contact-item {
@@ -62,14 +78,26 @@ textarea {
   line-height: 1.25;
   text-transform: capitalize;
   color: #2b2b2b;
-}
-.contact-form{
-  
-  @include tablet{
-    width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-
+  @include desktop {
+    font-size: 14px;
+    line-height: 20px;
   }
-  
+}
+.contact-form {
+  @include tablet {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    @include desktop {
+      display: none;
+    }
+  }
+}
+
+.contact-form-desk {
+  @include desktop {
+    width: 555px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

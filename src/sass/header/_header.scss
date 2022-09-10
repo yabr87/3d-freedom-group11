@@ -154,7 +154,6 @@ border-color: #008bef transparent transparent transparent;
   }
 }
 
-
 .lang {
   z-index: 1;
   margin-left: auto;
@@ -306,13 +305,16 @@ border-color: #008bef transparent transparent transparent;
   }
 }
 
-.header-petal {
+.petal {
   position: absolute;
-  top: 0;
   width: 74px;
   height: 74px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
+}
+
+.header-petal {
+  top: 0;
 
   @include desktop {
     width: 144px;

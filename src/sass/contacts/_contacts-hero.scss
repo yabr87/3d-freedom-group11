@@ -1,9 +1,9 @@
-.contact-wrap{
+.contact-wrap {
   margin-top: 40px;
-  @include tablet{
-    margin-top:0;
+  @include tablet {
+    margin-top: 0;
     display: flex;
-    column-gap:32px;
+    column-gap: 32px;
   }
 }
 .video {
@@ -11,9 +11,13 @@
   padding-bottom: 56.25%;
   padding-top: 25px;
   height: 0;
-  @include tablet{
-   width: 336px;
-   height: 261px;
+  @include tablet {
+    width: 336px;
+    height: 261px;
+  }
+  @include desktop {
+    width: 555px;
+    height: 315px;
   }
 }
 .video iframe {
@@ -25,20 +29,47 @@
   border-radius: 15px;
 }
 
-.contacts-title {
+.contact-title {
   margin-bottom: 16px;
   font-weight: 700;
   font-size: 24px;
-  line-height: 30px;
-
+  line-height: 1.25;
   color: #487996;
 }
-.contacts-text{
-  margin-top:  16px;
+.contacts-text {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2b2b2b;
+  @include desktop {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.28;
+  }
 }
-.contacts-text.first{
-  @include tablet{
-    margin-top:  0;
+.contacts-text.first {
+  @include tablet {
+    margin-top: 0;
   }
 }
 
+.smile {
+  display: inline-flex;
+  align-items: center;
+}
+.smile::after {
+  content: '';
+  width: 22px;
+  height: 22px;
+  background-size: contain;
+  background-image: url(/src/images/emoji.png);
+  margin-left: 8px;
+  align-content: center;
+}
+.cont-text-wrap {
+  display: block;
+  width: 519px;
+  @include desktop {
+    width: 515px;
+  }
+}

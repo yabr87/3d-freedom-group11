@@ -40,13 +40,14 @@ margin-right: 136px;
 }
 
 .navigation-link {
+  font-family: Caviar Dreams, sans-serif;
   @include fonts(null, 18px, 1.17, 0.01, null, null);
   color: #2B2B2B;
   padding: 2px 4px;
   border-radius: 4px;
   outline: 0;
   transition-duration: 250ms;
-  transition-timing-function: linear;
+  transition-timing-function: ease;
 
   &:hover, &:focus {
     color: #fff;
@@ -54,22 +55,22 @@ margin-right: 136px;
   }
 }
 
-.polygon {
-  display: inline-block;
-  width: 12px;
-  transform: rotate(180deg);
-  transition-duration: 250ms;
-  transition-timing-function: linear;
+// .polygon {
+//   display: inline-block;
+//   width: 12px;
+//   transform: rotate(180deg);
+//   transition-duration: 250ms;
+//   transition-timing-function: ease;
 
-  .services:hover & {
-  transform: rotate(0);
-  }
-}
+//   .services:hover & {
+//   transform: rotate(0);
+//   }
+// }
 
 .services-list {
   transform: scale(0);
   transition-duration: 250ms;
-  transition-timing-function: linear;
+  transition-timing-function: ease;
 
   li {
     margin-top: 4px;
@@ -92,9 +93,10 @@ height: 114px;
 padding-top: 13px;
 border-radius: 0px 0px 72px 72px;
 transition-duration: 250ms;
-  transition-timing-function: linear;
+  transition-timing-function: ease;
 
   span {
+    font-family: Caviar Dreams, sans-serif;
     @include fonts(null, 18px, 1.17, 0.01, null, null);
     color: #2B2B2B;
   }
@@ -103,6 +105,31 @@ transition-duration: 250ms;
   background-color: #ffffff;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
 }
+}
+
+.span-wrapper {
+  position: relative;
+}
+
+.span-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 4px;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
+  transform-origin: top;
+  
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 5px 5px 0 5px;
+border-color: #008bef transparent transparent transparent;
+
+.services:hover & {
+    transform: rotate(180deg);
+    }
 }
 
 .menu-open {
@@ -118,7 +145,7 @@ transition-duration: 250ms;
   cursor: pointer;
   outline: 0;
   transition-duration: 250ms;
-  transition-timing-function: linear;
+  transition-timing-function: ease;
 
   &:hover,
   &:focus {
@@ -155,7 +182,7 @@ transition-duration: 250ms;
 
 .lang-item:nth-child(odd) {
   transform: scale(0);
-  transition: transform 250ms linear;
+  transition: transform 250ms ease;
 
   .lang:hover &,
   .lang:focus-within & {
@@ -166,11 +193,13 @@ transition-duration: 250ms;
 .lang-link {
   display: block;
   padding: 2px 4px;
-  // font-family: Caviar Dreams, sans-serif;
+  font-family: Caviar Dreams, sans-serif;
   @include fonts(700, 14px, 1.28, 0.01, uppercase, null);
   color: #bdbdbd;
   border-radius: 4px;
   outline: none;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
 
   &:hover,
   &:focus {
@@ -190,7 +219,7 @@ transition-duration: 250ms;
   border-radius: 7px;
   outline: 0;
   transition-duration: 250ms;
-  transition-timing-function: linear;
+  transition-timing-function: ease;
 
   &:hover,
   &:focus {
@@ -205,7 +234,7 @@ transition-duration: 250ms;
 
 .tel-icon {
   transition-duration: 250ms;
-  transition-timing-function: linear;
+  transition-timing-function: ease;
   fill: #008CEF;
 
   .mobile-tel:hover & {
@@ -224,7 +253,7 @@ transition-duration: 250ms;
     background-color: #ffffff;
     z-index: 1;
     transform: scale(0);
-  transition: transform 250ms linear;
+  transition: transform 250ms ease;
   }
 
   &:hover {
@@ -257,7 +286,7 @@ transition-duration: 250ms;
   @include fonts(null, 16px, 1.25, 0.01, null, null);
   color: #2b2b2b;
   transition-duration: 250ms;
-  transition-timing-function: linear;
+  transition-timing-function: ease;
   padding: 2px 4px;
     border-radius: 4px;
     outline: 0;  
@@ -273,7 +302,7 @@ transition-duration: 250ms;
   display: inline-block;
   margin-right: 4px;
   transition-duration: 250ms;
-  transition-timing-function: linear;
+  transition-timing-function: ease;
   fill: #008CEF;
 
   @media screen and (max-width: 767.5px) {

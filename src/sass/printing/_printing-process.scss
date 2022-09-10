@@ -40,6 +40,14 @@
     margin-bottom: 0;
   }
 }
+.printing-process-block{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include tablet{
+    align-items: flex-start;
+  }
+}
 .printing-process-text-block {
   display: flex;
   flex-direction: column;
@@ -70,11 +78,14 @@
   font-size: 16px;
   line-height: calc(20 / 16);
   color: #487996;
+  text-transform: uppercase;
   @include desktop {
     font-size: 18px;
     line-height: calc(23 / 18);
   }
 }
 .printing-process-btn {
+  display: inline-block;
+  text-transform: uppercase;
   margin: 0;
 }

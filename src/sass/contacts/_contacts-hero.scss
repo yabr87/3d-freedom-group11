@@ -5,6 +5,12 @@
     display: flex;
     column-gap: 32px;
   }
+  
+}
+.wrap-desc{
+  @include desktop{
+    padding: 0 117px;
+  }
 }
 .video {
   position: relative;
@@ -35,6 +41,10 @@
   font-size: 24px;
   line-height: 1.25;
   color: #487996;
+  @include desktop{
+    font-size: 48px;
+    line-height: 1.25;
+    }
 }
 .contacts-text {
   margin-top: 16px;
@@ -45,6 +55,8 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 1.28;
+    padding-right: 120px;
+    margin-top: 24px;
   }
 }
 .contacts-text.first {
@@ -66,10 +78,5 @@
   margin-left: 8px;
   align-content: center;
 }
-.cont-text-wrap {
-  display: block;
-  width: 519px;
-  @include desktop {
-    width: 515px;
-  }
-}
+
+

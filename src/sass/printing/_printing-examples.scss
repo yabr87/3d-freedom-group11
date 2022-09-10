@@ -1,3 +1,115 @@
 .printing-examples {
-  background-color: bisque;
+  background-color: #ffffff;
+}
+
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+}
+
+.examples-title {
+  margin-bottom: 16px;
+  margin-top: 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #487996;
+  padding-left: auto;
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+    line-height: 1.25;
+  }
+}
+
+.examples-pre-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28;
+  text-align: center;
+  color: #487996;
+}
+
+.examples-item {
+  width: 130px;
+  height: 158px;
+  text-align: center;
+  background: #ffffff;
+  opacity: 0.8;
+  box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #ffffff;
+  border-radius: 50px 0px;
+  @media screen and (min-width: 768px) {
+    width: 152px;
+    height: 182px;
+  }
+  @media screen and (min-width: 1199px) {
+    width: 320px;
+    height: 382px;
+  }
+}
+
+.position {
+  margin: auto;
+}
+
+.product {
+  padding-top: 25px;
+  margin-bottom: 18px;
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 61px;
+    margin-bottom: 43px;
+  }
+}
+
+.macet {
+  padding-top: 38px;
+  margin-bottom: 17px;
+  @media screen and (min-width: 768px) {
+    padding-top: 44px;
+    margin-bottom: 19px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 86px;
+    margin-bottom: 65px;
+  }
+}
+
+.decor {
+  padding-top: 31px;
+  margin-bottom: 17px;
+  @media screen and (min-width: 768px) {
+    padding-top: 36px;
+    margin-bottom: 19px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 40px;
+    margin-bottom: 21px;
+  }
+}
+
+.coub {
+  padding-top: 24px;
+  margin-bottom: 9px;
+  @media screen and (min-width: 768px) {
+    padding-top: 28px;
+    margin-bottom: 11px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
 }

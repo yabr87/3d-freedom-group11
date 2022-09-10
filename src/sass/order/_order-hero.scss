@@ -1,27 +1,119 @@
-.order-wrapper {
-  display: flex;
-}
-.order-hero {
-  background-color: burlywood;
-}
-.order-title{
-  font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    color: #487996;
-    margin-bottom: 16px;
-}
-.order-list{
-  gap: 16px;
-  margin-bottom: 40px;
-}
-.irder-item-text{
-  font-weight: 300;
-    font-size: 16px;
-    line-height: 20px;
-  
-    color: #2B2B2B;
-}
-.order-hero-img{
+.orderhero-title {
+  display: block;
+  margin-top: 40px;
   margin-bottom: 16px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  text-align: left;
+  letter-spacing: 0.03em;
+
+  color: #487996;
+
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+  }
 }
+
+.orderhero-thumb {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1440px) {
+    align-items: flex-start;
+  }
+}
+
+.orderhero-pict {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  margin-bottom: 16px;
+  background-color: #487996;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 32px) / 2);
+  }
+}
+
+.orderhero-text-thumb {
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 32px) / 2);
+    height: auto;
+  }
+
+  @media screen and (min-width: 1440px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.orderhero-text {
+  margin-bottom: 16px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  color: #2b2b2b;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 24px;
+  }
+}
+
+.mosaic-thumb {
+  display: flex;
+  // display: block;
+  gap: 32px;
+  margin-top: 60px;
+
+  @media screen and (max-width: 1443px) {
+    display: none;
+  }
+}
+
+// .order-wrapper {
+//   display: flex;
+// }
+// .order-hero {
+//   background-color: burlywood;
+// }
+// .order-title{
+//   font-weight: 700;
+//     font-size: 24px;
+//     line-height: 30px;
+//     color: #487996;
+//     margin-bottom: 16px;
+// }
+// .order-list{
+//   gap: 16px;
+//   margin-bottom: 40px;
+// }
+// .irder-item-text{
+//   font-weight: 300;
+//     font-size: 16px;
+//     line-height: 20px;
+
+//     color: #2B2B2B;
+// }
+// .order-hero-img{
+//   margin-bottom: 16px;
+// }

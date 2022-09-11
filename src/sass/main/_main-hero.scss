@@ -1,6 +1,12 @@
 .main-hero {
   background-color: #e5e5e5;
+  position: relative;
 }
+
+.hero-petal-wrap {
+  top: -74px;
+}
+
 .main-hero-name {
   font-family: "Caviar Dreams";
   font-style: normal;

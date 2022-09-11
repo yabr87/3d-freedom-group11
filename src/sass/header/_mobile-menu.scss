@@ -45,10 +45,11 @@
   
   
   overflow: auto;
-  background-color: transparent;
-  transform: translate(100%);
-  transition-property: transform, background-color;
-  transition-duration: 250ms;
+  background-color: #ffffff;
+  transform: scale(0.5) translateY(-150%);
+  opacity: 0;
+  transition-property: transform, opacity;
+  transition-duration: 500ms;
   transition-timing-function: ease;
   
   @include tablet {
@@ -57,8 +58,8 @@
   }
 
   &.is-open {
-    background-color: #ffffff;
-    transform: translate(0);
+    transform: scale(1);
+    opacity: 1;
   }
 
   @include desktop {

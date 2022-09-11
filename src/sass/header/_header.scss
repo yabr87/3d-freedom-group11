@@ -24,7 +24,7 @@ header {
 }
 
 .navigation {
-  @media screen and (max-width: 1439.5px) {
+  @media screen and (max-width: 1199.5px) {
     display: none;
   }
 }
@@ -33,6 +33,10 @@ header {
   display: flex;
   gap: 56px;
   text-align: center;
+}
+
+.navigation-item {
+  z-index: 1;
 }
 
 .navigation-item:first-child {
@@ -48,6 +52,7 @@ margin-right: 136px;
   outline: 0;
   transition-duration: 250ms;
   transition-timing-function: ease;
+  
 
   &:hover, &:focus {
     color: #fff;
@@ -137,17 +142,18 @@ border-color: #008bef transparent transparent transparent;
 
   &:hover,
   &:focus {
-    color: #fff;
     background-color: rgba(72, 121, 150, 0.5);
   }
 
-  @include desktop {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
 
 .menu-open-icon {
   fill: #487996;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
 
   .menu-open:hover & {
     fill: #ffffff;
@@ -158,7 +164,7 @@ border-color: #008bef transparent transparent transparent;
   z-index: 1;
   margin-left: auto;
 
-  @include tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
     margin-right: 34px;
   }
 
@@ -173,18 +179,19 @@ border-color: #008bef transparent transparent transparent;
 
   .lang:hover &,
   .lang:focus-within & {
-    transform: scale(1);
+    transform: scale(1);    
   }
 }
 
-.lang-link {
-  display: block;
+.lang-btn {
   padding: 2px 4px;
   font-family: Caviar Dreams, sans-serif;
   @include fonts(700, 14px, 1.28, 0.01, uppercase, null);
   color: #bdbdbd;
   border-radius: 4px;
   outline: none;
+  border: none;
+  background-color: transparent;
   transition-duration: 250ms;
   transition-timing-function: ease;
 
@@ -214,7 +221,7 @@ border-color: #008bef transparent transparent transparent;
     background-color: rgba(72, 121, 150, 0.5);
   }
 
-  @include tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199.5px), (min-width: 1440px) {
     display: none;
   }
 }
@@ -230,7 +237,7 @@ border-color: #008bef transparent transparent transparent;
 }
 
 .tel-list {
-  @media screen and (max-width: 767.5px) {
+  @media screen and (max-width: 767.5px), (min-width: 1200px) and (max-width: 1339.5px) {
     position: absolute;
     top: 60px;
     right: 10px;
@@ -239,7 +246,7 @@ border-color: #008bef transparent transparent transparent;
     padding: 16px 7px;
     background-color: #ffffff;
     z-index: 1;
-    transform: scale(0);
+    // transform: scale(0);
   transition: transform 250ms ease;
   }
 
@@ -257,6 +264,10 @@ border-color: #008bef transparent transparent transparent;
     height: 15px;
     border-radius: 2px;
     background-color: #ffffff;
+
+    @media screen and (min-width: 767.5px) and (max-width: 1199.5px), (min-width: 1440px) {
+      display: none;
+    }
   }
 
   .mobile-tel:hover + & {
@@ -296,6 +307,10 @@ border-color: #008bef transparent transparent transparent;
     display: none;
   }
 
+  @media screen and (min-width: 1200px) and (max-width: 1399.5px) {
+    display: none;
+  }
+
   @include desktop {
     margin-right: 8px;
   }
@@ -311,6 +326,7 @@ border-color: #008bef transparent transparent transparent;
   height: 74px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
+  background-size: cover;
 }
 
 .header-petal {

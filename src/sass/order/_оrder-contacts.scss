@@ -1,14 +1,14 @@
-.order-wrapper{
-  @include desktop{
-  display: flex;
+.order-wrapper {
+  @include desktop {
+    display: flex;
+  }
 }
-}
-.оrder-forms>.container {
+.оrder-forms > .container {
   @media screen and (min-width: 1440px) {
     padding-left: 149px;
   }
 }
-.оrder-contacts{
+.оrder-contacts {
   padding-top: 60px;
 }
 
@@ -51,15 +51,13 @@
 }
 
 .contacts-pg {
-  
   @include tablet {
     display: flex;
     column-gap: 26px;
   }
 
   @include desktop {
-    
-      margin-left: auto;
+    margin-left: auto;
   }
 }
 
@@ -67,18 +65,18 @@
   @include tablet {
     text-align: right;
   }
-    @include desktop {
-      display: block;
-      align-items: flex-end;
-    }
+  @include desktop {
+    display: block;
+    align-items: flex-end;
+  }
 }
 
 .contacts-pg-down-item {
   margin-left: auto;
   @include desktop {
-      display: block;
-      align-items: flex-end;
-    }
+    display: block;
+    align-items: flex-end;
+  }
 }
 
 .contacts-title {
@@ -93,18 +91,18 @@
     margin-bottom: 18px;
     font-size: 36px;
     line-height: 1.25;
-  
-      display: block;
-      align-items: flex-end;
-    }
+
+    display: block;
+    align-items: flex-end;
+  }
 }
 
 .contacts-title.desk {
   margin-bottom: 16px;
   @include desktop {
-      display: block;
-      align-items: flex-end;
-    }
+    display: block;
+    align-items: flex-end;
+  }
 }
 
 .contacts-title.small-text {
@@ -120,22 +118,21 @@
     flex-direction: row-reverse;
   }
 }
-.mosaic-pict2{
+.mosaic-pict2 {
   display: none;
-  
-    width: 100px;
-    height: auto;
-    margin-top: 68px;
-    margin-left: auto;
-  
-    width: 514px;
-  @include desktop{
+
+  width: 100px;
+  height: auto;
+  margin-top: 68px;
+  margin-left: auto;
+
+  width: 514px;
+  @include desktop {
     display: block;
   }
 }
-br{
+br {
   @include desktop {
-      display:none;
-      
-    }
+    display: none;
+  }
 }

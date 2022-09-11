@@ -1,18 +1,17 @@
-.orderhero-section{
+.orderhero-section {
   @media screen and (min-width: 1440px) {
-      padding-left: 149px;
-    }
+    padding-left: 149px;
+  }
 }
 
 .orderhero-title {
   display: block;
   margin-top: 40px;
   margin-bottom: 16px;
-
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 1;
+  font-size: 48px;
+  line-height: calc(60 / 48);
   text-align: left;
   letter-spacing: 0.03em;
 
@@ -41,19 +40,14 @@
 
 .orderhero-pict {
   display: block;
-  width: 100%;
   height: auto;
-
   margin-bottom: 16px;
-  background-color: #487996;
-
+  max-width: 555px;
   @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1440px) {
     width: calc((100% - 32px) / 2);
   }
-    @media screen and (min-width: 1440px) {
-      width: calc((100% - 32px) / 2);
-      
-    }
 }
 
 .orderhero-text-thumb {
@@ -67,7 +61,7 @@
   @media screen and (min-width: 1440px) {
     display: flex;
     flex-direction: column;
-    gap:24px;
+    gap: 24px;
   }
 }
 
@@ -101,12 +95,12 @@
   }
 }
 
-.car>img{
+.car > img {
   border-radius: 0 50px 50px 0;
 }
-.drive>img{
+.drive > img {
   border-radius: 50px 0 50px 0;
 }
-.shroom>img{
+.shroom > img {
   border-radius: 0 0 50px 0;
 }

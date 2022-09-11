@@ -1,3 +1,6 @@
+.contacts-hero{
+  padding-top: 41px;
+}
 .contact-wrap {
   @include tablet {
     margin-top: 0;
@@ -52,7 +55,7 @@ iframe{
 .contacts-text {
   margin-top: 16px;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   color: #2b2b2b;
   @include desktop {
     font-weight: 300;
@@ -61,10 +64,28 @@ iframe{
     margin-top: 24px;
   }
 }
+
 .contacts-text.first {
+  position: relative;
   @include tablet {
     margin-top: 0;
   }
+}
+
+.contacts-text.second{
+  position: relative;
+}
+.contacts-text.second::before{
+  content: "";
+  position:absolute;
+width: 74px;
+height: 74px;
+// bottom: 56px;
+right: 251px;
+background:#fff;
+box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+border-radius: 0px 0px 35px 0px;
+
 }
 
 .smile {

@@ -4,10 +4,16 @@
 }
 .scanning-title {
   font-weight: 700;
-  font-size: 21px;
+  font-size: 24px;
   line-height: 1.24;
   color: #487996;
   margin-bottom: 16px;
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+      font-size: 36px;
+    }
+  @media screen and (min-width: 1440px){
+    font-size: 48px;
+  }
 }
 
 .scanning-list {
@@ -40,10 +46,14 @@
   font-size: 16px;
   line-height: 1.25;
   color: #2b2b2b;
-  @media screen and (min-width: 768px) and (max-width: 1439px) {
-    font-size: 18px;
+  @media screen and (min-width: 1440px){
+    font-size: 22px;
     line-height: 1.28;
   }
+}
+
+.limitation{
+  width: 500px;
 }
 
 .hero-scanning-img {
@@ -54,14 +64,15 @@
 .scanning {
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     position: absolute;
-    height: 240px;
-    top: 24%;
+    top: 40%;
     right: 0%;
     width: 210px;
     z-index: -1;
   }
 }
 
-.img-scanning {
-  height: 226px;
-}
+// .img-scanning {
+//   @media screen and (min-width: 768px) and (max-width: 1439px){
+//   height: 226px;
+// }
+// }

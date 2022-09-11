@@ -1,39 +1,37 @@
 .item-text {
-  
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
   color: #487996;
-@media screen and (min-width: 1440px){
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 1.28;
-  text-align: center;
-  color: #487996;
-}
+  @media screen and (min-width: 1440px) {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.28;
+    text-align: center;
+    color: #487996;
+  }
 }
 
 .scanning-img {
   text-align: center;
-  background: #FFFFFF;
-  opacity: 0.8;
-  box-shadow: inset 1px 1px 16px #CBCBCB, inset -1px -1px 16px #FFFFFF;
+  background: #ffffff;
+  box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #ffffff;
   border-radius: 50px 0px;
   padding: 11.5px 19px;
-  @media screen and (min-width: 768px) and (max-width: 1439px){
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
     padding: 22px 21px;
   }
   @media screen and (min-width: 1440px) {
-  padding: 43px 36px;
+    padding: 43px 36px;
   }
 }
 
-.scanning-img-item{
+.scanning-img-item {
+  width: 100%;
   @media screen and (min-width: 1440px) {
     display: inline-block;
-    width: 100%;
-    }
   }
+}
 
 .scanning-process {
   display: flex;
@@ -45,14 +43,13 @@
   // margin-top: calc(-1 * 16px);
 }
 
-.scanning-process>.scanning-img {
+.scanning-process > .scanning-img {
   width: calc((100% - 40px) / 2);
-  @include tablet{
+  @include tablet {
     flex-basis: calc((100% - 96px) / 4);
   }
   // margin-left: 20px;
   // margin-top: 16px;
-
 }
 
 .scanning-item-description {
@@ -62,14 +59,14 @@
   margin-top: 16px;
 }
 
-.padding-btn{
+.padding-btn {
   margin-top: 40px;
   margin-bottom: 60px;
-  @media screen and (min-width: 768px) and (max-width: 1439px){
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
     margin-top: 60px;
     margin-bottom: 60px;
   }
-  @media screen and (min-width: 1440px){
+  @media screen and (min-width: 1440px) {
     margin-top: 80px;
     margin-bottom: 80px;
   }

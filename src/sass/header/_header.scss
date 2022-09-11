@@ -137,7 +137,6 @@ border-color: #008bef transparent transparent transparent;
 
   &:hover,
   &:focus {
-    color: #fff;
     background-color: rgba(72, 121, 150, 0.5);
   }
 
@@ -148,6 +147,8 @@ border-color: #008bef transparent transparent transparent;
 
 .menu-open-icon {
   fill: #487996;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
 
   .menu-open:hover & {
     fill: #ffffff;
@@ -173,18 +174,19 @@ border-color: #008bef transparent transparent transparent;
 
   .lang:hover &,
   .lang:focus-within & {
-    transform: scale(1);
+    transform: scale(1);    
   }
 }
 
-.lang-link {
-  display: block;
+.lang-btn {
   padding: 2px 4px;
   font-family: Caviar Dreams, sans-serif;
   @include fonts(700, 14px, 1.28, 0.01, uppercase, null);
   color: #bdbdbd;
   border-radius: 4px;
   outline: none;
+  border: none;
+  background-color: transparent;
   transition-duration: 250ms;
   transition-timing-function: ease;
 
@@ -257,6 +259,10 @@ border-color: #008bef transparent transparent transparent;
     height: 15px;
     border-radius: 2px;
     background-color: #ffffff;
+
+    @include tablet {
+      display: none;
+    }
   }
 
   .mobile-tel:hover + & {
@@ -311,6 +317,7 @@ border-color: #008bef transparent transparent transparent;
   height: 74px;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
+  background-size: cover;
 }
 
 .header-petal {

@@ -1,5 +1,5 @@
 .main-hero-name {
-  font-family: "Caviar Dreams";
+  font-family: 'Caviar Dreams';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -55,9 +55,9 @@
 }
 
 .main-hero-list {
+  border-radius: 50%;
   height: 84px;
   width: 84px;
-  overflow: hidden;
   box-shadow: 20px 20px 80px #0000001a;
 
   @media screen and (min-width: 767px) {
@@ -73,7 +73,7 @@
 }
 
 .main-hero-text {
-  font-family: "Caviar Dreams";
+  font-family: 'Caviar Dreams';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

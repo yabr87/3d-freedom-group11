@@ -1,81 +1,168 @@
-.оrder-contacts {
-  background-color: aquamarine;
+// .ordercont-title {
+//     display: block;
+//     margin-top: 40px;
+//     margin-bottom: 8px;
+
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 36px;
+//     line-height: 1;
+//     letter-spacing: 0.03em;
+//     color: #487996;
+// }
+
+// .ordercont-text {
+//     margin-bottom: 8px;
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: 1.7;
+//     letter-spacing: 0.01em;
+//     color: #2b2b2b;
+// }
+.order-contacts{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        display: flex;   
+        }
+        @media screen and (min-width: 1440px) {
+            display: block;
+            justify-content: end;
+        }
+                @media screen and (min-width: 1440px) {
+                    padding-right: 149px;
+                    margin-top:100px;
+                    margin-bottom:74px;
+                }
+        
 }
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.contact-phone{
+    margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+            margin-right: 20px;
+        }
+        @media screen and (min-width: 1440px) {
+            margin-right: 0;
+            justify-content: end;
+                text-align: end;
+                margin-bottom: 30px;
+        }
+    
+}
+.contact-phone-title{
+    font-weight: 700;
+        font-size: 18px;
+        line-height: calc(23/18);
+        color: #487996;
+        margin-bottom: 8px;
+        @media screen and (min-width: 768px) {
+                font-size: 24px;
+                line-height: calc(30/24);
+            }
+                        @media screen and (min-width: 1440px) {
+                        font-size: 36px;
+                            line-height: calc(45/36);
+                            margin-bottom: 18px;
+                        }
+}
+.contact-phone-text{
+    font-size: 16px;
+        line-height: calc(20/16);
+        text-transform: capitalize;
+        color: #2B2B2B;
+        margin-bottom: 8px;
+        @media screen and (min-width: 1440px) {
+                font-size: 18px;
+                line-height: calc(20/18);
+                margin-bottom: 18px;
+            }
 }
 
-
-.order-address {
-  margin-bottom: 24px;
+.contact-mail{
+    margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+            margin-right: 119px;
+        }
+        @media screen and (min-width: 1440px) {
+            margin-right: 0;
+            justify-content: end;
+                text-align: end;
+                margin-bottom: 30px;
+        }
 }
-
-.order-phones-title {
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: calc(23/18);
-  color: #487996;
-  text-transform: uppercase;
-  margin-bottom: 8px;
+.contact-mail-title{
+    font-weight: 700;
+        font-size: 18px;
+        line-height: calc(23/18);
+        color: #487996;
+        margin-bottom: 8px;
+        @media screen and (min-width: 768px) {
+                font-size: 24px;
+                line-height: calc(30/24);
+            }
+                        @media screen and (min-width: 1440px) {
+                            font-size: 36px;
+                            line-height: calc(45/36);
+                            margin-bottom: 18px;
+                        }
 }
-
-.order-phone-link {
-  display: flex;
-  font-size: 16px;
-  line-height: calc(20/16);
-  text-transform: capitalize;
-  color: #2B2B2B;
-  text-decoration: none;
-  margin-bottom: 8px;
+.contact-mail-text{
+    font-size: 16px;
+        line-height: calc(20/16);
+        text-transform: capitalize;
+        color: #2B2B2B;
+        @media screen and (min-width: 1440px) {
+                font-size: 18px;
+                line-height: calc(20/18);
+                margin-bottom: 18px;
+            }
 }
-
-.order-mail {
-  margin-bottom: 24px;
+.contact-time{
+    
+    @media screen and (min-width: 768px) {
+            justify-content: left;
+            text-align: end;
+        }
+                @media screen and (min-width: 1440px) {
+                    justify-content: end;
+                        text-align: end;
+                }
+    
 }
-
-.order-mail-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: calc(23/18);
-  color: #487996;
-  margin-bottom: 8px;
+.contact-time-title{
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+        font-size: 18px;
+        line-height: calc(23/18);
+        color: #487996;
+        margin-bottom: 8px;
+        @media screen and (min-width: 768px) {
+                font-size: 24px;
+                line-height: calc(30/24);
+                
+            }
+                        @media screen and (min-width: 1440px) {
+                            font-size: 36px;
+                            line-height: calc(45/36);
+                            margin-bottom: 18px;
+                        }
 }
-
-.order-mail-link {
-  font-size: 16px;
-  line-height: calc(20/16);
-  text-transform: capitalize;
-  color: #2B2B2B;
-  text-decoration: none;
+.contact-time-text{
+    font-size: 16px;
+        line-height: calc(20/16);
+        text-transform: capitalize;
+        color: #2B2B2B;
+        margin-bottom: 8px;
+        @media screen and (min-width: 1440px) {
+                font-size: 18px;
+                line-height: calc(20/18);
+                margin-bottom: 18px;
+            }
 }
-
-.order-time {
-  margin-bottom: 60px;
-}
-
-.order-time-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: calc(23/18);
-  color: #487996;
-  text-transform: uppercase;
-  margin-bottom: 8px;
-}
-
-.order-time-text {
-  font-size: 16px;
-  line-height: calc(20/16);
-  text-transform: capitalize;
-  color: #2B2B2B;
-
+br {
+    @media screen and (min-width: 1440px) {
+        display: none;
+    }
 }

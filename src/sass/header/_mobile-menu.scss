@@ -49,7 +49,7 @@
   transform: scale(0.5) translateY(-150%);
   opacity: 0;
   transition-property: transform, opacity;
-  transition-duration: 500ms;
+  transition-duration: 250ms;
   transition-timing-function: ease;
   
   @include tablet {

@@ -12,6 +12,12 @@ textarea {
   margin-bottom: 4px;
   margin-top: 4px;
   resize: none;
+  outline: none;
+}
+.contact-text.write{
+  padding-left: 22px;
+  padding-top: 20px;
+  color: #2B2B2B;
 }
 .textarea-wrap {
   position: relative;
@@ -50,8 +56,6 @@ textarea {
   display: block;
 }
 .contact-text::placeholder {
-  padding-left: 22px;
-  padding-top: 20px;
   font-size: 16px;
   line-height: 1.25;
   @include desktop {
@@ -106,3 +110,50 @@ textarea {
     display: none;
   }
 }
+
+
+// ----------fon--------------------
+// .petal-contact-lf {
+//   bottom: 220;
+//   left: -25;
+//   z-index: -1;
+//   background: #fff;
+//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+//   border-radius: 0px 0px 35px 0px;
+// }
+// .petal-contact-lf::before {
+//   content: '';
+//   position: absolute;
+//   width: 74px;
+//   height: 74px;
+//   background: #fff;
+//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+//   border-radius: 72px;
+//   top: 270;
+//   left: 290;
+// }
+
+// .petal-contact-lf::before {
+//   content: '';
+//   position: absolute;
+//   background: #FFFFFF;
+//   bottom: 326;
+//   right: 290;
+//   width: 74px;
+//   height: 74px;
+//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+//   border-radius: 0px 0px 35px 0px;
+//   z-index: -1;
+// }
+// .petal-contact-lf::after {
+//   content: '';
+//   position: absolute;
+//   background: red;
+//   top: 60;
+//   left: 278;
+//   // bottom: 326;
+//   // right: 290;
+//   width: 74px;
+//   height: 74px;
+//   // z-index: -1;
+// }

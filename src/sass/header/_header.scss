@@ -24,7 +24,7 @@ header {
 }
 
 .navigation {
-  @media screen and (max-width: 1439.5px) {
+  @media screen and (max-width: 1199.5px) {
     display: none;
   }
 }
@@ -33,6 +33,10 @@ header {
   display: flex;
   gap: 56px;
   text-align: center;
+}
+
+.navigation-item {
+  z-index: 1;
 }
 
 .navigation-item:first-child {
@@ -48,6 +52,7 @@ margin-right: 136px;
   outline: 0;
   transition-duration: 250ms;
   transition-timing-function: ease;
+  
 
   &:hover, &:focus {
     color: #fff;
@@ -140,7 +145,7 @@ border-color: #008bef transparent transparent transparent;
     background-color: rgba(72, 121, 150, 0.5);
   }
 
-  @include desktop {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -159,7 +164,7 @@ border-color: #008bef transparent transparent transparent;
   z-index: 1;
   margin-left: auto;
 
-  @include tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
     margin-right: 34px;
   }
 
@@ -216,7 +221,7 @@ border-color: #008bef transparent transparent transparent;
     background-color: rgba(72, 121, 150, 0.5);
   }
 
-  @include tablet {
+  @media screen and (min-width: 768px) and (max-width: 1199.5px), (min-width: 1440px) {
     display: none;
   }
 }
@@ -232,7 +237,7 @@ border-color: #008bef transparent transparent transparent;
 }
 
 .tel-list {
-  @media screen and (max-width: 767.5px) {
+  @media screen and (max-width: 767.5px), (min-width: 1200px) and (max-width: 1339.5px) {
     position: absolute;
     top: 60px;
     right: 10px;
@@ -241,7 +246,7 @@ border-color: #008bef transparent transparent transparent;
     padding: 16px 7px;
     background-color: #ffffff;
     z-index: 1;
-    transform: scale(0);
+    // transform: scale(0);
   transition: transform 250ms ease;
   }
 
@@ -260,7 +265,7 @@ border-color: #008bef transparent transparent transparent;
     border-radius: 2px;
     background-color: #ffffff;
 
-    @include tablet {
+    @media screen and (min-width: 767.5px) and (max-width: 1199.5px), (min-width: 1440px) {
       display: none;
     }
   }
@@ -299,6 +304,10 @@ border-color: #008bef transparent transparent transparent;
   fill: #008CEF;
 
   @media screen and (max-width: 767.5px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) and (max-width: 1399.5px) {
     display: none;
   }
 

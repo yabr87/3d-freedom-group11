@@ -60,6 +60,10 @@
     background-color: #ffffff;
     transform: translate(0);
   }
+
+  @include desktop {
+    display: none;
+  }
 }
 
 .wrapper {

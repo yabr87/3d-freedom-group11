@@ -80,7 +80,7 @@ textarea {
   text-transform: capitalize;
   color: #2b2b2b;
   @include desktop {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.43;
   }
 }
@@ -99,5 +99,10 @@ textarea {
     width: 555px;
     margin-left: 0;
     margin-right: 0;
+  }
+}
+.orderform-basic{
+  @include desktop{
+    display: none;
   }
 }

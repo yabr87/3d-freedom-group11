@@ -8,15 +8,23 @@ header {
     display: flex;
     align-items: center;
     height: 100%;
+
+    @media screen and (min-width: 1200px) and (max-width: 1439.5px) {
+      max-width: 1200px;
+    }
   }
 
-  @include desktop {
+  @media screen and (min-width: 1200px) {
     height: 130px;
   }
 }
 
 .header-logo {
   z-index: 1;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 100px;
+  }
 
   @include desktop {
     margin-right: 258px;
@@ -79,13 +87,13 @@ margin-right: 136px;
 
 .services {
   position: absolute;
-  top: 42px;
-  left: 585px;
-width: 144px;
-height: 114px;
-padding-top: 13px;
-border-radius: 0px 0px 72px 72px;
-transition-duration: 250ms;
+  top: 41px;
+  left: 425px;
+  width: 144px;
+  height: 114px;
+  padding-top: 13px;
+  border-radius: 0px 0px 72px 72px;
+  transition-duration: 250ms;
   transition-timing-function: ease;
 
   span {
@@ -94,10 +102,15 @@ transition-duration: 250ms;
     color: #2B2B2B;
   }
 
-&:hover {
-  background-color: #ffffff;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-}
+  &:hover {
+    background-color: #ffffff;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  }
+
+  
+  @include desktop {
+    left: 585px;
+  }
 }
 
 .span-wrapper {
@@ -164,11 +177,11 @@ border-color: #008bef transparent transparent transparent;
   z-index: 1;
   margin-left: auto;
 
-  @media screen and (min-width: 768px) and (max-width: 1199.5px) {
-    margin-right: 34px;
+  @include tablet {
+    margin-right: 33px;
   }
 
-  @include desktop {
+  @media screen and (min-width: 1200px) {
     margin-right: 115px;
   }
 }
@@ -221,7 +234,7 @@ border-color: #008bef transparent transparent transparent;
     background-color: rgba(72, 121, 150, 0.5);
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199.5px), (min-width: 1440px) {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }
@@ -237,7 +250,7 @@ border-color: #008bef transparent transparent transparent;
 }
 
 .tel-list {
-  @media screen and (max-width: 767.5px), (min-width: 1200px) and (max-width: 1339.5px) {
+  @media screen and (max-width: 767.5px) {
     position: absolute;
     top: 60px;
     right: 10px;
@@ -265,7 +278,7 @@ border-color: #008bef transparent transparent transparent;
     border-radius: 2px;
     background-color: #ffffff;
 
-    @media screen and (min-width: 767.5px) and (max-width: 1199.5px), (min-width: 1440px) {
+    @include tablet {
       display: none;
     }
   }
@@ -307,10 +320,6 @@ border-color: #008bef transparent transparent transparent;
     display: none;
   }
 
-  @media screen and (min-width: 1200px) and (max-width: 1399.5px) {
-    display: none;
-  }
-
   @include desktop {
     margin-right: 8px;
   }
@@ -332,7 +341,7 @@ border-color: #008bef transparent transparent transparent;
 .header-petal {
   top: 0;
 
-  @include desktop {
+  @media screen and (min-width: 1200px) {
     width: 144px;
     height: 144px;
   }
@@ -345,7 +354,7 @@ border-color: #008bef transparent transparent transparent;
       left: 232px;
     }
 
-    @include desktop {
+    @media screen and (min-width: 1200px) {
       left: 291px;
       border-radius: 0px 72px 72px 0px;
     }
@@ -359,7 +368,7 @@ border-color: #008bef transparent transparent transparent;
       right: 216px;
     }
 
-    @include desktop {
+    @media screen and (min-width: 1200px) {
       right: 266px;
       border-radius: 72px 0px 0px 72px;
     }

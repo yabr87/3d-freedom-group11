@@ -97,28 +97,27 @@
 }
 
 /* эфект и ховер */
-.ddd>img {
+.ddd > img {
   border-radius: 5px;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease;
 }
 
-.ddd>img:hover {
+.ddd > img:hover {
   filter: grayscale(0);
 }
 
 .bfoto-image {
   max-width: 100%;
-  border: solid 2px black;
-  padding: 5px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border: solid 2px #487996;
+  padding: 3px;
   border-radius: 5px;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease;
 }
 
 .bfoto-image:hover {
   border-color: #16a1f7;
 }
 
-.bfoto-image>a {
+.bfoto-image > a {
   cursor: zoom-in;
 }

@@ -44,6 +44,10 @@ img {
   width: 100%;
 }
 
+.gallery-image-jpg img {
+  border-radius: 5px;
+}
+
 @media screen and (min-width: 768px) {
   .gallery-image-jpg {
     width: calc((100% - 32px) / 2);

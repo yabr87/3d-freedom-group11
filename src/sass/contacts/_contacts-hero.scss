@@ -1,5 +1,4 @@
 .contact-wrap {
-  margin-top: 40px;
   @include tablet {
     margin-top: 0;
     display: flex;
@@ -9,8 +8,11 @@
 }
 .wrap-desc{
   @include desktop{
-    padding: 0 117px;
+    padding: 0 149px;
   }
+}
+iframe{
+  border: 0;
 }
 .video {
   position: relative;
@@ -41,6 +43,7 @@
   font-size: 24px;
   line-height: 1.25;
   color: #487996;
+  text-transform: uppercase;
   @include desktop{
     font-size: 48px;
     line-height: 1.25;
@@ -55,7 +58,6 @@
     font-weight: 300;
     font-size: 18px;
     line-height: 1.28;
-    padding-right: 120px;
     margin-top: 24px;
   }
 }
@@ -77,6 +79,22 @@
   background-image: url(/src/images/emoji.png);
   margin-left: 8px;
   align-content: center;
+  @include desktop{
+    display: none;
+  }
+}
+.cont-text-wrap-desk{
+  display: none;
+  @include desktop{
+    display: block;
+  }
 }
 
-
+.cont-text-wrap{
+  @include desktop{
+    display: none;
+  }
+}
+.smile-img{
+  margin-top: 56px;
+}

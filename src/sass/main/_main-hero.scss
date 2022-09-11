@@ -1,3 +1,71 @@
 .main-hero {
-  background-color: sandybrown;
+  background-color: #e5e5e5;
+}
+.main-hero-name {
+  font-family: "Caviar Dreams";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-align: center;
+  color: #2b2b2b;
+  padding: 0 20px 44px;
+  width: 281px;
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 630px;
+    font-size: 48px;
+    line-height: calc(56 / 48);
+  }
+}
+// .main-hero-photo {
+// }
+.main-hero-item {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 32px;
+}
+.walley {
+  border-radius: 100px;
+}
+
+.main-hero-list {
+  height: 84px;
+  width: 84px;
+
+  @media screen and (max-width: 768px) {
+    height: 114px;
+    width: 114px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    height: 203px;
+    width: 203px;
+    gap: 32px;
+  }
+}
+
+.main-hero-text {
+  font-family: "Caviar Dreams";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(18 / 16);
+  text-align: center;
+  color: #2b2b2b;
+  padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1440px) {
+    font-size: 48px;
+    line-height: calc(56 / 48);
+    margin: 0;
+  }
+}
+img [src$="picture"] {
+  border-radius: 0 50px 0 0;
 }

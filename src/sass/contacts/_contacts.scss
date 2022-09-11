@@ -5,36 +5,69 @@
   text-transform: capitalize;
   color: #2b2b2b;
   margin-bottom: 8px;
-}
-.contact-part{
+  @include desktop{
+    margin-bottom: 18px;
+  }}
+.contact-part {
   margin-bottom: 24px;
-}
-.work-time {
-  margin-bottom: 8px;
-}
-.contacts{
-  padding-bottom: 60px;
-}
-.weekday-work{
-  margin-bottom: 8px;
-}
-.contacts-pg-down{
   @include tablet{
-display: flex;
-column-gap: 26px;
+    margin-bottom: 0;
+  }
+  @include desktop{
+    margin-bottom: 68px;
   }
 }
-.contact-part.info{
-  @include tablet{
+.contacts {
+  padding-bottom: 60px;
+  @include desktop{
+    padding-bottom: 80px;
+  }
+}
+.weekday-work {
+  margin-bottom: 8px;
+}
+.contacts-pg-down {
+  @include tablet {
+    display: flex;
+    column-gap: 26px;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+.contact-part.info {
+  @include tablet {
     text-align: right;
   }
 }
-.contacts-pg-down-item{
+.contacts-pg-down-item {
   margin-left: auto;
-}
-.contacts-title{
+  }
+
+.contacts-title {
   font-weight: 700;
-font-size: 18px;
-line-height: 1.28;
-color: #487996;
+  font-size: 18px;
+  line-height: 1.28;
+  color: #487996;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  @include desktop{
+    margin-bottom: 18px;
+    font-size: 36px;
+line-height: 1.25;
+  }
+}
+.contacts-title.desk{
+  margin-bottom: 16px;
+}
+.contacts-title.small-text{
+  text-transform: none ;
+}
+.wrap-form-contact{
+  display: none;
+  @include desktop{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
 }

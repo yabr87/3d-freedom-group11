@@ -1,24 +1,26 @@
 <!DOCTYPE html>
+
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <script type="module" src="./index.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page title</title>
-  <link rel="stylesheet" href="./sass/index.scss" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
-  <script type="module" src="./index.js"></script>
-</head>
-
-<body>
-  <include src="./partials/header/header.html"></include>
-  <main>
-    <include src="./partials/main/main-hero.html"></include>
-    <include src="./partials/main/main-gallery.html"></include>
-    <include src="./partials/main/main-photo.html"></include>
-  </main>
-  <include src="./partials/footer/footer.html"></include>
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-</body>
-
+  <body>
+    <include src="./partials/header/header.html"></include>
+    <main>
+      <include src="./partials/main/main-hero.html"></include>
+      <include src="./partials/main/main-gallery.html"></include>
+      <include src="./partials/main/main-photo.html"></include>
+    </main>
+    <include src="./partials/footer/footer.html"></include>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  </body>
 </html>

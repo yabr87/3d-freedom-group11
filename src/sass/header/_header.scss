@@ -137,7 +137,6 @@ border-color: #008bef transparent transparent transparent;
 
   &:hover,
   &:focus {
-    color: #fff;
     background-color: rgba(72, 121, 150, 0.5);
   }
 
@@ -148,6 +147,8 @@ border-color: #008bef transparent transparent transparent;
 
 .menu-open-icon {
   fill: #487996;
+  transition-duration: 250ms;
+  transition-timing-function: ease;
 
   .menu-open:hover & {
     fill: #ffffff;
@@ -316,7 +317,6 @@ border-color: #008bef transparent transparent transparent;
   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
   background-size: cover;
-  outline: 1px dotted red;
 }
 
 .header-petal {

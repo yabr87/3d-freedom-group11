@@ -26,6 +26,7 @@
 	padding-bottom: 32px;
 	@include desktop {
 		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 }
 
@@ -69,10 +70,30 @@
 	}
 }
 
-.email-address,
+.footer-link:hover,
+.footer-link:focus,
+.network-link:hover,
+.network-link:focus,
+.footer-tel:hover,
+.footer-tel:focus,
+.footer-tel-link:hover,
+.footer-tel-link:focus {
+	color: rgba(72, 121, 150, 0.5);
+}
+
+.email-address {
+	margin-bottom: 24px;
+	@include tablet {
+		margin-bottom: 16px;
+	}
+}
+
 .footer-content,
 .network-links {
 	margin-bottom: 24px;
+	@include tablet {
+		margin-bottom: 0;
+	}
 }
 
 .logo {
@@ -97,7 +118,7 @@
 .footer-content {
 	margin-right: 0;
 	@include tablet {
-		margin-right: 55px;
+		margin-right: 36px;
 	}
 	@include desktop {
 		margin-right: 100px;
@@ -112,7 +133,4 @@
 	@include desktop {
 		margin-right: 160px;
 	}
-}
-ul {
-	margin: 0;
 }

@@ -16,7 +16,6 @@
 
 .examples-title {
   margin-bottom: 16px;
-  margin-top: 16px;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25;
@@ -41,7 +40,7 @@
 }
 
 .examples-item {
-  width: 130px;
+  width: calc((100% - 20px) / 2);
   height: 158px;
   text-align: center;
   background: #ffffff;
@@ -49,11 +48,11 @@
   box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #ffffff;
   border-radius: 50px 0px;
   @media screen and (min-width: 768px) {
-    width: 152px;
+    width: calc((100% - 96px) / 3);
     height: 182px;
   }
-  @media screen and (min-width: 1199px) {
-    width: 320px;
+  @media screen and (min-width: 1440px) {
+    width: calc((100% - 96px) / 3);
     height: 382px;
   }
 }
@@ -69,7 +68,7 @@
     padding-top: 30px;
     margin-bottom: 20px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     padding-top: 61px;
     margin-bottom: 43px;
   }
@@ -82,7 +81,7 @@
     padding-top: 44px;
     margin-bottom: 19px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     padding-top: 86px;
     margin-bottom: 65px;
   }
@@ -95,7 +94,7 @@
     padding-top: 36px;
     margin-bottom: 19px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     padding-top: 40px;
     margin-bottom: 21px;
   }
@@ -108,7 +107,7 @@
     padding-top: 28px;
     margin-bottom: 11px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1440px) {
     padding-top: 40px;
     margin-bottom: 20px;
   }

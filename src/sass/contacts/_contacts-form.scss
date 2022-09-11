@@ -24,14 +24,15 @@ textarea {
   right: 21px;
   bottom: 23px;
   background-color: transparent;
-  @include desktop {
-    right: 61px;
-    bottom: 18px;
-  }
+  border-radius: 50%;
 }
-.contact-field {
-  margin-bottom: 44px;
+.text-btn-icon{
+  fill: #CDCDCD;
 }
+.text-btn:hover .text-btn-icon{
+  fill: #487996}
+
+
 .contact-field.text {
   margin-bottom: 0;
 }
@@ -52,10 +53,10 @@ textarea {
   padding-left: 22px;
   padding-top: 20px;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   @include desktop {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 1.11;
   }
 }
 .btn-form {
@@ -68,7 +69,7 @@ textarea {
   color: #cdcdcd;
   @include desktop {
     font-size: 18px;
-    line-height: 20px;
+    line-height: 1.11;
   }
 }
 
@@ -80,7 +81,7 @@ textarea {
   color: #2b2b2b;
   @include desktop {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 1.43;
   }
 }
 .contact-form {
@@ -93,7 +94,6 @@ textarea {
     }
   }
 }
-
 .contact-form-desk {
   @include desktop {
     width: 555px;

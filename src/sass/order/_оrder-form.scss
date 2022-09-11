@@ -62,14 +62,13 @@
     background-origin: border-box;
     // border: 1px solid var(--accent);
   }
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 400px;
-    }
-  
-    @media screen and (min-width: 1440px) {
-      width: 555px;
-      
-    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 555px;
+  }
 }
 
 .orderform-label {
@@ -108,20 +107,17 @@
   /* Отступы от рамки к тексту */
   padding: 10px 35px 10px 10px;
 
-
   &:focus {
     background-origin: border-box;
   }
-    @media screen and (min-width: 768px) {
-      width: 400px;
-    }
-  
-    @media screen and (min-width: 1440px) {
-      width: 555px;
-  
-    }
+  @media screen and (min-width: 768px) {
+    width: 400px;
+  }
 
-
+  @media screen and (min-width: 1440px) {
+    width: 555px;
+  }
+}
 /* Делаем .select-wrapper родительским элементом для позиционирования "стрелочки" */
 .select-wrapper {
   position: relative;
@@ -306,13 +302,12 @@ Select c dropdown на JS
   border-radius: 50px 0px 50px 0px;
   outline: transparent;
   @media screen and (min-width: 768px) {
-      width: 400px;
-    }
-  
-    @media screen and (min-width: 1440px) {
-      width: 555px;
-  
-    }
+    width: 400px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 555px;
+  }
 }
 
 .ordertextbox-input:not(:placeholder-shown) {
@@ -345,12 +340,12 @@ Select c dropdown на JS
   }
 }
 
-.agriment__bottom>.btn{
+.agriment__bottom > .btn {
   @media screen and (min-width: 768px) {
-      margin-left: auto;
-        margin-right: 142px;
-        margin-top: 40px;
-    }
+    margin-left: auto;
+    margin-right: 142px;
+    margin-top: 40px;
+  }
   @media screen and (min-width: 1440px) {
     margin-left: auto;
     margin-right: 0%;
@@ -358,13 +353,9 @@ Select c dropdown на JS
   }
 }
 
-
 .ordercont-title {
   display: block;
   margin-bottom: 18px;
-
-
-
   color: #487996;
 }
 

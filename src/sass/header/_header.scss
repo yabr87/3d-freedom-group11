@@ -174,18 +174,19 @@ border-color: #008bef transparent transparent transparent;
 
   .lang:hover &,
   .lang:focus-within & {
-    transform: scale(1);
+    transform: scale(1);    
   }
 }
 
-.lang-link {
-  display: block;
+.lang-btn {
   padding: 2px 4px;
   font-family: Caviar Dreams, sans-serif;
   @include fonts(700, 14px, 1.28, 0.01, uppercase, null);
   color: #bdbdbd;
   border-radius: 4px;
   outline: none;
+  border: none;
+  background-color: transparent;
   transition-duration: 250ms;
   transition-timing-function: ease;
 

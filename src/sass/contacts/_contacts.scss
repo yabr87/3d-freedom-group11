@@ -10,6 +10,9 @@
   }}
 .contact-part {
   margin-bottom: 24px;
+  @include tablet{
+    margin-bottom: 0;
+  }
   @include desktop{
     margin-bottom: 68px;
   }
@@ -51,7 +54,7 @@
   @include desktop{
     margin-bottom: 18px;
     font-size: 36px;
-line-height: 45px;
+line-height: 1.25;
   }
 }
 .contacts-title.desk{

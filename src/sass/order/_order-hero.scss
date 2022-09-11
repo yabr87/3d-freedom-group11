@@ -2,11 +2,10 @@
   display: block;
   margin-top: 40px;
   margin-bottom: 16px;
-  font-family: Caviar Dreams;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
-  line-height: calc(60/48);
+  line-height: calc(60 / 48);
   text-align: left;
   letter-spacing: 0.03em;
 
@@ -86,12 +85,12 @@
   }
 }
 
-.car>img{
+.car > img {
   border-radius: 0 50px 50px 0;
 }
-.flash>img{
+.flash > img {
   border-radius: 50px 0 50px 0;
 }
-.shroom>img{
+.shroom > img {
   border-radius: 0 0 50px 0;
 }

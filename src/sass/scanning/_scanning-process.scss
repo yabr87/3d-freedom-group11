@@ -1,8 +1,17 @@
-.item {
+.item-text {
+  
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
   color: #487996;
+@media screen and (min-width: 1440px){
+ 
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.28;
+  text-align: center;
+  color: #487996;
+}
 }
 
 .scanning-img {
@@ -12,13 +21,20 @@
   box-shadow: inset 1px 1px 16px #CBCBCB, inset -1px -1px 16px #FFFFFF;
   border-radius: 50px 0px;
   padding: 15px 19px;
+  @media screen and (min-width: 768px) and (max-width: 1439px){
+    padding: 28.5px 21px;
+  }
+@media screen and (min-width: 1440px) {
+  padding: 51px 40px;
+  }
 }
 
 .scanning-img-item{
   @media screen and (min-width: 1440px) {
     display: inline-block;
+    width: 100%;
     }
-}
+  }
 
 .scanning-process {
   display: flex;
@@ -50,6 +66,10 @@
 .padding-btn{
   margin-top: 40px;
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) and (max-width: 1439px){
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 1440px){
     margin-top: 80px;
     margin-bottom: 80px;

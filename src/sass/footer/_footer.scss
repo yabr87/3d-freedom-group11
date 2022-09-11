@@ -1,118 +1,125 @@
 .container-footer {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	@include tablet {
-		text-align: start;
-	}
-	@include desktop {
-		flex-direction: row;
-		align-items: flex-start;
-	}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  @include tablet {
+    text-align: start;
+  }
+  @include desktop {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 .footer-container {
-	display: flex;
-	flex-direction: column;
-	@include tablet {
-		flex-direction: row;
-	}
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+  }
 }
 
 .page-footer {
-	background-color: #f5f5fa;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	@include desktop {
-		padding-top: 40px;
-	}
+  background-color: #f5f5fa;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include desktop {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .page-link {
-	font-style: normal;
-	font-weight: 400;
-	font-size: 160px;
-	line-height: 20px;
-	text-align: center;
-	letter-spacing: 0.01em;
-	color: #2b2b2b;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 160px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #2b2b2b;
 }
 
 .footer-tel,
 .footer-email,
 .footer-item,
 .network-item {
-	margin-bottom: 8px;
-	font-style: normal;
+  margin-bottom: 8px;
+  font-style: normal;
 }
 
 .footer-item:last-child,
 .footer-item:last-child,
 .footer-tel:last-child {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .footer-link,
 .network-link,
 .footer-tel {
-	text-decoration: none;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 20px;
-	text-align: center;
-	letter-spacing: 0.01em;
-	color: #2b2b2b;
-	@include tablet {
-		text-align: end;
-	}
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #2b2b2b;
+  @include tablet {
+    text-align: end;
+  }
 }
 
-.email-address,
+.email-address {
+  margin-bottom: 24px;
+  @include tablet {
+    margin-bottom: 16px;
+  }
+}
+
 .footer-content,
 .network-links {
-	margin-bottom: 24px;
+  margin-bottom: 24px;
+  @include tablet {
+    margin-bottom: 0;
+  }
 }
 
 .logo {
-	margin-bottom: 20px;
-	margin-right: 0px;
-	@include desktop {
-		margin-right: 270px;
-	}
+  margin-bottom: 20px;
+  margin-right: 0px;
+  @include desktop {
+    margin-right: 270px;
+  }
 }
 
 .footer-mail,
 .footer-tel-link {
-	color: #487996;
+  color: #487996;
 }
 
 .footer-address {
-	@include tablet {
-		text-align: end;
-	}
+  @include tablet {
+    text-align: end;
+  }
 }
 
 .footer-content {
-	margin-right: 0;
-	@include tablet {
-		margin-right: 55px;
-	}
-	@include desktop {
-		margin-right: 100px;
-	}
+  margin-right: 0;
+  @include tablet {
+    margin-right: 36px;
+  }
+  @include desktop {
+    margin-right: 100px;
+  }
 }
 
 .network-links {
-	margin-right: 0px;
-	@include tablet {
-		margin-right: 240px;
-	}
-	@include desktop {
-		margin-right: 160px;
-	}
-}
-ul {
-	margin: 0;
+  margin-right: 0px;
+  @include tablet {
+    margin-right: 240px;
+  }
+  @include desktop {
+    margin-right: 160px;
+  }
 }

@@ -2,8 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 40px;
-}
+   margin-bottom: 40px;
+  }
 
 @media screen and (min-width: 768px) {
   .models-list {
@@ -55,5 +55,15 @@
 @media screen and (min-width: 1440px) {
   .models-picture-draft {
     width: 320px;
+  }
+}
+
+.modeling-btn {
+    margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1440px) {
+  .modeling-btn {
+    margin-bottom: 80px;
   }
 }

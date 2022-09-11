@@ -195,13 +195,13 @@
 }
 
 .mosaic-pict2 {
-  display: block;
+  display: flex;
   width: 100px;
   height: auto;
-  margin-top: 68px;
-  margin-left: auto;
-
+  margin-top: 52px;
+  
   width: 514px;
+  justify-content: end;
 
   @media screen and (max-width: 1443px) {
     display: none;
@@ -209,29 +209,4 @@
   }
 }
 
-.ordercont-title {
-  display: block;
-  margin-top: 40px;
-  margin-bottom: 18px;
 
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1;
-  text-align: right;
-  letter-spacing: 0.03em;
-
-  color: #487996;
-}
-
-.ordercont-text {
-  margin-bottom: 16px;
-  text-align: right;
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.7;
-  letter-spacing: 0.01em;
-  color: #2b2b2b;
-}

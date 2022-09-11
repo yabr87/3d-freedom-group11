@@ -76,11 +76,7 @@
     border-radius: 20px;
     transition-duration: 250ms;
     transition-timing-function: ease;
-    // color: #487996;
-    -webkit-text-fill-color: transparent;
-    // -webkit-text-stroke: 1px solid #487996;
-    -webkit-text-stroke-color: #487996;
-    -webkit-text-stroke-width: 1px;
+    color: #487996;
     outline: 0;
 
     @include fonts(700, 24px, 1.25, 0.01, null, null);
@@ -348,4 +344,40 @@
     left: 49px;
     border-radius: 50%;
   }
+}
+
+.page-main .menu-main {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #487996;
+  -webkit-text-stroke-width: 1px;
+}
+
+.page-modeling .menu-modeling {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #487996;
+  -webkit-text-stroke-width: 1px;
+}
+
+.page-scanning .menu-scanning {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #487996;
+  -webkit-text-stroke-width: 1px;
+}
+
+.page-printing .menu-printing {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #487996;
+  -webkit-text-stroke-width: 1px;
+}
+
+.page-order .menu-order {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #487996;
+  -webkit-text-stroke-width: 1px;
+}
+
+.page-contacts .menu-contacts {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #487996;
+  -webkit-text-stroke-width: 1px;
 }

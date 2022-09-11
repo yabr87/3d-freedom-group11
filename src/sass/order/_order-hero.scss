@@ -1,3 +1,9 @@
+.orderhero-section {
+  @media screen and (min-width: 1440px) {
+    padding-left: 149px;
+  }
+}
+
 .orderhero-title {
   display: block;
   margin-top: 40px;
@@ -39,6 +45,9 @@
   max-width: 555px;
   @media screen and (min-width: 768px) {
   }
+  @media screen and (min-width: 1440px) {
+    width: calc((100% - 32px) / 2);
+  }
 }
 
 .orderhero-text-thumb {
@@ -52,6 +61,7 @@
   @media screen and (min-width: 1440px) {
     display: flex;
     flex-direction: column;
+    gap: 24px;
   }
 }
 
@@ -70,7 +80,7 @@
   }
 
   @media screen and (min-width: 1440px) {
-    margin-bottom: 24px;
+    margin-bottom: 0px;
   }
 }
 
@@ -78,7 +88,7 @@
   display: flex;
   // display: block;
   gap: 32px;
-  margin-top: 60px;
+  margin-top: 36px;
 
   @media screen and (max-width: 1443px) {
     display: none;
@@ -88,7 +98,7 @@
 .car > img {
   border-radius: 0 50px 50px 0;
 }
-.flash > img {
+.drive > img {
   border-radius: 50px 0 50px 0;
 }
 .shroom > img {

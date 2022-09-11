@@ -1,12 +1,12 @@
 .printing-process-container {
-  margin-top: 38px;
-  margin-bottom: 60px;
+  padding-top: 38px;
+  padding-bottom: 60px;
   @include tablet {
-    margin-top: 40px;
+    padding-top: 40px;
   }
   @include desktop {
-    margin-top: 100px;
-    margin-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 80px;
   }
 }
 .printing-process-list {

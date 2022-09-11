@@ -1,3 +1,9 @@
+.orderhero-section{
+  @media screen and (min-width: 1440px) {
+      padding-left: 149px;
+    }
+}
+
 .orderhero-title {
   display: block;
   margin-top: 40px;
@@ -44,6 +50,10 @@
   @media screen and (min-width: 768px) {
     width: calc((100% - 32px) / 2);
   }
+    @media screen and (min-width: 1440px) {
+      width: calc((100% - 32px) / 2);
+      
+    }
 }
 
 .orderhero-text-thumb {
@@ -57,6 +67,7 @@
   @media screen and (min-width: 1440px) {
     display: flex;
     flex-direction: column;
+    gap:24px;
   }
 }
 
@@ -75,7 +86,7 @@
   }
 
   @media screen and (min-width: 1440px) {
-    margin-bottom: 24px;
+    margin-bottom: 0px;
   }
 }
 
@@ -83,37 +94,19 @@
   display: flex;
   // display: block;
   gap: 32px;
-  margin-top: 60px;
+  margin-top: 36px;
 
   @media screen and (max-width: 1443px) {
     display: none;
   }
 }
 
-// .order-wrapper {
-//   display: flex;
-// }
-// .order-hero {
-//   background-color: burlywood;
-// }
-// .order-title{
-//   font-weight: 700;
-//     font-size: 24px;
-//     line-height: 30px;
-//     color: #487996;
-//     margin-bottom: 16px;
-// }
-// .order-list{
-//   gap: 16px;
-//   margin-bottom: 40px;
-// }
-// .irder-item-text{
-//   font-weight: 300;
-//     font-size: 16px;
-//     line-height: 20px;
-
-//     color: #2B2B2B;
-// }
-// .order-hero-img{
-//   margin-bottom: 16px;
-// }
+.car>img{
+  border-radius: 0 50px 50px 0;
+}
+.drive>img{
+  border-radius: 50px 0 50px 0;
+}
+.shroom>img{
+  border-radius: 0 0 50px 0;
+}

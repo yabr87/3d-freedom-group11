@@ -70,6 +70,14 @@
   &:focus {
     background-origin: border-box;
   }
+    @media screen and (min-width: 768px) {
+    width: 400px;
+    }
+  
+    @media screen and (min-width: 1440px) {
+      width: 555px;
+      
+    }
 }
 
 .orderform-label {
@@ -106,6 +114,14 @@
   &:focus {
     background-origin: border-box;
   }
+    @media screen and (min-width: 768px) {
+      width: 400px;
+    }
+  
+    @media screen and (min-width: 1440px) {
+      width: 555px;
+  
+    }
 }
 
 .orderform-pict {
@@ -154,6 +170,14 @@
   border: 1px solid #487996;
   border-radius: 50px 0px 50px 0px;
   outline: transparent;
+  @media screen and (min-width: 768px) {
+      width: 400px;
+    }
+  
+    @media screen and (min-width: 1440px) {
+      width: 555px;
+  
+    }
 }
 
 .ordertextbox-input:not(:placeholder-shown) {
@@ -191,47 +215,23 @@
     display: flex;
     justify-content: space-between;
     gap: 149px;
+    margin-bottom: 60px;
   }
 }
 
-.mosaic-pict2 {
-  display: block;
-  width: 100px;
-  height: auto;
-  margin-top: 68px;
-  margin-left: auto;
-
-  width: 514px;
-
-  @media screen and (max-width: 1443px) {
-    display: none;
-    margin-top: 100px;
+.agriment__bottom>.btn{
+  @media screen and (min-width: 768px) {
+      margin-left: auto;
+        margin-right: 142px;
+        margin-top: 40px;
+    }
+  @media screen and (min-width: 1440px) {
+    margin-left: auto;
+    margin-right: 0%;
+    margin-top: 24px;
   }
 }
 
-.ordercont-title {
-  display: block;
-  margin-top: 40px;
-  margin-bottom: 18px;
+  
 
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1;
-  text-align: right;
-  letter-spacing: 0.03em;
 
-  color: #487996;
-}
-
-.ordercont-text {
-  margin-bottom: 16px;
-  text-align: right;
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.7;
-  letter-spacing: 0.01em;
-  color: #2b2b2b;
-}

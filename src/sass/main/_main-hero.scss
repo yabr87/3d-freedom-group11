@@ -1,5 +1,5 @@
 .main-hero {
-  background-color: #e5e5e5;
+  background-color: #ffffff;
   position: relative;
 
   .petal-wrap {
@@ -31,8 +31,6 @@
       &::after {
         width: 144px;
         height: 144px;
-
-        outline: 1px solid red;
       }
 
       &::before {
@@ -62,8 +60,6 @@
       &::after {
         width: 144px;
         height: 144px;
-
-        outline: 1px solid red;
       }
 
       &::before {
@@ -79,52 +75,36 @@
     }
   }
 
-  .petal-arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 296px;
-    left: 106px;
-    border-radius: 0px 0px 35px 0px;
-    pointer-events: all;
+  .petal-arrow {  
+    @include desktop {
+      top: 578px;
+      left: 174px;
+      border-radius: 0px 0px 72px 0px;
 
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      width: 74px;
-      height: 74px;
-      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-      background-color: #ffffff;
-
-      outline: 1px solid red;
+      &::before,
+      &::after {
+      width: 144px;
+      height: 144px;
     }
 
     &::before {
-      bottom: 148px;
-      left: 0;
-      border-radius: 0px 35px 0px 0px;
+      bottom: 289px;
+      border-radius: 0px 72px 0px 0px;
     }
 
     &::after {
-      bottom: 74;
-      left: -74px;
-      border-radius: 0px 0px 0px 35px;
+      bottom: 144px;
+      left: -144px;
+      border-radius: 0px 0px 0px 72px;
     }
-  }
-
-  .arrow-link {
-    padding: 4px;
+    }    
   }
 
   .arrow-icon {
-    fill: #008cef;
-    transition-duration: 250ms;
-    transition-timing-function: ease;
-
-    .arrow-link:hover & {
-      fill: #ffffff;
-    }
+    width: 16px;
+    @include desktop {
+      width: 32px;
+    }    
   }
 
   .petal-img3 {

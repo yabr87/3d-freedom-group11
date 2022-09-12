@@ -1,3 +1,69 @@
-.modeling-create {
-  background-color: bisque;
+.models-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+   margin-bottom: 40px;
+  }
+
+@media screen and (min-width: 768px) {
+  .models-list {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .models-list {
+    margin-bottom: 80px;
+  }
+}
+
+.models-picture {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.models-picture:not(:nth-child(2n)) {
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .models-picture {
+    margin-top: 24px;
+  }
+  .models-picture:not(:last-child) {
+    margin-right: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .models-picture {
+    margin-top: 40px;
+  }
+}
+
+.models-picture-draft {
+  width: 130px;
+}
+
+@media screen and (min-width: 768px) {
+  .models-picture-draft {
+    width: 152px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .models-picture-draft {
+    width: 320px;
+  }
+}
+
+.modeling-btn {
+    margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1440px) {
+  .modeling-btn {
+    margin-bottom: 80px;
+  }
 }

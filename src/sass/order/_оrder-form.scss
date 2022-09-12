@@ -27,7 +27,7 @@
   }
 }
 
-.orderform {
+.orderform-wrapper-box {
   display: block;
   width: 100%;
   font-style: normal;
@@ -74,6 +74,13 @@
     background-origin: border-box;
     // border: 1px solid var(--accent);
   }
+  @media screen and (min-width: 768px) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 555px;
+  }
 }
 
 .orderform-label {
@@ -112,12 +119,17 @@
   /* Отступы от рамки к тексту */
   padding: 10px 35px 10px 10px;
 
-  /* Убираем баузерную обводку*/
-  outline: none;
+  &:focus {
+    background-origin: border-box;
+  }
+  @media screen and (min-width: 768px) {
+    width: 400px;
+  }
 
-  cursor: pointer;
+  @media screen and (min-width: 1440px) {
+    width: 555px;
+  }
 }
-
 /* Делаем .select-wrapper родительским элементом для позиционирования "стрелочки" */
 .select-wrapper {
   position: relative;
@@ -301,6 +313,13 @@ Select c dropdown на JS
   border: 1px solid #487996;
   border-radius: 50px 0px 50px 0px;
   outline: transparent;
+  @media screen and (min-width: 768px) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 555px;
+  }
 }
 
 .ordertextbox-input:not(:placeholder-shown) {
@@ -342,14 +361,6 @@ Select c dropdown на JS
 .ordercont-title {
   display: block;
   margin-bottom: 18px;
-
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1;
-  text-align: right;
-  letter-spacing: 0.03em;
-
   color: #487996;
 }
 

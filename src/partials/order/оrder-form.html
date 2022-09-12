@@ -1,100 +1,92 @@
 <section class="оrder-forms">
   <div class="container">
-<div class="orderform-basic">
+    <div class="orderform-wrap">
+      <div class="orderform">
+        <b class="orderform-title"> ЗВ’ЯЖІТЬСЯ З НАМИ </b>
 
-    <b class="orderform-title"> ЗВ’ЯЖІТЬСЯ З НАМИ </b>
- 
-          <div class="orderform">
-            <div class="orderform-field">
-              <input
-                class="orderform-input"
-                type="text"
-                name="name"
-                id="name"
-                placeholder=" "
-              />
-              <label class="orderform-label" for="name">Ім'я</label>
-            </div>
-            <div class="orderform-field">
-              <input
-                class="orderform-input"
-                type="email"
-                name="mail"
-                id="mail"
-                placeholder=" "
-              />
-              <label class="orderform-label" for="mail">Email</label>
-            </div>
-    <div class="form-group">
-      <div class="dropdown">
-        <button class="dropdown__button">Види пластика</button>
-        <ul class="dropdown__list">
-          <!-- <li class="dropdown__list-item" data-value="travel">
-            300 мікрон -->
-          </li>
-          <li class="dropdown__list-item" data-value="lessons">
-            200 мікрон
-          </li>
-          <li class="dropdown__list-item" data-value="photo">100 мікрон</li>
-          <li class="dropdown__list-item" data-value="sport">
-            Труднощі у виборі - ми допоможемо
-          </li>
-        </ul>
-        <input
-          type="text"
-          name="select-category"
-          value=""
-          class="dropdown__input-hidden"
-        />
-      </div>
-    </div>
+        <div class="orderform-field">
+          <input
+            class="orderform-input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder=" "
+          />
+          <label class="orderform-label" for="name">Ім'я</label>
+        </div>
+        <div class="orderform-field">
+          <input
+            class="orderform-input"
+            type="email"
+            name="mail"
+            id="mail"
+            placeholder=" "
+          />
+          <label class="orderform-label" for="mail">Email</label>
+        </div>
+        <div class="form-group">
+          <div class="dropdown">
+            <button class="dropdown__button">Види пластика</button>
+            <ul class="dropdown__list">
+              <li class="dropdown__list-item" data-value="lessons">
+                200 мікрон
+              </li>
+              <li class="dropdown__list-item" data-value="photo">100 мікрон</li>
+              <li class="dropdown__list-item" data-value="sport">
+                Труднощі у виборі - ми допоможемо
+              </li>
+            </ul>
+            <input
+              type="text"
+              name="select-category"
+              value=""
+              class="dropdown__input-hidden"
+            />
+          </div>
+        </div>
 
-    <div class="form-group">
-      <div class="dropdown">
-        <button class="dropdown__button">Якість друку</button>
-        <ul class="dropdown__list">
-          <li class="dropdown__list-item" data-value="travel">
-            300 мікрон
-          </li>
-          <li class="dropdown__list-item" data-value="lessons">
-            200 мікрон
-          </li>
-          <li class="dropdown__list-item" data-value="photo">100 мікрон</li>
-          <li class="dropdown__list-item" data-value="sport">
-            Труднощі у виборі - ми допоможемо
-          </li>
-        </ul>
-        <input
-          type="text"
-          name="select-category"
-          value=""
-          class="dropdown__input-hidden"
-        />
-      </div>
-    </div>
+        <div class="form-group">
+          <div class="dropdown">
+            <button class="dropdown__button">Якість друку</button>
+            <ul class="dropdown__list">
+              <li class="dropdown__list-item" data-value="travel">
+                300 мікрон
+              </li>
+              <li class="dropdown__list-item" data-value="lessons">
+                200 мікрон
+              </li>
+              <li class="dropdown__list-item" data-value="photo">100 мікрон</li>
+              <li class="dropdown__list-item" data-value="sport">
+                Труднощі у виборі - ми допоможемо
+              </li>
+            </ul>
+            <input
+              type="text"
+              name="select-category"
+              value=""
+              class="dropdown__input-hidden"
+            />
+          </div>
+        </div>
 
-    <div class="form-group">
-      <div class="dropdown">
-        <button class="dropdown__button">Колір</button>
-        <ul class="dropdown__list">
-          <li class="dropdown__list-item" data-value="travel">
-            Red
-          </li>
-          <li class="dropdown__list-item" data-value="lessons">
-            Green
-          </li>
-          <li class="dropdown__list-item" data-value="photo">Blue</li>
-        </ul>
-        <input
-          type="text"
-          name="select-category"
-          value=""
-          class="dropdown__input-hidden"
-        />
-      </div>
-    </div>
+        <div class="form-group">
+          <div class="dropdown">
+            <button class="dropdown__button">Колір</button>
+            <ul class="dropdown__list">
+              <li class="dropdown__list-item" data-value="travel">Red</li>
+              <li class="dropdown__list-item" data-value="lessons">Green</li>
+              <li class="dropdown__list-item" data-value="photo">Blue</li>
+            </ul>
+            <input
+              type="text"
+              name="select-category"
+              value=""
+              class="dropdown__input-hidden"
+            />
+          </div>
+        </div>
 
-<div class="form-margin"></div>
+        <div class="form-margin"></div>
 
         <div class="contact-field text">
           <label for="contact-text" class="contact-label">
@@ -108,7 +100,7 @@
               placeholder="Залишіть своє повідомлення"
             ></textarea>
             <button class="text-btn" type="button">
-              <svg class="text-btn-icon" width="22" height="20">
+              <!-- <svg class="text-btn-icon" width="22" height="20"> -->
               <svg class="conta-icon" width="22" height="20">
                 <use href="/src/images/icon.svg#paper-clip"></use>
               </svg>
@@ -118,45 +110,59 @@
             *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
           </p>
         </div>
-        <button type="submit" class="btn send-mobile-btn btn-form">Відправити</button>
+        <button type="submit" class="btn send-mobile-btn btn-form">
+          Відправити
+        </button>
         <div class="button-margin"></div>
+      </div>
 
+      <!-- <ul class="contacts-pg-down-desktop"> -->
+      <!-- <ul class="order-pg-down"> -->
+      <div class="order-pg-down">
+        <div class="ordercontact-part">
+          <p class="contacts-title">Телефони</p>
+          <a href="tel:+380957384551" class="contact-info link">
+            +38 (095) -73-84-551
+          </a>
+          <a href="+380980025235" class="contact-info link">
+            +38 (098) -00-25-235
+          </a>
         </div>
 
-        <ul class="contacts-pg-down-desktop">
-        <li>
-          <div class="contact-part">
-            <p class="contacts-title">Телефони</p>
-            <a href="tel:+380957384551" class="contact-info link">
-              +38 (095) -73-84-551
-            </a>
-            <a href="+380980025235" class="contact-info link">
-              +38 (098) -00-25-235
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="contact-part">
-            <p class="contacts-title small-text">Email</p>
-            <a href="mailto:3dfreedom.info@gmail.com" class="contact-info link">
-              3dfreedom.info@gmail.com
-            </a>
-          </div>
-        </li>
-        <li>
-          <div class="contact-part">
-            <p class="contacts-title">Робочий час</p>
-            <div class="weekday-work">
-              <p class="contact-info link">Пн-пт:з 8:00 до 19:00</p>
-            </div>
-            <div class="weekend-work">
-              <p class="contact-info link">Сб, Нд:з 10:00 до 17:00</p>
-            </div>
-          </div>
-        </li>
-      </ul>
+        <div class="ordercontact-part">
+          <p class="contacts-title small-text">Email</p>
+          <a href="mailto:3dfreedom.info@gmail.com" class="contact-info link">
+            3dfreedom.info@gmail.com
+          </a>
+        </div>
 
+        <div class="ordercontact-part">
+          <p class="contacts-title">Робочий час</p>
+          <div class="weekday-work">
+            <p class="contact-info link">Пн-пт:з 8:00 до 19:00</p>
+          </div>
+          <div class="weekend-work">
+            <p class="contact-info link">Сб, Нд:з 10:00 до 17:00</p>
+          </div>
+        </div>
 
+        <picture class="order-pict">
+          <source
+            srcset="
+              ./images/order/order-003-desktop.jpg    1x,
+              ./images/order/order-003-desktop-2x.jpg 2x
+            "
+            media="(min-width: 1200px)"
+          />
+          <img
+            src="./images/order/order-003-desktop.jpg"
+            alt="order"
+            width="440"
+            height="300"
+          />
+        </picture>
+      </div>
+    </div>
   </div>
 
   <script src="main.js"></script>

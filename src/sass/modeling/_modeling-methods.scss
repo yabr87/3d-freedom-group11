@@ -53,15 +53,20 @@
   transform: translatex(-17px);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
   .box-list {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
 }
 
-.metod-img {
-  display: flex;
-  width: 555px;
+.pic {
+  padding-top: 80px;
 }
 
+@media screen and (max-width: 768px) {
+  .pic {
+    display: flex;
+    padding-top: 40px;
+  }
+}

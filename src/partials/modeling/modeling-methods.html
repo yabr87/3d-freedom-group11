@@ -11,7 +11,21 @@
         <li class="metod">За вашим кресленням</li>
         <li class="metod">По вже існуючому прототипу шляхом зняття розмірів</li>
       </ul>
-      <img src="./images/3d/pic-desctop-1x.jpg" alt="Изображение" />
+      <picture class="pic">
+        <source srcset="
+                              ./images/3d/pic-desctop-1x.jpg 1x,
+                              ./images/3d/pic-desctop-2x.jpg 2x
+                            " media="(min-width:1440px)" />
+                      <source srcset="
+                              ./images/3d/pic-tab-1x.jpg 1x,
+                              ./images/3d/pic-tab-2x.jpg 2x
+                            " media="(min-width:768px)" />
+                      <source srcset="
+                              ./images/3d/pic-mob-1x.jpg 1x,
+                              ./images/3d/pic-mob-2x.jpg 2x
+                            " media="(max-width:767px)" />
+              <img src="./images/3d/pic-desctop-1x.jpg" alt="Изображение" />
+            </picture>
          </div>
      </div> 
     </div>

@@ -1,6 +1,11 @@
-.contacts-form {
-  padding-top: 40px;
-  margin-bottom: 60px;
+.contacts-form-wrapper {
+}
+
+.wrap-form-contact {
+  @include tablet {
+    padding-left: 152px;
+    padding-right: 152px;
+  }
 }
 
 .contact-form-input {

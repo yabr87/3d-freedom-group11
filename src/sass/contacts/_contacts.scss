@@ -31,9 +31,6 @@
     display: flex;
     column-gap: 26px;
   }
-  @include desktop {
-    display: none;
-  }
 }
 .contact-part.info {
   @include tablet {

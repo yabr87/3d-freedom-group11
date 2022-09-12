@@ -1,6 +1,16 @@
-.printing-examples {
-  background-color: #ffffff;
+.printing-examples-container {
+  position: relative;
+  padding-top: 18.35px;
+  @include tablet {
+    padding-top: 29.95px;
+  }
+  @include desktop {
+    padding-top: 45.7px;
+  }
 }
+// .printing-examples {
+//   background-color: #ffffff;
+// }
 
 .examples-list {
   display: flex;
@@ -28,6 +38,8 @@
   @media screen and (min-width: 1200px) {
     font-size: 48px;
     line-height: 1.25;
+    margin-bottom: 24px;
+    padding-left: 114px;
   }
 }
 
@@ -110,5 +122,54 @@
   @media screen and (min-width: 1440px) {
     padding-top: 40px;
     margin-bottom: 20px;
+  }
+}
+.printing-examples-petals {
+  position: absolute;
+  background: #FFFFFF;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+.printing-examples-1 {
+  width: 73.65px;
+  height: 73.65px;
+  left: -29px;
+  top: 220.96px;
+  border-radius: 0px 0px 35px 0px;
+  @include tablet {
+    width: 71.41px;
+    height: 63.79px;
+    left: auto;
+    right: 32px;
+    top: 8.42px;
+    border-radius: 0px 35px 0px 0px;
+    transform: rotate(180deg);
+  }
+  @include desktop {
+    width: 82px;
+    height: 78px;
+    left: 35px;
+    top: 45.7px;
+    border-radius: 0px 0px 72px 0px;
+    transform: none;
+  }
+}
+.printing-examples-2 {
+  @include tablet {
+    width: 74.08px;
+    height: 71.41px;
+    left: 32px;
+    top: 147.95px;
+    right: auto;
+    border-radius: 0px 0px 0px 35px;
+  }
+  @include desktop {
+    width: 83px;
+    height: 137px;
+    right: 62px;
+    left: auto;
+    top: 6.71px;
+    border-radius: 0px 0px 72px 0px;
+    transform: rotate(90deg);
   }
 }

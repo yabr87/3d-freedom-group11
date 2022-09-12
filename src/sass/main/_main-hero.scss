@@ -1,6 +1,7 @@
 .main-hero {
   background-color: #ffffff;
   position: relative;
+  // overflow: hidden;
 
   .petal-wrap {
     top: -74px;
@@ -120,19 +121,17 @@
       &::after {
         width: 144px;
         height: 144px;
-  
-        outline: 1px solid red;
       }
 
       &::before {
-        left: 144px;
+        left: -144px;
       }
 
       &::after {
         top: 144;
-        left: 144px;
+        left: -144px;
       }
-    }    
+    }
   }
 
   .petal-img4 {
@@ -149,8 +148,6 @@
       &::after {
         width: 144px;
         height: 144px;
-  
-        outline: 1px solid red;
       }
 
       &::before {
@@ -169,31 +166,23 @@
     @include desktop {
       top: 723px;
       height: 124px;
-      border-radius: 0px 0px 0px 35px;
+      border-radius: 0px 0px 0px 72px;
 
       &::before,
       &::after {
         width: 144px;
         height: 144px;
-  
-        outline: 1px solid red;
       }
 
-      
-    }
-    
+      &::before {
+        top: 298px;
+        border-radius: 72px 0px 0px 0px;
+      }
 
-    
-
-    &::before {
-      top: 148px;
-      border-radius: 35px 0px 0px 0px;
-    }
-
-    &::after {
-      top: 222px;
-      left: 49px;
-      border-radius: 50%;
+      &::after {
+        top: 443px;
+        left: 80px;
+      }
     }
   }
 }

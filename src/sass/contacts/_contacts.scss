@@ -1,3 +1,13 @@
+.container {
+  outline: 2px solid red;
+}
+.contacts-form-wrapper {
+  @include desktop {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
 .contact-inf {
   display: block;
   font-size: 16px;
@@ -20,7 +30,12 @@
 .contacts {
   padding-bottom: 60px;
   @include desktop {
-    padding-bottom: 80px;
+    padding-bottom: 0px;
+    padding-top: 40px;
+  }
+
+  & .link {
+    display: inline-block;
   }
 }
 .weekday-work {
@@ -31,7 +46,12 @@
     display: flex;
     column-gap: 26px;
   }
+
+  @include desktop {
+    display: block;
+  }
 }
+
 .contact-part.info {
   @include tablet {
     text-align: right;

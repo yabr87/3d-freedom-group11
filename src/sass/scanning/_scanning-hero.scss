@@ -9,9 +9,9 @@
   color: #487996;
   margin-bottom: 16px;
   @media screen and (min-width: 768px) and (max-width: 1439px) {
-      font-size: 36px;
-    }
-  @media screen and (min-width: 1440px){
+    font-size: 36px;
+  }
+  @media screen and (min-width: 1440px) {
     font-size: 48px;
   }
 }
@@ -46,14 +46,14 @@
   font-size: 16px;
   line-height: 1.25;
   color: #2b2b2b;
-  @media screen and (min-width: 1440px){
+  @media screen and (min-width: 1440px) {
     font-size: 22px;
     line-height: 1.28;
   }
 }
 
-.limitation{
-  width: 500px;
+.limitation {
+  max-width: 500px;
 }
 
 .hero-scanning-img {

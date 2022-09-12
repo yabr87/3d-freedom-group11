@@ -27,7 +27,8 @@
         background-image: url(../images/hero/petal-desk-img-1@2x.jpg);
       }
 
-      &::before, &::after {
+      &::before,
+      &::after {
         width: 144px;
         height: 144px;
 
@@ -57,10 +58,11 @@
         background-image: url(../images/hero/petal-desk-img-2@2x.jpg);
       }
 
-      &::before, &::after {
+      &::before,
+      &::after {
         width: 144px;
         height: 144px;
-  
+
         outline: 1px solid red;
       }
 
@@ -76,7 +78,7 @@
       }
     }
   }
-  
+
   .petal-arrow {
     display: flex;
     align-items: center;
@@ -85,130 +87,133 @@
     left: 106px;
     border-radius: 0px 0px 35px 0px;
     pointer-events: all;
-  
-    &::before, &::after {
+
+    &::before,
+    &::after {
       content: '';
       position: absolute;
       width: 74px;
       height: 74px;
       box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
       background-color: #ffffff;
-  
+
       outline: 1px solid red;
     }
-  
+
     &::before {
-        bottom: 148px;
-        left: 0;
-        border-radius: 0px 35px 0px 0px;
-      }
-  
-      &::after {
-        bottom: 74;
-        left: -74px;
-        border-radius: 0px 0px 0px 35px;
-      }
+      bottom: 148px;
+      left: 0;
+      border-radius: 0px 35px 0px 0px;
+    }
+
+    &::after {
+      bottom: 74;
+      left: -74px;
+      border-radius: 0px 0px 0px 35px;
+    }
   }
-  
+
   .arrow-link {
     padding: 4px;
   }
-  
+
   .arrow-icon {
-    fill: #008CEF;
+    fill: #008cef;
     transition-duration: 250ms;
     transition-timing-function: ease;
-  
+
     .arrow-link:hover & {
       fill: #ffffff;
     }
   }
-  
+
   .petal-img3 {
     top: 78px;
     right: 32px;
     border-radius: 0px 0px 72px 0px;
     background-image: url(../images/header/petal-img-3.jpg);
-      @include retina {
-        background-image: url(../images/header/petal-img-3@2x.jpg);
-      }
-  
-      &::before, &::after {
-        content: '';
-        position: absolute;
-        width: 74px;
-        height: 74px;
-        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-        background-color: #ffffff;
-  
-        outline: 1px solid red;
-      }
-  
-      &::before {
-        left: -74px;
-      }
-  
-      &::after {
-        top: 74;
-        left: -74px;
-        border-radius: 50%;
-      }
-  
-  }
-  
-  .petal-img4 {
-    top: 296px;
-    right: 32px;
-    border-radius: 35px 35px 0px 0px;
-    background-image: url(../images/header/petal-img-4.jpg);
-      @include retina {
-        background-image: url(../images/header/petal-img-4@2x.jpg);
-      }
-  
-      &::before, &::after {
-        content: '';
-        position: absolute;
-        width: 74px;
-        height: 74px;
-        box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-        background-color: #ffffff;
-  
-        outline: 1px solid red;
-      }
-  
-      &::before {
-        left: -74px;
-        border-radius: 0px 0px 0px 35px;
-      }
-  
-      &::after {
-        bottom: 74px;
-        border-radius: 25px 0px;
-      }
-  }
-  
-  .petal-no-img {
-    top: 370px;
-    right: 32px;
-    height: 64px;
-    border-radius: 0px 0px 0px 35px;
-  
-    &::before, &::after {
+    @include retina {
+      background-image: url(../images/header/petal-img-3@2x.jpg);
+    }
+
+    &::before,
+    &::after {
       content: '';
       position: absolute;
       width: 74px;
       height: 74px;
       box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
       background-color: #ffffff;
-  
+
       outline: 1px solid red;
     }
-  
+
+    &::before {
+      left: -74px;
+    }
+
+    &::after {
+      top: 74;
+      left: -74px;
+      border-radius: 50%;
+    }
+  }
+
+  .petal-img4 {
+    top: 296px;
+    right: 32px;
+    border-radius: 35px 35px 0px 0px;
+    background-image: url(../images/header/petal-img-4.jpg);
+    @include retina {
+      background-image: url(../images/header/petal-img-4@2x.jpg);
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+
+      outline: 1px solid red;
+    }
+
+    &::before {
+      left: -74px;
+      border-radius: 0px 0px 0px 35px;
+    }
+
+    &::after {
+      bottom: 74px;
+      border-radius: 25px 0px;
+    }
+  }
+
+  .petal-no-img {
+    top: 370px;
+    right: 32px;
+    height: 64px;
+    border-radius: 0px 0px 0px 35px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+
+      outline: 1px solid red;
+    }
+
     &::before {
       top: 148px;
       border-radius: 35px 0px 0px 0px;
     }
-  
+
     &::after {
       top: 222px;
       left: 49px;
@@ -217,46 +222,69 @@
   }
 }
 
-
-
-
-
 .main-hero-name {
-  font-family: "Caviar Dreams";
+  font-family: 'Caviar Dreams';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: calc(21 / 18);
   text-align: center;
   color: #2b2b2b;
-  padding: 0 20px 44px;
-  width: 281px;
+  padding: 20px 44px;
+  width: 340px;
+
   @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 56px;
+    font-size: 24px;
+    line-height: calc(24 / 18);
+    width: 410px;
   }
 
   @media screen and (min-width: 1440px) {
     width: 630px;
     font-size: 48px;
     line-height: calc(56 / 48);
+    padding-top: 42px;
+    padding-bottom: 60px;
   }
 }
-// .main-hero-photo {
-// }
+
 .main-hero-item {
   display: flex;
   justify-content: center;
   gap: 15px;
   padding-bottom: 32px;
+  @media screen and (max-width: 768px) {
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 60px;
+  }
 }
 .walley {
+  border-radius: 0 30px 0 0;
+  @media screen and (min-width: 1439px) {
+    border-radius: 0 80px 0 0;
+  }
+}
+.lamps {
   border-radius: 100px;
+}
+.skull {
+  border-radius: 0 30px 0 30px;
+  @media screen and (min-width: 1439px) {
+    border-radius: 0 80px 0 80px;
+  }
 }
 
 .main-hero-list {
+  border-radius: 50%;
   height: 84px;
   width: 84px;
+  box-shadow: 20px 20px 80px #0000001a;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 767px) {
     height: 114px;
     width: 114px;
   }
@@ -269,7 +297,7 @@
 }
 
 .main-hero-text {
-  font-family: "Caviar Dreams";
+  font-family: 'Caviar Dreams';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -277,16 +305,17 @@
   text-align: center;
   color: #2b2b2b;
   padding-bottom: 40px;
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 768px) {
+    padding-bottom: 60px;
   }
-
   @media screen and (min-width: 1440px) {
     font-size: 48px;
     line-height: calc(56 / 48);
     margin: 0;
+    padding-bottom: 120px;
   }
 }
 
-img [src$="picture"] {
+img [src$='picture'] {
   border-radius: 0 50px 0 0;
 }

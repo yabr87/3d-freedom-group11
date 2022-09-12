@@ -1,25 +1,25 @@
-.contact-info {
+.contact-inf {
   display: block;
   font-size: 16px;
   line-height: 1.25;
-  text-transform: capitalize;
   color: #2b2b2b;
   margin-bottom: 8px;
-  @include desktop{
+  @include desktop {
     margin-bottom: 18px;
-  }}
+  }
+}
 .contact-part {
   margin-bottom: 24px;
-  @include tablet{
+  @include tablet {
     margin-bottom: 0;
   }
-  @include desktop{
+  @include desktop {
     margin-bottom: 68px;
   }
 }
 .contacts {
   padding-bottom: 60px;
-  @include desktop{
+  @include desktop {
     padding-bottom: 80px;
   }
 }
@@ -42,7 +42,7 @@
 }
 .contacts-pg-down-item {
   margin-left: auto;
-  }
+}
 
 .contacts-title {
   font-weight: 700;
@@ -51,21 +51,21 @@
   color: #487996;
   text-transform: uppercase;
   margin-bottom: 8px;
-  @include desktop{
+  @include desktop {
     margin-bottom: 18px;
     font-size: 36px;
-line-height: 1.25;
+    line-height: 1.25;
   }
 }
-.contacts-title.desk{
+.contacts-title.desk {
   margin-bottom: 16px;
 }
-.contacts-title.small-text{
-  text-transform: none ;
+.contacts-title.small-text {
+  text-transform: none;
 }
-.wrap-form-contact{
+.wrap-form-contact {
   display: none;
-  @include desktop{
+  @include desktop {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;

@@ -3,6 +3,19 @@
   margin-bottom: 60px;
 }
 
+.contact-form-input {
+  padding: 8px 8px;
+  width: 100%;
+  margin: 20px 0px 20px;
+  outline: transparent;
+  border: none;
+  border-bottom: 1px solid #487996;
+
+  &:focus {
+    background-origin: border-box;
+  }
+}
+
 textarea {
   width: 100%;
   height: 199px;
@@ -14,10 +27,10 @@ textarea {
   resize: none;
   outline: none;
 }
-.contact-text.write{
+.contact-text.write {
   padding-left: 22px;
   padding-top: 20px;
-  color: #2B2B2B;
+  color: #2b2b2b;
 }
 .textarea-wrap {
   position: relative;
@@ -32,12 +45,12 @@ textarea {
   background-color: transparent;
   border-radius: 50%;
 }
-.text-btn-icon{
-  fill: #CDCDCD;
+.text-btn-icon {
+  fill: #cdcdcd;
 }
-.text-btn:hover .text-btn-icon{
-  fill: #487996}
-
+.text-btn:hover .text-btn-icon {
+  fill: #487996;
+}
 
 .contact-field.text {
   margin-bottom: 0;
@@ -89,15 +102,10 @@ textarea {
   }
 }
 .contact-form {
-  @include tablet {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    @include desktop {
-      display: none;
-    }
-  }
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .contact-form-desk {
   @include desktop {
     width: 555px;
@@ -105,55 +113,24 @@ textarea {
     margin-right: 0;
   }
 }
-.orderform-basic{
-  @include desktop{
-    display: none;
+
+.contact-form-field {
+  position: relative;
+}
+.contact-form-label {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+
+  transition: transform 250ms linear;
+
+  .contact-form-input:focus + &,
+  .contact-form-input:not(:placeholder-shown) + & {
+    transform: translateY(-40px);
+  }
+
+  .contact-form-input:hover + & {
+    transform: translateY(-40px);
   }
 }
-
-
-// ----------fon--------------------
-// .petal-contact-lf {
-//   bottom: 220;
-//   left: -25;
-//   z-index: -1;
-//   background: #fff;
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 0px 0px 35px 0px;
-// }
-// .petal-contact-lf::before {
-//   content: '';
-//   position: absolute;
-//   width: 74px;
-//   height: 74px;
-//   background: #fff;
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 72px;
-//   top: 270;
-//   left: 290;
-// }
-
-// .petal-contact-lf::before {
-//   content: '';
-//   position: absolute;
-//   background: #FFFFFF;
-//   bottom: 326;
-//   right: 290;
-//   width: 74px;
-//   height: 74px;
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 0px 0px 35px 0px;
-//   z-index: -1;
-// }
-// .petal-contact-lf::after {
-//   content: '';
-//   position: absolute;
-//   background: red;
-//   top: 60;
-//   left: 278;
-//   // bottom: 326;
-//   // right: 290;
-//   width: 74px;
-//   height: 74px;
-//   // z-index: -1;
-// }

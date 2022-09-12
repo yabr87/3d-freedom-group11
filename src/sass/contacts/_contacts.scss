@@ -63,11 +63,3 @@
 .contacts-title.small-text {
   text-transform: none;
 }
-.wrap-form-contact {
-  display: none;
-  @include desktop {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row-reverse;
-  }
-}

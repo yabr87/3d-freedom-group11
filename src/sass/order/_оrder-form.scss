@@ -1,430 +1,11 @@
-.оrder-forms {
-  padding: 100px 0 80px 0;
-  display: block;
-}
-
-.orderform-title {
-  display: block;
-
-  margin-bottom: 16px;
-
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1;
-  text-align: left;
-  letter-spacing: 0.03em;
-
-  color: #487996;
-
-  @media screen and (min-width: 768px) {
-    text-align: center;
-  }
-
-  @media screen and (min-width: 1440px) {
-    text-align: left;
-    font-size: 36px;
-  }
-}
-
-.orderform-wrapper-box {
-  display: block;
-  width: 100%;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.01em;
-  color: #2b2b2b;
-
-  @media screen and (min-width: 768px) {
-    padding: 0px 152px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    width: 555px;
-    padding: 0px;
-  }
-}
-
-.orderform-wrap {
-  @media screen and (min-width: 1440px) {
-    display: flex;
-  }
-}
-
-.orderform-thumb {
-  position: relative;
-}
-
-.orderform-field {
-  position: relative;
-}
-
-.orderform-input {
-  padding: 8px 8px;
-  width: 100%;
-  margin: 20px 0px 20px;
-
-  outline: transparent;
-  border: none;
-  border-bottom: 1px solid #487996;
-
-  &:focus {
-    background-origin: border-box;
-    // border: 1px solid var(--accent);
-  }
-  @media screen and (min-width: 768px) {
-    width: 400px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    width: 555px;
-  }
-}
-
-.orderform-label {
-  position: absolute;
-  top: 50%;
-  left: 0px;
-  transform: translateY(-50%);
-
-  transition: transform 250ms linear;
-
-  .orderform-input:focus + &,
-  .orderform-input:not(:placeholder-shown) + & {
-    transform: translateY(-40px);
-  }
-
-  .orderform-input:hover + & {
-    transform: translateY(-40px);
-  }
-}
-
-// вставка для селекта
-
-.select {
-  /* Растягиваем блок на 100% родительского блока, для правильного размещения кастомной стрелочки */
-  width: 100%;
-
-  /* Убираем браузерную стрелку */
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-
-  /* Задаем свой фон и рамку */
-  border: none;
-  border-bottom: 1px solid #487996;
-
-  /* Отступы от рамки к тексту */
-  padding: 10px 35px 10px 10px;
-
-  &:focus {
-    background-origin: border-box;
-  }
-  @media screen and (min-width: 768px) {
-    width: 400px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    width: 555px;
-  }
-}
-/* Делаем .select-wrapper родительским элементом для позиционирования "стрелочки" */
-.select-wrapper {
-  position: relative;
-}
-
-/* Рисуем стрелочку */
-.select-wrapper::before {
-  content: '';
-
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-
-  display: block;
-
-  /* Рисуем треугольник */
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 13px 10px 0 10px;
-  border-color: #2b2b2b transparent transparent transparent;
-
-  // width: 0;
-  // height: 0;
-  // border-style: solid;
-  // border-width: 0 10px 13px 10px;
-  // border-color: transparent transparent #2b2b2b transparent;
-
-  /* Снимаем клик с треугольника */
-  pointer-events: none;
-}
-
-// ---------------------
-
-.form-margin {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-bottom: 44px;
-}
-.button-margin {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-bottom: 60px;
-}
-
-/* *******************
-Select c dropdown на JS
-******************* */
-
-.dropdown {
-  position: relative;
-}
-
-.dropdown__button {
-  position: relative;
-  display: block;
-  width: 100%;
-  text-align: left;
-
-  background: #ffffff;
-  border: none;
-  border-bottom: 1px solid #487996;
-  height: auto;
-  margin: 20px 0;
-  padding: 8px 35px 8px 0px;
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.01em;
-  color: #2b2b2b;
-
-  cursor: pointer;
-}
-
-.dropdown__button:focus,
-.dropdown__button--active {
-  outline: none;
-  // box-shadow: 0px 0px 0px 4px rgba(176, 198, 225, 0.6);
-}
-
-.dropdown__button::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-
-  /* Рисуем треугольник */
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 13px 10px 0 10px;
-  border-color: #2b2b2b transparent transparent transparent;
-
-  // width: 0;
-  // height: 0;
-  // border-style: solid;
-  // border-width: 0 10px 13px 10px;
-  // border-color: transparent transparent #2b2b2b transparent;
-
-  /* Снимаем клик с треугольника */
-  pointer-events: none;
-}
-
-.dropdown__list {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 46px;
-
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-
-  background: #ffffff;
-  border-bottom: 1px solid #487996;
-  overflow: hidden;
-
-  // border-radius: 6px;
-  width: 100%;
-
-  z-index: 1;
-}
-
-.dropdown__list--visible {
-  display: block;
-}
-
-.dropdown__list-item {
-  margin: 0;
-  padding: 0;
-  border: none;
-  border-bottom: 0px;
-  padding: 10px 20px 10px 0px;
-  cursor: pointer;
-}
-
-// .dropdown__list-item:first-child {
-// 	border-radius: 6px 6px 0 0;
-// }
-
-.dropdown__list-item:last-child {
-  // border-radius: 0 0 6px 6px;
-  border-bottom: 1px solid #487996;
-}
-
-.dropdown__list-item:hover {
-  color: #ffffff;
-  background: rgba(72, 121, 150, 0.5);
-}
-
-.dropdown__input-hidden {
-  display: none;
-}
-// конец кода для селектора
-
-.ordertextbox {
-  display: flex;
-  display: block;
-  flex-direction: column;
-  margin-bottom: 44px;
-}
-
-.ordertextbox-label {
-  display: block;
-  width: 100%;
-  margin-top: 44px;
-  margin-bottom: 4px;
-}
-
-.ordertextbox-input {
-  display: block;
-  width: 100%;
-  height: auto;
-  padding: 22px 20px;
-  border: 1px solid #487996;
-  border-radius: 50px 0px 50px 0px;
-  outline: transparent;
-  @media screen and (min-width: 768px) {
-    width: 400px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    width: 555px;
-  }
-}
-
-.ordertextbox-input:not(:placeholder-shown) {
-  color: #2b2b2b;
-}
-
-.ordertextbox-input::placeholder {
-  color: #cdcdcd;
-}
-
-.ordertextbox-text {
-  color: #cdcdcd;
-}
-
-.ordertextbox-pict {
-  display: block;
-  position: absolute;
-  bottom: 20px;
-  right: 22px;
-  margin-left: 12px;
-  z-index: 9;
-}
-
-.mosaic-pict2 {
-  display: block;
-  width: 100px;
-  height: auto;
-  margin-top: 68px;
-  margin-left: auto;
-
-  width: 514px;
-
-  @media screen and (max-width: 1443px) {
-    display: none;
-    margin-top: 100px;
-  }
-}
-
-.ordercont-title {
-  display: block;
-  margin-bottom: 18px;
-  color: #487996;
-}
-
-.ordercont-text {
-  margin-bottom: 16px;
-  text-align: right;
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.7;
-  letter-spacing: 0.01em;
-  color: #2b2b2b;
-}
-
-// телефоны
-.order-pg-down {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-  }
-
-  @media screen and (min-width: 1440px) {
-    flex-direction: column;
-    margin-left: auto;
-  }
-}
-
-.ordercontact-part {
-  @media screen and (min-width: 768px) {
-    width: 100%;
-    @media screen and (min-width: 1440px) {
-      text-align: right;
-      margin-left: auto;
-    }
-  }
-}
-
-.ordercontact-part:last-child {
-  @media screen and (min-width: 768px) {
-    text-align: right;
-    margin-left: auto;
-  }
-}
-
-// ----------------------
-//---картинка -----------
-
-.order-pict {
-  display: block;
-  margin-top: 50px;
-
-  @media screen and (max-width: 1443px) {
-    display: none;
-  }
-}
-
 // .оrder-forms {
-//   background-color: blueviolet;
+//   padding: 100px 0 80px 0;
+//   display: block;
 // }
 
 // .orderform-title {
 //   display: block;
-//   margin-top: 40px;
+
 //   margin-bottom: 16px;
 
 //   font-style: normal;
@@ -446,7 +27,9 @@ Select c dropdown на JS
 //   }
 // }
 
-// .orderform {
+// .orderform-wrapper-box {
+//   display: block;
+//   width: 100%;
 //   font-style: normal;
 //   font-weight: 400;
 //   font-size: 16px;
@@ -464,11 +47,13 @@ Select c dropdown на JS
 //   }
 // }
 
-// .orderform-thumb {
-//   position: relative;
+// .orderform-wrap {
+//   @media screen and (min-width: 1440px) {
+//     display: flex;
+//   }
 // }
 
-// .ordertextbox-thumb {
+// .orderform-thumb {
 //   position: relative;
 // }
 
@@ -485,10 +70,16 @@ Select c dropdown на JS
 //   border: none;
 //   border-bottom: 1px solid #487996;
 
-//   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 //   &:focus {
 //     background-origin: border-box;
+//     // border: 1px solid var(--accent);
+//   }
+//   @media screen and (min-width: 768px) {
+//     width: 400px;
+//   }
+
+//   @media screen and (min-width: 1440px) {
+//     width: 555px;
 //   }
 // }
 
@@ -510,53 +101,201 @@ Select c dropdown на JS
 //   }
 // }
 
-// .orderform-select {
-//   padding: 8px 8px;
-//   width: 100%;
-//   margin-top: 4px;
-//   margin-bottom: 10px;
+// // вставка для селекта
 
-//   outline: transparent;
-//   color: #2b2b2b;
+// .select {
+//   /* Растягиваем блок на 100% родительского блока, для правильного размещения кастомной стрелочки */
+//   width: 100%;
+
+//   /* Убираем браузерную стрелку */
+//   -moz-appearance: none;
+//   -webkit-appearance: none;
+//   appearance: none;
+
+//   /* Задаем свой фон и рамку */
 //   border: none;
 //   border-bottom: 1px solid #487996;
 
-//   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   /* Отступы от рамки к тексту */
+//   padding: 10px 35px 10px 10px;
 
 //   &:focus {
 //     background-origin: border-box;
 //   }
+//   @media screen and (min-width: 768px) {
+//     width: 400px;
+//   }
+
+//   @media screen and (min-width: 1440px) {
+//     width: 555px;
+//   }
+// }
+// /* Делаем .select-wrapper родительским элементом для позиционирования "стрелочки" */
+// .select-wrapper {
+//   position: relative;
 // }
 
-// .orderform-pict {
-//   display: block;
+// /* Рисуем стрелочку */
+// .select-wrapper::before {
+//   content: '';
+
 //   position: absolute;
 //   top: 50%;
-//   right: 0px;
-//   margin-left: 12px;
-//   z-index: 9;
+//   right: 15px;
+//   transform: translateY(-50%);
 
-//   width: 18px;
-//   height: 13px;
-//   // background-image: url(./images/order/polygon-down.svg);
-//   // background-size: contain;
-//   // background-size: contain;
-//   // background-origin: border-box;
-//   // border: none;
-//   // transform: translateY(-50%);
+//   display: block;
 
-//   // .orderform-select:focus-within + & {
-//   //   background-image: url(./images/order/polygon-up.svg);
-//   //   background-size: contain;
-//   //   background-origin: border-box;
-//   //   border: none;
-//   // }
+//   /* Рисуем треугольник */
+//   width: 0;
+//   height: 0;
+//   border-style: solid;
+//   border-width: 13px 10px 0 10px;
+//   border-color: #2b2b2b transparent transparent transparent;
+
+//   // width: 0;
+//   // height: 0;
+//   // border-style: solid;
+//   // border-width: 0 10px 13px 10px;
+//   // border-color: transparent transparent #2b2b2b transparent;
+
+//   /* Снимаем клик с треугольника */
+//   pointer-events: none;
 // }
+
+// // ---------------------
+
+// .form-margin {
+//   display: block;
+//   width: 100%;
+//   height: auto;
+//   margin-bottom: 44px;
+// }
+// .button-margin {
+//   display: block;
+//   width: 100%;
+//   height: auto;
+//   margin-bottom: 60px;
+// }
+
+// /* *******************
+// Select c dropdown на JS
+// ******************* */
+
+// .dropdown {
+//   position: relative;
+// }
+
+// .dropdown__button {
+//   position: relative;
+//   display: block;
+//   width: 100%;
+//   text-align: left;
+
+//   background: #ffffff;
+//   border: none;
+//   border-bottom: 1px solid #487996;
+//   height: auto;
+//   margin: 20px 0;
+//   padding: 8px 35px 8px 0px;
+
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   letter-spacing: 0.01em;
+//   color: #2b2b2b;
+
+//   cursor: pointer;
+// }
+
+// .dropdown__button:focus,
+// .dropdown__button--active {
+//   outline: none;
+//   // box-shadow: 0px 0px 0px 4px rgba(176, 198, 225, 0.6);
+// }
+
+// .dropdown__button::after {
+//   content: '';
+//   position: absolute;
+//   top: 50%;
+//   right: 15px;
+//   transform: translateY(-50%);
+
+//   /* Рисуем треугольник */
+//   width: 0;
+//   height: 0;
+//   border-style: solid;
+//   border-width: 13px 10px 0 10px;
+//   border-color: #2b2b2b transparent transparent transparent;
+
+//   // width: 0;
+//   // height: 0;
+//   // border-style: solid;
+//   // border-width: 0 10px 13px 10px;
+//   // border-color: transparent transparent #2b2b2b transparent;
+
+//   /* Снимаем клик с треугольника */
+//   pointer-events: none;
+// }
+
+// .dropdown__list {
+//   display: none;
+//   position: absolute;
+//   left: 0;
+//   top: 46px;
+
+//   margin: 0;
+//   padding: 0;
+//   list-style-type: none;
+
+//   background: #ffffff;
+//   border-bottom: 1px solid #487996;
+//   overflow: hidden;
+
+//   // border-radius: 6px;
+//   width: 100%;
+
+//   z-index: 1;
+// }
+
+// .dropdown__list--visible {
+//   display: block;
+// }
+
+// .dropdown__list-item {
+//   margin: 0;
+//   padding: 0;
+//   border: none;
+//   border-bottom: 0px;
+//   padding: 10px 20px 10px 0px;
+//   cursor: pointer;
+// }
+
+// // .dropdown__list-item:first-child {
+// // 	border-radius: 6px 6px 0 0;
+// // }
+
+// .dropdown__list-item:last-child {
+//   // border-radius: 0 0 6px 6px;
+//   border-bottom: 1px solid #487996;
+// }
+
+// .dropdown__list-item:hover {
+//   color: #ffffff;
+//   background: rgba(72, 121, 150, 0.5);
+// }
+
+// .dropdown__input-hidden {
+//   display: none;
+// }
+// // конец кода для селектора
 
 // .ordertextbox {
 //   display: flex;
 //   display: block;
 //   flex-direction: column;
+//   margin-bottom: 44px;
 // }
 
 // .ordertextbox-label {
@@ -574,6 +313,13 @@ Select c dropdown на JS
 //   border: 1px solid #487996;
 //   border-radius: 50px 0px 50px 0px;
 //   outline: transparent;
+//   @media screen and (min-width: 768px) {
+//     width: 400px;
+//   }
+
+//   @media screen and (min-width: 1440px) {
+//     width: 555px;
+//   }
 // }
 
 // .ordertextbox-input:not(:placeholder-shown) {
@@ -595,36 +341,290 @@ Select c dropdown на JS
 //   right: 22px;
 //   margin-left: 12px;
 //   z-index: 9;
-
-//   width: 32px;
-//   height: 30px;
-//   // background-image: url(./images/order/simple-line-icons_paper-clip.svg);
-//   // background-size: contain;
-//   // background-repeat: no-repeat;
-//   // background-origin: border-box;
-//   border: none;
-//   transform: translateY(-50%);
-// }
-
-// .order {
-//   @media screen and (min-width: 1440px) {
-//     display: flex;
-//     justify-content: space-between;
-//     gap: 149px;
-//   }
 // }
 
 // .mosaic-pict2 {
-//   display: flex;
+//   display: block;
 //   width: 100px;
 //   height: auto;
-//   margin-top: 52px;
+//   margin-top: 68px;
+//   margin-left: auto;
 
 //   width: 514px;
-//   justify-content: end;
 
 //   @media screen and (max-width: 1443px) {
 //     display: none;
 //     margin-top: 100px;
 //   }
 // }
+
+// .ordercont-title {
+//   display: block;
+//   margin-bottom: 18px;
+//   color: #487996;
+// }
+
+// .ordercont-text {
+//   margin-bottom: 16px;
+//   text-align: right;
+
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 18px;
+//   line-height: 1.7;
+//   letter-spacing: 0.01em;
+//   color: #2b2b2b;
+// }
+
+// // телефоны
+// .order-pg-down {
+//   @media screen and (min-width: 768px) {
+//     display: flex;
+//     flex-direction: row;
+//   }
+
+//   @media screen and (min-width: 1440px) {
+//     flex-direction: column;
+//     margin-left: auto;
+//   }
+// }
+
+// .ordercontact-part {
+//   @media screen and (min-width: 768px) {
+//     width: 100%;
+//     @media screen and (min-width: 1440px) {
+//       text-align: right;
+//       margin-left: auto;
+//     }
+//   }
+// }
+
+// .ordercontact-part:last-child {
+//   @media screen and (min-width: 768px) {
+//     text-align: right;
+//     margin-left: auto;
+//   }
+// }
+
+// // ----------------------
+// //---картинка -----------
+
+// .order-pict {
+//   display: block;
+//   margin-top: 50px;
+
+//   @media screen and (max-width: 1443px) {
+//     display: none;
+//   }
+// }
+
+// // .оrder-forms {
+// //   background-color: blueviolet;
+// // }
+
+// // .orderform-title {
+// //   display: block;
+// //   margin-top: 40px;
+// //   margin-bottom: 16px;
+
+// //   font-style: normal;
+// //   font-weight: 700;
+// //   font-size: 24px;
+// //   line-height: 1;
+// //   text-align: left;
+// //   letter-spacing: 0.03em;
+
+// //   color: #487996;
+
+// //   @media screen and (min-width: 768px) {
+// //     text-align: center;
+// //   }
+
+// //   @media screen and (min-width: 1440px) {
+// //     text-align: left;
+// //     font-size: 36px;
+// //   }
+// // }
+
+// // .orderform {
+// //   font-style: normal;
+// //   font-weight: 400;
+// //   font-size: 16px;
+// //   line-height: 1.25;
+// //   letter-spacing: 0.01em;
+// //   color: #2b2b2b;
+
+// //   @media screen and (min-width: 768px) {
+// //     padding: 0px 152px;
+// //   }
+
+// //   @media screen and (min-width: 1440px) {
+// //     width: 555px;
+// //     padding: 0px;
+// //   }
+// // }
+
+// // .orderform-thumb {
+// //   position: relative;
+// // }
+
+// // .ordertextbox-thumb {
+// //   position: relative;
+// // }
+
+// // .orderform-field {
+// //   position: relative;
+// // }
+
+// // .orderform-input {
+// //   padding: 8px 8px;
+// //   width: 100%;
+// //   margin: 20px 0px 20px;
+
+// //   outline: transparent;
+// //   border: none;
+// //   border-bottom: 1px solid #487996;
+
+// //   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// //   &:focus {
+// //     background-origin: border-box;
+// //   }
+// // }
+
+// // .orderform-label {
+// //   position: absolute;
+// //   top: 50%;
+// //   left: 0px;
+// //   transform: translateY(-50%);
+
+// //   transition: transform 250ms linear;
+
+// //   .orderform-input:focus + &,
+// //   .orderform-input:not(:placeholder-shown) + & {
+// //     transform: translateY(-40px);
+// //   }
+
+// //   .orderform-input:hover + & {
+// //     transform: translateY(-40px);
+// //   }
+// // }
+
+// // .orderform-select {
+// //   padding: 8px 8px;
+// //   width: 100%;
+// //   margin-top: 4px;
+// //   margin-bottom: 10px;
+
+// //   outline: transparent;
+// //   color: #2b2b2b;
+// //   border: none;
+// //   border-bottom: 1px solid #487996;
+
+// //   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// //   &:focus {
+// //     background-origin: border-box;
+// //   }
+// // }
+
+// // .orderform-pict {
+// //   display: block;
+// //   position: absolute;
+// //   top: 50%;
+// //   right: 0px;
+// //   margin-left: 12px;
+// //   z-index: 9;
+
+// //   width: 18px;
+// //   height: 13px;
+// //   // background-image: url(./images/order/polygon-down.svg);
+// //   // background-size: contain;
+// //   // background-size: contain;
+// //   // background-origin: border-box;
+// //   // border: none;
+// //   // transform: translateY(-50%);
+
+// //   // .orderform-select:focus-within + & {
+// //   //   background-image: url(./images/order/polygon-up.svg);
+// //   //   background-size: contain;
+// //   //   background-origin: border-box;
+// //   //   border: none;
+// //   // }
+// // }
+
+// // .ordertextbox {
+// //   display: flex;
+// //   display: block;
+// //   flex-direction: column;
+// // }
+
+// // .ordertextbox-label {
+// //   display: block;
+// //   width: 100%;
+// //   margin-top: 44px;
+// //   margin-bottom: 4px;
+// // }
+
+// // .ordertextbox-input {
+// //   display: block;
+// //   width: 100%;
+// //   height: auto;
+// //   padding: 22px 20px;
+// //   border: 1px solid #487996;
+// //   border-radius: 50px 0px 50px 0px;
+// //   outline: transparent;
+// // }
+
+// // .ordertextbox-input:not(:placeholder-shown) {
+// //   color: #2b2b2b;
+// // }
+
+// // .ordertextbox-input::placeholder {
+// //   color: #cdcdcd;
+// // }
+
+// // .ordertextbox-text {
+// //   color: #cdcdcd;
+// // }
+
+// // .ordertextbox-pict {
+// //   display: block;
+// //   position: absolute;
+// //   bottom: 20px;
+// //   right: 22px;
+// //   margin-left: 12px;
+// //   z-index: 9;
+
+// //   width: 32px;
+// //   height: 30px;
+// //   // background-image: url(./images/order/simple-line-icons_paper-clip.svg);
+// //   // background-size: contain;
+// //   // background-repeat: no-repeat;
+// //   // background-origin: border-box;
+// //   border: none;
+// //   transform: translateY(-50%);
+// // }
+
+// // .order {
+// //   @media screen and (min-width: 1440px) {
+// //     display: flex;
+// //     justify-content: space-between;
+// //     gap: 149px;
+// //   }
+// // }
+
+// // .mosaic-pict2 {
+// //   display: flex;
+// //   width: 100px;
+// //   height: auto;
+// //   margin-top: 52px;
+
+// //   width: 514px;
+// //   justify-content: end;
+
+// //   @media screen and (max-width: 1443px) {
+// //     display: none;
+// //     margin-top: 100px;
+// //   }
+// // }

@@ -1,55 +1,58 @@
 <section class="contacts-form">
-    <div class="container">
-      <form class="orderform-basic">
-        <b class="contacts-title form"> ЗВ’ЯЖІТЬСЯ З НАМИ </b>
-              <div class="orderform">
-                <div class="orderform-field">
-                  <input
-                    class="orderform-input"
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder=" "
-                  />
-                  <label class="orderform-label" for="name">Ім'я</label>
-                </div>
-                <div class="orderform-field">
-                  <input
-                    class="orderform-input"
-                    type="email"
-                    name="mail"
-                    id="mail"
-                    placeholder=" "
-                  />
-                  <label class="orderform-label" for="mail">Email</label>
-                </div>
-    <div class="form-margin"></div>
-            <div class="contact-field text">
-              <label for="contact-text" class="contact-label">
-                <span class="contact-item text">Повідомлення</span>
-              </label>
-              <div class="textarea-wrap">
-                <textarea
-                  name="contact-text"
-                  id="contact-text"
-                  class="contact-text write"
-                  placeholder="Залишіть своє повідомлення"
-                ></textarea>
-                <button class="text-btn" type="button">
-                  <svg class="text-btn-icon" width="22" height="20">
-                  <svg class="conta-icon" width="22" height="20">
-                    <use href="/src/images/icon.svg#paper-clip"></use>
-                  </svg>
-                </button>
-              </div>
-              <p class="hint">
-                *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
-              </p>
+  <div class="container">
+    <div class="wrap-form-contact">
+      <form class="contact-form-desk">
+        <div class="contwrapper">
+          <b class="contacts-title form desk"> ЗВ’ЯЖІТЬСЯ З НАМИ </b>
+          <div class="contact-form">
+            <div class="contact-form-field">
+              <input
+                class="contact-form-input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder=" "
+              />
+              <label class="contact-form-label" for="name">Ім'я</label>
             </div>
-            <button type="submit" class="btn send-mobile-btn btn-form">Відправити</button>
-            <div class="button-margin"></div>
+            <div class="contact-form-field">
+              <input
+                class="contact-form-input"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder=" "
+              />
+              <label class="contact-form-label" for="mail">Email</label>
             </div>
-          </form>
+          </div>
+
+          <div class="contact-field text">
+            <label for="contact-text" class="contact-label">
+              <span class="contact-item text">Повідомлення</span>
+            </label>
+            <div class="textarea-wrap">
+              <textarea
+                name="contact-text"
+                id="contact-text"
+                class="contact-text write"
+                placeholder="Залишіть своє повідомлення"
+              ></textarea>
+              <button class="text-btn" type="button">
+                <svg class="text-btn-icon" width="22" height="20">
+                  <use href="./images/icon.svg#paper-clip"></use>
+                </svg>
+              </button>
+            </div>
+            <p class="hint">
+              *Прикріпіть зображення / креслення / STL / Obj / CAD-модель
+            </p>
+          </div>
+          <button type="submit" class="btn send-mobile-btn btn-form">
+            Відправити
+          </button>
+        </div>
+      </form>
+    </div>
   </div>
 </section>
-

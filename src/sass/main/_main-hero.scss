@@ -108,86 +108,82 @@
   }
 
   .petal-img3 {
-    top: 78px;
-    right: 32px;
-    border-radius: 0px 0px 72px 0px;
-    background-image: url(../images/header/petal-img-3.jpg);
-    @include retina {
-      background-image: url(../images/header/petal-img-3@2x.jpg);
-    }
+    @include desktop {
+      top: 145px;
 
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      width: 74px;
-      height: 74px;
-      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-      background-color: #ffffff;
+      background-image: url(../images/hero/petal-desk-img-3.jpg);
+      @include retina {
+        background-image: url(../images/hero/petal-desk-img-3@2x.jpg);
+      }
 
-      outline: 1px solid red;
-    }
+      &::before,
+      &::after {
+        width: 144px;
+        height: 144px;
+  
+        outline: 1px solid red;
+      }
 
-    &::before {
-      left: -74px;
-    }
+      &::before {
+        left: 144px;
+      }
 
-    &::after {
-      top: 74;
-      left: -74px;
-      border-radius: 50%;
-    }
+      &::after {
+        top: 144;
+        left: 144px;
+      }
+    }    
   }
 
   .petal-img4 {
-    top: 296px;
-    right: 32px;
-    border-radius: 35px 35px 0px 0px;
-    background-image: url(../images/header/petal-img-4.jpg);
-    @include retina {
-      background-image: url(../images/header/petal-img-4@2x.jpg);
-    }
+    @include desktop {
+      top: 578px;
+      border-radius: 72px 72px 0px 0px;
+    
+      background-image: url(../images/hero/petal-desk-img-4.jpg);
+      @include retina {
+      background-image: url(../images/hero/petal-desk-img-4@2x.jpg);
+      }
 
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      width: 74px;
-      height: 74px;
-      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-      background-color: #ffffff;
+      &::before,
+      &::after {
+        width: 144px;
+        height: 144px;
+  
+        outline: 1px solid red;
+      }
 
-      outline: 1px solid red;
-    }
+      &::before {
+        left: -144px;
+        border-radius: 0px 0px 0px 72px;
+      }
 
-    &::before {
-      left: -74px;
-      border-radius: 0px 0px 0px 35px;
-    }
-
-    &::after {
-      bottom: 74px;
-      border-radius: 25px 0px;
+      &::after {
+        bottom: 144px;
+        border-radius: 72px 0px;
+      }
     }
   }
 
   .petal-no-img {
-    top: 370px;
-    right: 32px;
-    height: 64px;
-    border-radius: 0px 0px 0px 35px;
+    @include desktop {
+      top: 723px;
+      height: 124px;
+      border-radius: 0px 0px 0px 35px;
 
-    &::before,
-    &::after {
-      content: '';
-      position: absolute;
-      width: 74px;
-      height: 74px;
-      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-      background-color: #ffffff;
+      &::before,
+      &::after {
+        width: 144px;
+        height: 144px;
+  
+        outline: 1px solid red;
+      }
 
-      outline: 1px solid red;
+      
     }
+    
+
+    
 
     &::before {
       top: 148px;

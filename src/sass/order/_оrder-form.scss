@@ -1,4 +1,4 @@
-.оrder-forms {
+.оrder-forms1 {
   padding: 100px 0 80px 0;
   display: block;
 }
@@ -27,7 +27,7 @@
   }
 }
 
-.orderform {
+.orderform1 {
   display: block;
   width: 100%;
   font-style: normal;
@@ -47,7 +47,7 @@
   }
 }
 
-.orderform-wrap {
+.orderform-wrap1 {
   @media screen and (min-width: 1440px) {
     display: flex;
   }
@@ -57,11 +57,11 @@
   position: relative;
 }
 
-.orderform-field {
+.orderform-field1 {
   position: relative;
 }
 
-.orderform-input {
+.orderform-input1 {
   padding: 8px 8px;
   width: 100%;
   margin: 20px 0px 20px;
@@ -366,7 +366,7 @@ Select c dropdown на JS
 }
 
 // телефоны
-.order-pg-down {
+.order-pg-down1 {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
@@ -378,7 +378,7 @@ Select c dropdown на JS
   }
 }
 
-.ordercontact-part {
+.ordercontact-part1 {
   @media screen and (min-width: 768px) {
     width: 100%;
     @media screen and (min-width: 1440px) {
@@ -388,10 +388,14 @@ Select c dropdown на JS
   }
 }
 
-.ordercontact-part:last-child {
+.ordercontact-part3 {
   @media screen and (min-width: 768px) {
+    width: 100%;
     text-align: right;
-    margin-left: auto;
+
+    @media screen and (min-width: 1440px) {
+      margin-left: auto;
+    }
   }
 }
 
@@ -407,213 +411,18 @@ Select c dropdown на JS
   }
 }
 
-// .оrder-forms {
-//   background-color: blueviolet;
-// }
+//---------------------
+.textarea-wrap1 {
+  position: relative;
+}
 
-// .orderform-title {
-//   display: block;
-//   margin-top: 40px;
-//   margin-bottom: 16px;
-
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 24px;
-//   line-height: 1;
-//   text-align: left;
-//   letter-spacing: 0.03em;
-
-//   color: #487996;
-
-//   @media screen and (min-width: 768px) {
-//     text-align: center;
-//   }
-
-//   @media screen and (min-width: 1440px) {
-//     text-align: left;
-//     font-size: 36px;
-//   }
-// }
-
-// .orderform {
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 16px;
-//   line-height: 1.25;
-//   letter-spacing: 0.01em;
-//   color: #2b2b2b;
-
-//   @media screen and (min-width: 768px) {
-//     padding: 0px 152px;
-//   }
-
-//   @media screen and (min-width: 1440px) {
-//     width: 555px;
-//     padding: 0px;
-//   }
-// }
-
-// .orderform-thumb {
-//   position: relative;
-// }
-
-// .ordertextbox-thumb {
-//   position: relative;
-// }
-
-// .orderform-field {
-//   position: relative;
-// }
-
-// .orderform-input {
-//   padding: 8px 8px;
-//   width: 100%;
-//   margin: 20px 0px 20px;
-
-//   outline: transparent;
-//   border: none;
-//   border-bottom: 1px solid #487996;
-
-//   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:focus {
-//     background-origin: border-box;
-//   }
-// }
-
-// .orderform-label {
-//   position: absolute;
-//   top: 50%;
-//   left: 0px;
-//   transform: translateY(-50%);
-
-//   transition: transform 250ms linear;
-
-//   .orderform-input:focus + &,
-//   .orderform-input:not(:placeholder-shown) + & {
-//     transform: translateY(-40px);
-//   }
-
-//   .orderform-input:hover + & {
-//     transform: translateY(-40px);
-//   }
-// }
-
-// .orderform-select {
-//   padding: 8px 8px;
-//   width: 100%;
-//   margin-top: 4px;
-//   margin-bottom: 10px;
-
-//   outline: transparent;
-//   color: #2b2b2b;
-//   border: none;
-//   border-bottom: 1px solid #487996;
-
-//   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:focus {
-//     background-origin: border-box;
-//   }
-// }
-
-// .orderform-pict {
-//   display: block;
-//   position: absolute;
-//   top: 50%;
-//   right: 0px;
-//   margin-left: 12px;
-//   z-index: 9;
-
-//   width: 18px;
-//   height: 13px;
-//   // background-image: url(./images/order/polygon-down.svg);
-//   // background-size: contain;
-//   // background-size: contain;
-//   // background-origin: border-box;
-//   // border: none;
-//   // transform: translateY(-50%);
-
-//   // .orderform-select:focus-within + & {
-//   //   background-image: url(./images/order/polygon-up.svg);
-//   //   background-size: contain;
-//   //   background-origin: border-box;
-//   //   border: none;
-//   // }
-// }
-
-// .ordertextbox {
-//   display: flex;
-//   display: block;
-//   flex-direction: column;
-// }
-
-// .ordertextbox-label {
-//   display: block;
-//   width: 100%;
-//   margin-top: 44px;
-//   margin-bottom: 4px;
-// }
-
-// .ordertextbox-input {
-//   display: block;
-//   width: 100%;
-//   height: auto;
-//   padding: 22px 20px;
-//   border: 1px solid #487996;
-//   border-radius: 50px 0px 50px 0px;
-//   outline: transparent;
-// }
-
-// .ordertextbox-input:not(:placeholder-shown) {
-//   color: #2b2b2b;
-// }
-
-// .ordertextbox-input::placeholder {
-//   color: #cdcdcd;
-// }
-
-// .ordertextbox-text {
-//   color: #cdcdcd;
-// }
-
-// .ordertextbox-pict {
-//   display: block;
-//   position: absolute;
-//   bottom: 20px;
-//   right: 22px;
-//   margin-left: 12px;
-//   z-index: 9;
-
-//   width: 32px;
-//   height: 30px;
-//   // background-image: url(./images/order/simple-line-icons_paper-clip.svg);
-//   // background-size: contain;
-//   // background-repeat: no-repeat;
-//   // background-origin: border-box;
-//   border: none;
-//   transform: translateY(-50%);
-// }
-
-// .order {
-//   @media screen and (min-width: 1440px) {
-//     display: flex;
-//     justify-content: space-between;
-//     gap: 149px;
-//   }
-// }
-
-// .mosaic-pict2 {
-//   display: flex;
-//   width: 100px;
-//   height: auto;
-//   margin-top: 52px;
-
-//   width: 514px;
-//   justify-content: end;
-
-//   @media screen and (max-width: 1443px) {
-//     display: none;
-//     margin-top: 100px;
-//   }
-// }
+.hint1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #cdcdcd;
+  @include desktop {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}

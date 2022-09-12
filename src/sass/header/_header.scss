@@ -8,6 +8,7 @@ header {
     display: flex;
     align-items: center;
     height: 100%;
+    z-index: 1;
 
     @media screen and (min-width: 1200px) and (max-width: 1439.5px) {
       max-width: 1200px;

@@ -1,3 +1,227 @@
+.main-hero {
+  background-color: #e5e5e5;
+  position: relative;
+
+  .petal-wrap {
+    top: -74px;
+    @include desktop {
+      max-width: 1440px;
+      top: -130px;
+    }
+  }
+
+  .petal {
+    @include desktop {
+      width: 144px;
+      height: 144px;
+    }
+  }
+
+  .petal-img1 {
+    @include desktop {
+      top: 140px;
+      left: 176px;
+
+      background-image: url(../images/hero/petal-desk-img-1.jpg);
+      @include retina {
+        background-image: url(../images/hero/petal-desk-img-1@2x.jpg);
+      }
+
+      &::before,
+      &::after {
+        width: 144px;
+        height: 144px;
+
+        outline: 1px solid red;
+      }
+
+      &::before {
+        bottom: 144;
+        left: -144px;
+        border-radius: 72px 0px 0px 0px;
+      }
+
+      &::after {
+        left: -144px;
+        border-radius: 0px 0px 72px 0px;
+      }
+    }
+  }
+
+  .petal-img2 {
+    @include desktop {
+      top: 699px;
+      left: 30px;
+
+      background-image: url(../images/hero/petal-desk-img-2.jpg);
+      @include retina {
+        background-image: url(../images/hero/petal-desk-img-2@2x.jpg);
+      }
+
+      &::before,
+      &::after {
+        width: 144px;
+        height: 144px;
+
+        outline: 1px solid red;
+      }
+
+      &::before {
+        top: 144px;
+        width: 110px;
+        border-radius: 0px 0px 72px 0px;
+      }
+
+      &::after {
+        top: 545px;
+        border-radius: 72px 0px;
+      }
+    }
+  }
+
+  .petal-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 296px;
+    left: 106px;
+    border-radius: 0px 0px 35px 0px;
+    pointer-events: all;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+
+      outline: 1px solid red;
+    }
+
+    &::before {
+      bottom: 148px;
+      left: 0;
+      border-radius: 0px 35px 0px 0px;
+    }
+
+    &::after {
+      bottom: 74;
+      left: -74px;
+      border-radius: 0px 0px 0px 35px;
+    }
+  }
+
+  .arrow-link {
+    padding: 4px;
+  }
+
+  .arrow-icon {
+    fill: #008cef;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+
+    .arrow-link:hover & {
+      fill: #ffffff;
+    }
+  }
+
+  .petal-img3 {
+    top: 78px;
+    right: 32px;
+    border-radius: 0px 0px 72px 0px;
+    background-image: url(../images/header/petal-img-3.jpg);
+    @include retina {
+      background-image: url(../images/header/petal-img-3@2x.jpg);
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+
+      outline: 1px solid red;
+    }
+
+    &::before {
+      left: -74px;
+    }
+
+    &::after {
+      top: 74;
+      left: -74px;
+      border-radius: 50%;
+    }
+  }
+
+  .petal-img4 {
+    top: 296px;
+    right: 32px;
+    border-radius: 35px 35px 0px 0px;
+    background-image: url(../images/header/petal-img-4.jpg);
+    @include retina {
+      background-image: url(../images/header/petal-img-4@2x.jpg);
+    }
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+
+      outline: 1px solid red;
+    }
+
+    &::before {
+      left: -74px;
+      border-radius: 0px 0px 0px 35px;
+    }
+
+    &::after {
+      bottom: 74px;
+      border-radius: 25px 0px;
+    }
+  }
+
+  .petal-no-img {
+    top: 370px;
+    right: 32px;
+    height: 64px;
+    border-radius: 0px 0px 0px 35px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      width: 74px;
+      height: 74px;
+      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+
+      outline: 1px solid red;
+    }
+
+    &::before {
+      top: 148px;
+      border-radius: 35px 0px 0px 0px;
+    }
+
+    &::after {
+      top: 222px;
+      left: 49px;
+      border-radius: 50%;
+    }
+  }
+}
+
 .main-hero-name {
   font-family: 'Caviar Dreams';
   font-style: normal;
@@ -90,4 +314,8 @@
     margin: 0;
     padding-bottom: 120px;
   }
+}
+
+img [src$='picture'] {
+  border-radius: 0 50px 0 0;
 }

@@ -1,7 +1,13 @@
 .оrder-forms {
   padding: 100px 0 80px 0;
   display: block;
+}
+
+.orderform-title {
+  display: block;
+
   margin-bottom: 16px;
+
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -38,6 +44,12 @@
   @media screen and (min-width: 1440px) {
     width: 555px;
     padding: 0px;
+  }
+}
+
+.orderform-wrap {
+  @media screen and (min-width: 1440px) {
+    display: flex;
   }
 }
 
@@ -331,25 +343,18 @@ Select c dropdown на JS
   z-index: 9;
 }
 
-.order {
-  @media screen and (min-width: 1440px) {
-    display: flex;
-    justify-content: space-between;
-    gap: 149px;
-    margin-bottom: 60px;
-  }
-}
+.mosaic-pict2 {
+  display: block;
+  width: 100px;
+  height: auto;
+  margin-top: 68px;
+  margin-left: auto;
 
-.agriment__bottom > .btn {
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
-    margin-right: 142px;
-    margin-top: 40px;
-  }
-  @media screen and (min-width: 1440px) {
-    margin-left: auto;
-    margin-right: 0%;
-    margin-top: 24px;
+  width: 514px;
+
+  @media screen and (max-width: 1443px) {
+    display: none;
+    margin-top: 100px;
   }
 }
 
@@ -369,6 +374,48 @@ Select c dropdown на JS
   line-height: 1.7;
   letter-spacing: 0.01em;
   color: #2b2b2b;
+}
+
+// телефоны
+.order-pg-down {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: 1440px) {
+    flex-direction: column;
+    margin-left: auto;
+  }
+}
+
+.ordercontact-part {
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    @media screen and (min-width: 1440px) {
+      text-align: right;
+      margin-left: auto;
+    }
+  }
+}
+
+.ordercontact-part:last-child {
+  @media screen and (min-width: 768px) {
+    text-align: right;
+    margin-left: auto;
+  }
+}
+
+// ----------------------
+//---картинка -----------
+
+.order-pict {
+  display: block;
+  margin-top: 50px;
+
+  @media screen and (max-width: 1443px) {
+    display: none;
+  }
 }
 
 // .оrder-forms {

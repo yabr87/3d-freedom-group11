@@ -343,6 +343,11 @@ border-color: #008bef transparent transparent transparent;
   top: 0;
 
   @media screen and (min-width: 1200px) {
+    width: 124px;
+    height: 124px;
+  }
+
+  @include desktop {
     width: 144px;
     height: 144px;
   }
@@ -357,6 +362,10 @@ border-color: #008bef transparent transparent transparent;
 
     @media screen and (min-width: 1200px) {
       left: 291px;
+      border-radius: 0px 66px 66px 0px;
+    }
+
+    @include desktop {
       border-radius: 0px 72px 72px 0px;
     }
   }
@@ -371,6 +380,10 @@ border-color: #008bef transparent transparent transparent;
 
     @media screen and (min-width: 1200px) {
       right: 266px;
+      border-radius: 66px 0px 0px 66px;
+    }
+
+    @include desktop {
       border-radius: 72px 0px 0px 72px;
     }
   }

@@ -55,6 +55,7 @@
   @include tablet {
     padding-left: 32px;
     padding-right: 32px;
+    overflow: hidden;
   }
 
   &.is-open {
@@ -62,7 +63,7 @@
     opacity: 1;
   }
 
-  @include desktop {
+  @media screen and (min-width: 1200px) {
     display: none;
   }
 }

@@ -97,3 +97,69 @@
 .contacts-title.small-text {
   text-transform: none;
 }
+.contacts-form-wrapper {
+  position: relative
+}
+.container-contact-position {
+  position: relative;
+  overflow: 1px solid red;
+}
+
+.petal-contact-desc-8 {
+  @include desktop {
+    position: absolute;
+    width: 136.83px;
+    height: 144px;
+    left: -10;
+   bottom: 350;
+    background: #fff;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px;
+  }
+}
+
+// .petal-contact-desc-9 {
+//   overflow: hidden;
+//   right: -15;
+//   bottom: 40;
+//   border-radius: 72px;
+//   background-color: red;
+//   z-index: -1;
+//   @include tablet {
+//     display: none;
+//   }
+// }
+// .petal-contact-desc-10 {
+//   overflow: hidden;
+//   background-color: red;
+//   right: -36;
+//   bottom: -380;
+//   border-radius: 25px 0px;
+//   transform: rotate(90deg);
+//   z-index: -1;
+//   @include tablet {
+//     display: none;
+//   }
+// }
+// .petal-contact-desc-11 {
+//   overflow: hidden;
+//   background-color: red;
+//   left: -10;
+//   bottom: -420;
+//   border-radius: 0px 0px 0px 35px;
+//   z-index: -1;
+//   @include tablet {
+//     display: none;
+//   }
+// }
+// .petal-contact-desc-12 {
+//   overflow: hidden;
+//   top: 0;
+//   right: -5;
+//   z-index: -1;
+//   background-color: red;
+//   border-radius: 25px 0px;
+//   @include tablet {
+//     display: none;
+//   }
+// }

@@ -75,7 +75,7 @@
     }
   }
 
-  .petal-arrow {  
+  .petal-arrow {
     @include desktop {
       top: 578px;
       left: 174px;
@@ -83,28 +83,28 @@
 
       &::before,
       &::after {
-      width: 144px;
-      height: 144px;
-    }
+        width: 144px;
+        height: 144px;
+      }
 
-    &::before {
-      bottom: 289px;
-      border-radius: 0px 72px 0px 0px;
-    }
+      &::before {
+        bottom: 289px;
+        border-radius: 0px 72px 0px 0px;
+      }
 
-    &::after {
-      bottom: 144px;
-      left: -144px;
-      border-radius: 0px 0px 0px 72px;
+      &::after {
+        bottom: 144px;
+        left: -144px;
+        border-radius: 0px 0px 0px 72px;
+      }
     }
-    }    
   }
 
   .arrow-icon {
     width: 16px;
     @include desktop {
       width: 32px;
-    }    
+    }
   }
 
   .petal-img3 {
@@ -137,10 +137,10 @@
     @include desktop {
       top: 578px;
       border-radius: 72px 72px 0px 0px;
-    
+
       background-image: url(../images/hero/petal-desk-img-4.jpg);
       @include retina {
-      background-image: url(../images/hero/petal-desk-img-4@2x.jpg);
+        background-image: url(../images/hero/petal-desk-img-4@2x.jpg);
       }
 
       &::before,
@@ -187,14 +187,14 @@
 }
 
 .main-hero-name {
-  font-family: 'Caviar Dreams';
+  font-family: "Caviar Dreams";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: calc(21 / 18);
   text-align: center;
   color: #2b2b2b;
-  padding: 20px 44px;
+  padding: 20px 0;
   width: 340px;
 
   @media screen and (min-width: 768px) {
@@ -219,7 +219,7 @@
   justify-content: center;
   gap: 15px;
   padding-bottom: 32px;
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding-bottom: 60px;
   }
   @media screen and (min-width: 1440px) {
@@ -261,7 +261,7 @@
 }
 
 .main-hero-text {
-  font-family: 'Caviar Dreams';
+  font-family: "Caviar Dreams";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -269,7 +269,7 @@
   text-align: center;
   color: #2b2b2b;
   padding-bottom: 40px;
-  @media screen and (max-width: 768px) {
+  @media screen and (min-width: 768px) {
     padding-bottom: 60px;
   }
   @media screen and (min-width: 1440px) {
@@ -280,7 +280,6 @@
   }
 }
 
-img [src$='picture'] {
+img [src$="picture"] {
   border-radius: 0 50px 0 0;
 }
-

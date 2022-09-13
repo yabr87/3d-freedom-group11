@@ -105,65 +105,96 @@ iframe {
   position: relative;
 }
 
+
+
 .petal-contact-desc-1 {
-  right: 25;
-  top: -50;
-  position: absolute;
-  width: 83px;
-  height: 137px;
-  background: #ffffff;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 0px 72px 0px;
-  transform: rotate(90deg);
+  @include desktop {
+    right: 25;
+    top: -50;
+    position: absolute;
+    width: 83px;
+    height: 137px;
+    background: #ffffff;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 72px 0px;
+    transform: rotate(90deg);
+  }
 }
 .petal-contact-desc-2 {
-  position: absolute;
-  width: 82px;
-  height: 78px;
-  left: 0;
-  top: -10;
-  background: #ffffff;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 0px 0px 72px 0px;
+  @include desktop {
+    position: absolute;
+    left: 1305;
+    top: 350;
+    width: 136.83px;
+    height: 144px;
+    background: #ffffff;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 72px 0px;
+  }
 }
 .petal-contact-desc-3 {
-  position: absolute;
-  width: 136.83px;
-  height: 144px;
-  left: 1305;
-  top: 350;
-  background: #ffffff;
-  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-  border-radius: 72px 0px;
+  @include desktop {
+    position: absolute;
+    width: 82px;
+    height: 78px;
+    border-radius: 0px 0px 72px 0px;
+    left: 0;
+    top: -10;
+    background: #ffffff;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  }
+}
+.petal-contact-tab-4 {
+  @include tablet {
+    position: absolute;
+    width: 71.41px;
+    height: 63.79px;
+    right: 5;
+    top: -35;
+    background: #ffffff;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 35px 0px 0px;
+    transform: rotate(180deg);
+  }
+  @include desktop{
+    display: none;
+  }
+}
+.petal-contact-desc-5 {
+  @include tablet{
+    position: absolute;
+    width: 71.41px;
+    height: 74.08px;
+    top: 350;
+    right: 5;
+    background: #ffffff;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 25px 0px;
+    @include desktop{
+      display: none;
+    }
+  }
 }
 
-// .petal-contact-desc-2{
-//   position: absolute;
-//   width: 82px;
-//   height: 78px;
-//   // left: 35px;
-//   // top: 5px;
-//   background: red;
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 0px 0px 72px 0px;
+.petal-contact-desc-6{
+left: -25;
+bottom: 210;
+border-radius: 0px 0px 35px 0px;
+z-index: -1;
+overflow: visible;
+@include tablet{
+  display: none;
+}
+}
+.petal-contact-desc-7{
+left: -20;
+bottom: -150;
+border-radius: 25px 0px;
+overflow: visible;
+@include tablet{
+  display: none;
+}
+}
 
-// }
-// .petal-contact {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 0px 0px 35px 0px;
-//   z-index: -1;
-// }
-// .petal-contact-1 {
-//   position: absolute;
-//   background-color: red;
-//   box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-//   border-radius: 72px;
-//   // right: -320;
-//   // top: 240;
-//   left: 250;
-//   bottom: -20;
-//   z-index: -1;
-// }
+
+

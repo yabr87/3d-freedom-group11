@@ -139,7 +139,7 @@ iframe {
     height: 78px;
     border-radius: 0px 0px 72px 0px;
     left: 0;
-    top: -10;
+    top: -50;
     background: #ffffff;
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   }
@@ -190,11 +190,9 @@ overflow: visible;
 left: -20;
 bottom: -150;
 border-radius: 25px 0px;
-overflow: visible;
 @include tablet{
   display: none;
 }
 }
-
 
 

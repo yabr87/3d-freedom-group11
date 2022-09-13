@@ -22,6 +22,7 @@
     font-size: 48px;
     line-height: 1.25;
     margin-top: 115px;
+    margin-left: 117px;
   }
 }
 
@@ -29,7 +30,8 @@
   .modeling {
     display: flex;
     max-width: 515 px;
-    justify-content: space-between;
+    // justify-content: space-between;
+    margin-left: 117px;
   }
 }
 
@@ -51,4 +53,66 @@
 
 .modeling-text:not(:last-child) {
   margin-right: 72px;
+}
+
+// ===========Decor============
+
+.modeling-container {
+  position: relative;
+}
+
+.modeling-hero-petals {
+  position: absolute;
+  background:  #ffff;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .modeling-methods-12 {
+    width: 73.65px;
+height: 73.65px;
+left: -29px;
+top: 169.61px;
+border-radius: 0px 0px 35px 0px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .modeling-methods-5 {
+    width: 74.08px;
+height: 71.41px;
+left: 32px;
+top: 115.08px;
+border-radius: 0px 0px 0px 35px;
+transform: rotate(-90deg);
+  }
+
+  .modeling-methods-58 {
+  width: 71.41px;
+height: 63.79px;
+left: 664.59px;
+top: -30.26px;
+border-radius: 0px 35px 0px 0px;
+transform: rotate(180deg);
+}
+}
+
+@media screen and (min-width: 1440px) {
+  .modeling-methods-3 {
+    width: 82px;
+height: 78px;
+left: 35px;
+top: 0px;
+border-radius: 0px 0px 72px 0px;
+  }
+
+  .modeling-methods-61 {
+    width: 144px;
+height: 136.83px;
+left: 1265.32px;
+top: -60px;
+border-radius: 0px 0px 72px 0px;
+transform: rotate(90deg);
+  }
 }

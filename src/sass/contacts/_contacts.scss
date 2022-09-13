@@ -85,10 +85,6 @@
   color: #487996;
   text-transform: uppercase;
   margin-bottom: 8px;
-  @include tablet{
-    display: block;
-    text-align: center;
-  }
   @include desktop {
     margin-bottom: 18px;
     font-size: 36px;
@@ -98,6 +94,10 @@
 }
 .contacts-title.desk {
   margin-bottom: 16px;
+  @include tablet{
+    display: block;
+    text-align: center;
+  }
 }
 .contacts-title.small-text {
   text-transform: none;

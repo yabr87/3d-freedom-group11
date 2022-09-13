@@ -1,9 +1,39 @@
-.оrder-forms1 {
+.ord-section {
   padding: 100px 0 80px 0;
   display: block;
+
+  @media screen and (min-width: 1440px) {
+    padding: 100px 149px 80px 149px;
+  }
 }
-// ---
-.orderform-title {
+
+.ord-wrap {
+  @media screen and (min-width: 1440px) {
+    display: flex;
+  }
+}
+
+.ord-form {
+  display: block;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.01em;
+  color: #2b2b2b;
+
+  @media screen and (min-width: 768px) {
+    padding: 0px 120px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 555px;
+    padding: 0px;
+  }
+}
+
+.ord-title {
   display: block;
 
   margin-bottom: 16px;
@@ -14,6 +44,7 @@
   line-height: 1;
   text-align: left;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 
   color: #487996;
 
@@ -27,41 +58,11 @@
   }
 }
 
-.orderform1 {
-  display: block;
-  width: 100%;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.01em;
-  color: #2b2b2b;
-
-  @media screen and (min-width: 768px) {
-    padding: 0px 152px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    width: 555px;
-    padding: 0px;
-  }
-}
-
-.orderform-wrap1 {
-  @media screen and (min-width: 1440px) {
-    display: flex;
-  }
-}
-
-.orderform-thumb {
+.ord-field {
   position: relative;
 }
 
-.orderform-field1 {
-  position: relative;
-}
-
-.orderform-input1 {
+.ord-input {
   padding: 8px 8px;
   width: 100%;
   margin: 20px 0px 20px;
@@ -75,7 +76,7 @@
     // border: 1px solid var(--accent);
   }
   @media screen and (min-width: 768px) {
-    width: 400px;
+    width: 100%;
   }
 
   @media screen and (min-width: 1440px) {
@@ -83,7 +84,7 @@
   }
 }
 
-.orderform-label {
+.ord-label {
   position: absolute;
   top: 50%;
   left: 0px;
@@ -91,96 +92,19 @@
 
   transition: transform 250ms linear;
 
-  .orderform-input:focus + &,
-  .orderform-input:not(:placeholder-shown) + & {
+  .ord-input:focus + &,
+  .ord-input:not(:placeholder-shown) + & {
     transform: translateY(-40px);
   }
 
-  .orderform-input:hover + & {
+  .ord-input:hover + & {
     transform: translateY(-40px);
   }
 }
 
-// вставка для селекта
-
-.select {
-  /* Растягиваем блок на 100% родительского блока, для правильного размещения кастомной стрелочки */
-  width: 100%;
-
-  /* Убираем браузерную стрелку */
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-
-  /* Задаем свой фон и рамку */
-  border: none;
-  border-bottom: 1px solid #487996;
-
-  /* Отступы от рамки к тексту */
-  padding: 10px 35px 10px 10px;
-
-  &:focus {
-    background-origin: border-box;
-  }
-  @media screen and (min-width: 768px) {
-    width: 400px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    width: 555px;
-  }
-}
-/* Делаем .select-wrapper родительским элементом для позиционирования "стрелочки" */
-.select-wrapper {
-  position: relative;
-}
-
-/* Рисуем стрелочку */
-.select-wrapper::before {
-  content: '';
-
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-
-  display: block;
-
-  /* Рисуем треугольник */
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 13px 10px 0 10px;
-  border-color: #2b2b2b transparent transparent transparent;
-
-  // width: 0;
-  // height: 0;
-  // border-style: solid;
-  // border-width: 0 10px 13px 10px;
-  // border-color: transparent transparent #2b2b2b transparent;
-
-  /* Снимаем клик с треугольника */
-  pointer-events: none;
-}
-
-// ---------------------
-
-.form-margin {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-bottom: 44px;
-}
-.button-margin {
-  display: block;
-  width: 100%;
-  height: auto;
-  margin-bottom: 60px;
-}
-
-/* *******************
-Select c dropdown на JS
-******************* */
+// /* *******************
+// Select c dropdown на JS
+// ******************* */
 
 .dropdown {
   position: relative;
@@ -196,7 +120,7 @@ Select c dropdown на JS
   border: none;
   border-bottom: 1px solid #487996;
   height: auto;
-  margin: 20px 0;
+  margin: 30px 0;
   padding: 8px 35px 8px 0px;
 
   font-style: normal;
@@ -253,7 +177,6 @@ Select c dropdown на JS
   border-bottom: 1px solid #487996;
   overflow: hidden;
 
-  // border-radius: 6px;
   width: 100%;
 
   z-index: 1;
@@ -272,10 +195,6 @@ Select c dropdown на JS
   cursor: pointer;
 }
 
-// .dropdown__list-item:first-child {
-// 	border-radius: 6px 6px 0 0;
-// }
-
 .dropdown__list-item:last-child {
   // border-radius: 0 0 6px 6px;
   border-bottom: 1px solid #487996;
@@ -289,145 +208,31 @@ Select c dropdown на JS
 .dropdown__input-hidden {
   display: none;
 }
-// конец кода для селектора
 
-.ordertextbox {
-  display: flex;
-  display: block;
-  flex-direction: column;
-  margin-bottom: 44px;
-}
+// // конец кода для селектора
 
-.ordertextbox-label {
-  display: block;
-  width: 100%;
-  margin-top: 44px;
-  margin-bottom: 4px;
-}
-
-.ordertextbox-input {
-  display: block;
-  width: 100%;
-  height: auto;
-  padding: 22px 20px;
-  border: 1px solid #487996;
-  border-radius: 50px 0px 50px 0px;
-  outline: transparent;
-  @media screen and (min-width: 768px) {
-    width: 400px;
-  }
-
-  @media screen and (min-width: 1440px) {
-    width: 555px;
-  }
-}
-
-.ordertextbox-input:not(:placeholder-shown) {
-  color: #2b2b2b;
-}
-
-.ordertextbox-input::placeholder {
-  color: #cdcdcd;
-}
-
-.ordertextbox-text {
-  color: #cdcdcd;
-}
-
-.ordertextbox-pict {
-  display: block;
-  position: absolute;
-  bottom: 20px;
-  right: 22px;
-  margin-left: 12px;
-  z-index: 9;
-}
-
-.mosaic-pict2 {
-  display: block;
-  width: 100px;
-  height: auto;
-  margin-top: 68px;
-  margin-left: auto;
-
-  width: 514px;
-
-  @media screen and (max-width: 1443px) {
-    display: none;
-    margin-top: 100px;
-  }
-}
-
-.ordercont-title {
-  display: block;
-  margin-bottom: 18px;
-  color: #487996;
-}
-
-.ordercont-text {
-  margin-bottom: 16px;
-  text-align: right;
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.7;
-  letter-spacing: 0.01em;
-  color: #2b2b2b;
-}
-
-// телефоны
-.order-pg-down1 {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-  }
-
-  @media screen and (min-width: 1440px) {
-    flex-direction: column;
-    margin-left: auto;
-  }
-}
-
-.ordercontact-part1 {
-  @media screen and (min-width: 768px) {
-    width: 100%;
-    @media screen and (min-width: 1440px) {
-      text-align: right;
-      margin-left: auto;
-    }
-  }
-}
-
-.ordercontact-part3 {
-  @media screen and (min-width: 768px) {
-    width: 100%;
-    text-align: right;
-
-    @media screen and (min-width: 1440px) {
-      margin-left: auto;
-    }
-  }
-}
-
-// ----------------------
-//---картинка -----------
-
-.order-pict {
-  display: block;
-  margin-top: 50px;
-
-  @media screen and (max-width: 1443px) {
-    display: none;
-  }
-}
-
-//---------------------
-.textarea-wrap1 {
+.ord-cont-thumb {
   position: relative;
 }
 
-.hint1 {
+.ord-cont-textarea {
+  padding: 20px;
+}
+
+.ord-cont-textarea::placeholder {
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #cdcdcd;
+  @include desktop {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
+
+.ord-cont-hint {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -437,3 +242,391 @@ Select c dropdown на JS
     line-height: 1.11;
   }
 }
+
+.ord-form-margin {
+  margin-bottom: 60px;
+}
+
+//-----------------------------------
+.ord-pgdown {
+  @include tablet {
+    display: flex;
+    column-gap: 26px;
+  }
+
+  @include desktop {
+    flex-direction: column;
+    margin-left: auto;
+  }
+}
+
+.ord-item:last-child {
+  @include tablet {
+    margin-left: auto;
+    text-align: right;
+  }
+  @include desktop {
+    text-align: right;
+  }
+}
+
+.ord-item {
+  margin-bottom: 30px;
+  @include desktop {
+    text-align: right;
+  }
+}
+
+.ord-pgdown-title {
+  display: block;
+
+  margin-bottom: 18px;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  text-align: left;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #487996;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    text-align: right;
+    font-size: 36px;
+  }
+}
+
+//-------------------------------------------------------------------------
+
+// .оrder-forms1 {
+//   padding: 100px 0 80px 0;
+//   display: block;
+// }
+
+// .orderform-title {
+//   display: block;
+
+//   margin-bottom: 16px;
+
+//   font-style: normal;
+//   font-weight: 700;
+//   font-size: 24px;
+//   line-height: 1;
+//   text-align: left;
+//   letter-spacing: 0.03em;
+
+//   color: #487996;
+
+//   @media screen and (min-width: 768px) {
+//     text-align: center;
+//   }
+
+//   @media screen and (min-width: 1440px) {
+//     text-align: left;
+//     font-size: 36px;
+//   }
+// }
+
+// .orderform1 {
+//   display: block;
+//   width: 100%;
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   letter-spacing: 0.01em;
+//   color: #2b2b2b;
+
+//   @media screen and (min-width: 768px) {
+//     padding: 0px 152px;
+//   }
+
+//   @media screen and (min-width: 1440px) {
+//     width: 555px;
+//     padding: 0px;
+//   }
+// }
+
+// .orderform-wrap1 {
+//   @media screen and (min-width: 1440px) {
+//     display: flex;
+//   }
+// }
+
+// .orderform-thumb {
+//   position: relative;
+// }
+
+// .orderform-field1 {
+//   position: relative;
+// }
+
+// .orderform-input1 {
+//   padding: 8px 8px;
+//   width: 100%;
+//   margin: 20px 0px 20px;
+
+//   outline: transparent;
+//   border: none;
+//   border-bottom: 1px solid #487996;
+
+//   &:focus {
+//     background-origin: border-box;
+//     // border: 1px solid var(--accent);
+//   }
+//   @media screen and (min-width: 768px) {
+//     width: 400px;
+//   }
+
+//   @media screen and (min-width: 1440px) {
+//     width: 555px;
+//   }
+// }
+
+// .orderform-label {
+//   position: absolute;
+//   top: 50%;
+//   left: 0px;
+//   transform: translateY(-50%);
+
+//   transition: transform 250ms linear;
+
+//   .orderform-input:focus + &,
+//   .orderform-input:not(:placeholder-shown) + & {
+//     transform: translateY(-40px);
+//   }
+
+//   .orderform-input:hover + & {
+//     transform: translateY(-40px);
+//   }
+// }
+
+// вставка для селекта
+
+// .select {
+//   /* Растягиваем блок на 100% родительского блока, для правильного размещения кастомной стрелочки */
+//   width: 100%;
+
+//   /* Убираем браузерную стрелку */
+//   -moz-appearance: none;
+//   -webkit-appearance: none;
+//   appearance: none;
+
+//   /* Задаем свой фон и рамку */
+//   border: none;
+//   border-bottom: 1px solid #487996;
+
+//   /* Отступы от рамки к тексту */
+//   padding: 10px 35px 10px 10px;
+
+//   &:focus {
+//     background-origin: border-box;
+//   }
+//   @media screen and (min-width: 768px) {
+//     width: 400px;
+//   }
+
+//   @media screen and (min-width: 1440px) {
+//     width: 555px;
+//   }
+// }
+// /* Делаем .select-wrapper родительским элементом для позиционирования "стрелочки" */
+// .select-wrapper {
+//   position: relative;
+// }
+
+// /* Рисуем стрелочку */
+// .select-wrapper::before {
+//   content: '';
+
+//   position: absolute;
+//   top: 50%;
+//   right: 15px;
+//   transform: translateY(-50%);
+
+//   display: block;
+
+//   /* Рисуем треугольник */
+//   width: 0;
+//   height: 0;
+//   border-style: solid;
+//   border-width: 13px 10px 0 10px;
+//   border-color: #2b2b2b transparent transparent transparent;
+
+//   // width: 0;
+//   // height: 0;
+//   // border-style: solid;
+//   // border-width: 0 10px 13px 10px;
+//   // border-color: transparent transparent #2b2b2b transparent;
+
+//   /* Снимаем клик с треугольника */
+//   pointer-events: none;
+// }
+
+// // ---------------------
+
+// .form-margin {
+//   display: block;
+//   width: 100%;
+//   height: auto;
+//   margin-bottom: 44px;
+// }
+// .button-margin {
+//   display: block;
+//   width: 100%;
+//   height: auto;
+//   margin-bottom: 60px;
+// }
+
+// .ordertextbox {
+//   display: flex;
+//   display: block;
+//   flex-direction: column;
+//   margin-bottom: 44px;
+// }
+
+// .ordertextbox-label {
+//   display: block;
+//   width: 100%;
+//   margin-top: 44px;
+//   margin-bottom: 4px;
+// }
+
+// .ordertextbox-input {
+//   display: block;
+//   width: 100%;
+//   height: auto;
+//   padding: 22px 20px;
+//   border: 1px solid #487996;
+//   border-radius: 50px 0px 50px 0px;
+//   outline: transparent;
+//   @media screen and (min-width: 768px) {
+//     width: 400px;
+//   }
+
+//   @media screen and (min-width: 1440px) {
+//     width: 555px;
+//   }
+// }
+
+// .ordertextbox-input:not(:placeholder-shown) {
+//   color: #2b2b2b;
+// }
+
+// .ordertextbox-input::placeholder {
+//   color: #cdcdcd;
+// }
+
+// .ordertextbox-text {
+//   color: #cdcdcd;
+// }
+
+// .ordertextbox-pict {
+//   display: block;
+//   position: absolute;
+//   bottom: 20px;
+//   right: 22px;
+//   margin-left: 12px;
+//   z-index: 9;
+// }
+
+// .mosaic-pict2 {
+//   display: block;
+//   width: 100px;
+//   height: auto;
+//   margin-top: 68px;
+//   margin-left: auto;
+
+//   width: 514px;
+
+//   @media screen and (max-width: 1443px) {
+//     display: none;
+//     margin-top: 100px;
+//   }
+// }
+
+// .ordercont-title {
+//   display: block;
+//   margin-bottom: 18px;
+//   color: #487996;
+// }
+
+// .ordercont-text {
+//   margin-bottom: 16px;
+//   text-align: right;
+
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 18px;
+//   line-height: 1.7;
+//   letter-spacing: 0.01em;
+//   color: #2b2b2b;
+// }
+
+// // телефоны
+// .order-pg-down1 {
+//   @media screen and (min-width: 768px) {
+//     display: flex;
+//     flex-direction: row;
+//   }
+
+//   @media screen and (min-width: 1440px) {
+//     flex-direction: column;
+//     margin-left: auto;
+//   }
+// }
+
+// .ordercontact-part1 {
+//   @media screen and (min-width: 768px) {
+//     width: 100%;
+//     @media screen and (min-width: 1440px) {
+//       text-align: right;
+//       margin-left: auto;
+//     }
+//   }
+// }
+
+// .ordercontact-part3 {
+//   @media screen and (min-width: 768px) {
+//     width: 100%;
+//     text-align: right;
+
+//     @media screen and (min-width: 1440px) {
+//       margin-left: auto;
+//     }
+//   }
+// }
+
+// // ----------------------
+// //---картинка -----------
+
+// .order-pict {
+//   display: block;
+//   margin-top: 50px;
+
+//   @media screen and (max-width: 1443px) {
+//     display: none;
+//   }
+// }
+
+// //---------------------
+// .textarea-wrap1 {
+//   position: relative;
+// }
+
+// .hint1 {
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   color: #cdcdcd;
+//   @include desktop {
+//     font-size: 18px;
+//     line-height: 1.11;
+//   }
+// }

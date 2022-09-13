@@ -107,7 +107,7 @@ iframe {
 
 
 
-.petal-contact-desc-1 {
+.petal-contact-1 {
   @include desktop {
     right: 25;
     top: -50;
@@ -120,7 +120,7 @@ iframe {
     transform: rotate(90deg);
   }
 }
-.petal-contact-desc-2 {
+.petal-contact-2 {
   @include desktop {
     position: absolute;
     left: 1305;
@@ -132,7 +132,7 @@ iframe {
     border-radius: 72px 0px;
   }
 }
-.petal-contact-desc-3 {
+.petal-contact-3 {
   @include desktop {
     position: absolute;
     width: 82px;
@@ -144,7 +144,7 @@ iframe {
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
   }
 }
-.petal-contact-tab-4 {
+.petal-contact-4 {
   @include tablet {
     position: absolute;
     width: 71.41px;
@@ -160,7 +160,7 @@ iframe {
     display: none;
   }
 }
-.petal-contact-desc-5 {
+.petal-contact-5 {
   @include tablet{
     position: absolute;
     width: 71.41px;
@@ -176,9 +176,10 @@ iframe {
   }
 }
 
-.petal-contact-desc-6{
+.petal-contact-6{
 left: -25;
-bottom: 210;
+// bottom: 210;
+bottom: 150;
 border-radius: 0px 0px 35px 0px;
 z-index: -1;
 overflow: visible;
@@ -186,7 +187,7 @@ overflow: visible;
   display: none;
 }
 }
-.petal-contact-desc-7{
+.petal-contact-7{
 left: -20;
 bottom: -150;
 border-radius: 25px 0px;

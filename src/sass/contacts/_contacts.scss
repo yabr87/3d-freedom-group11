@@ -11,7 +11,7 @@
 
   @media screen and (min-width: 1440px) {
     max-width: 1440px;
-    padding-top: 60px;
+    // padding-top: 60px;
     padding-bottom: 20px;
   }
 }
@@ -85,10 +85,15 @@
   color: #487996;
   text-transform: uppercase;
   margin-bottom: 8px;
+  @include tablet{
+    display: block;
+    text-align: center;
+  }
   @include desktop {
     margin-bottom: 18px;
     font-size: 36px;
     line-height: 1.25;
+    text-align: left;
   }
 }
 .contacts-title.desk {
@@ -112,7 +117,7 @@
   }
 }
 
-.petal-contact-desc-8 {
+.petal-contact-8 {
   @include desktop {
     position: absolute;
     width: 136.83px;
@@ -125,7 +130,7 @@
   }
 }
 
-.petal-contact-desc-9 {
+.petal-contact-9 {
   right: -15;
   top: 20;
   border-radius: 72px;
@@ -134,7 +139,7 @@
     display: none;
   }
 }
-.petal-contact-desc-10 {
+.petal-contact-10 {
   right: -25;
   bottom: 525;
   border-radius: 25px 0px;
@@ -144,7 +149,7 @@
     display: none;
   }
 }
-.petal-contact-desc-11 {
+.petal-contact-11 {
   overflow: hidden;
   left: -15;
   bottom: 500;
@@ -154,7 +159,7 @@
     display: none;
   }
 }
-.petal-contact-desc-12 {
+.petal-contact-12 {
   overflow: hidden;
   right: -20;
   bottom: 180;

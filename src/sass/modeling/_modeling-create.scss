@@ -44,3 +44,53 @@
     margin-bottom: 80px;
   }
 }
+
+// Background==================
+
+.create {
+position: relative;
+}
+
+.modeling-create-petals {
+  position: absolute;
+  background: #ffff;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .modeling-create-68 {
+    width: 73.65px;
+height: 73.65px;
+left: 426.65px;
+top: -5px;
+border-radius: 25px 0px;
+transform: rotate(90deg);
+  }
+
+  .modeling-create-67 {
+    width: 73.65px;
+    height: 73.65px;
+left: 415.65px;
+top: 460px;
+border-radius: 25px 0px;
+  }
+
+  .modeling-create-65 {
+    width: 73.65px;
+    height: 73.65px;
+    left: -18px;
+    top: 25.83px;
+    border-radius: 0px 0px 0px 35px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .modeling-create-46 {
+    width: 136.83px;
+    height: 144px;
+    left: -21.82px;
+    top: -45.01px;
+    border-radius: 72px;
+  }
+}

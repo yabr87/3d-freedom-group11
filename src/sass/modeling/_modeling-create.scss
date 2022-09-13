@@ -35,8 +35,11 @@
   max-width: 100%;
 }
 
+.btn-box {
+  display: flex;
+}
 .modeling-btn {
-    margin-bottom: 60px;
+      margin-bottom: 60px;
 }
 
 @media screen and (min-width: 1440px) {

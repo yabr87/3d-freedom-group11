@@ -3,6 +3,7 @@
   line-height: 1.29;
   text-align: center;
   color: #487996;
+
   @media screen and (min-width: 1440px) {
     font-weight: 300;
     font-size: 18px;
@@ -18,13 +19,15 @@
     line-height: 1.27;
     padding-left: 20px;
   }
-@media screen and (min-width: 1440px){
-  padding-left: 117px;
-}
-@media screen and (min-width: 768px) and (max-width: 1439px) {
-  padding-left: 28px;
-  font-size: 24px !important;
-}
+
+  @media screen and (min-width: 1440px){
+    padding-left: 117px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    padding-left: 28px;
+    font-size: 24px !important;
+  }
 }
 .scanning-img {
   text-align: center;
@@ -32,6 +35,7 @@
   box-shadow: inset 1px 1px 16px #cbcbcb, inset -1px -1px 16px #ffffff;
   border-radius: 50px 0px;
   padding: 11.5px 19px;
+
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     padding: 22px 21px;
   }
@@ -42,6 +46,7 @@
 
 .scanning-img-item {
   width: 100%;
+
   @media screen and (min-width: 1440px) {
     display: inline-block;
   }
@@ -72,18 +77,31 @@
 .padding-btn {
   margin-top: 40px;
   margin-bottom: 60px;
+
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     margin-top: 60px;
     margin-bottom: 60px;
   }
+
   @media screen and (min-width: 1440px) {
     margin-top: 80px;
     margin-bottom: 80px;
   }
 }
 
+.btn-order-container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  & > a {
+    display: inline;      
+  }
+}
+
 .process-right{
   position: absolute;
+
   @media screen and (min-width:320px)and (max-width: 767px) {
       width: 73.65px;
       height: 73.65px;
@@ -100,6 +118,7 @@
 
 .process-left{
   position: absolute;
+
   @media screen and (min-width:320px)and (max-width: 767px) {
       width: 73.65px;
       height: 73.65px;

@@ -1,12 +1,26 @@
 .ord-section {
-  padding: 100px 0 80px 0;
+  // padding: 100px 0 80px 0;
   display: block;
 
-  @media screen and (min-width: 1440px) {
-    padding: 100px 149px 80px 149px;
+  // @media screen and (min-width: 1440px) {
+  //   padding: 100px 149px 80px 149px;
+  // }
+}
+.ord-form-container {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  @include mobile {
+    overflow: visible;
+  }
+  @include desktop {
+    padding-top: 100px;
+    padding-bottom: 73.51px;
+    padding-left: 149px;
+    padding-right: 149px;
   }
 }
-
 .ord-wrap {
   @include desktop {
     display: flex;
@@ -330,11 +344,85 @@
 }
 
 .ord-pict {
-  display: block;
+  // display: block;
   // margin-top: 50px;
+  display: none;
   margin-left: auto;
-
-  @media screen and (max-width: 1443px) {
+  // @media screen and (max-width: 1443px) {
+  //   display: none;
+  // }
+  @include desktop {
+    display: block;
+  }
+}
+.order-form-petal {
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+.order-form-petal-1 {
+  width: 73.65px;
+  height: 73.65px;
+  left: -17px;
+  top: 161.93px;
+  border-radius: 25px 0px;
+  @include tablet {
+    width: 71.41px;
+    height: 74.08px;
+    right: 32px;
+    left: auto;
+    top: 142.65px;
+    border-radius: 25px 0px;
+  }
+  @include desktop {
+    width: 136.83px;
+    height: 144px;
+    left: -21.82px;
+    right: auto;
+    top: 144.01px;
+    border-radius: 72px;
+  }
+}
+.order-form-petal-2 {
+  width: 73.65px;
+  height: 73.65px;
+  left: auto;
+  right: -17px;
+  top: 99.53px;
+  border-radius: 72px;
+  @include tablet {
+    width: 74.08px;
+    height: 71.41px;
+    left: auto;
+    right: 32px;
+    top: 707.88px;
+    border-radius: 25px 0px;
+    transform: rotate(90deg);
+  }
+  @include desktop {
+    display: none;
+  }
+}
+.order-form-petal-3 {
+  width: 73.65px;
+  height: 73.65px;
+  left: -18px;
+  top: 580.83px;
+  border-radius: 0px 0px 0px 35px;
+  @include tablet {
+    display: none;
+  }
+}
+.order-form-petal-4 {
+  width: 73.65px;
+  height: 73.65px;
+  left: auto;
+  right: -18px;
+  top: 544px;
+  border-radius: 25px 0px;
+  transform: rotate(90deg);
+  @include tablet {
     display: none;
   }
 }

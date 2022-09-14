@@ -1,28 +1,37 @@
-.orderhero-section {
-  @media screen and (min-width: 1440px) {
+// .orderhero-section {
+//   @media screen and (min-width: 1440px) {
+//     padding-left: 149px;
+//   }
+// }
+.orderhero-container {
+  padding-top: 18.35px;
+  @include tablet {
+    padding-top: 29.95px;
+  }
+  @include desktop {
+    padding-top: 45.7px;
     padding-left: 149px;
   }
 }
-
 .orderhero-title {
   display: block;
-  margin-top: 40px;
+  // margin-top: 40px;
   margin-bottom: 16px;
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
-  line-height: calc(60 / 48);
+  font-size: 22px;
+  line-height: calc(30 / 22);
   text-align: left;
-  letter-spacing: 0.03em;
-
+  // letter-spacing: 0.03em;
   color: #487996;
-
   @media screen and (min-width: 768px) {
     font-size: 36px;
+    line-height: calc(45 / 36);
   }
 
   @media screen and (min-width: 1440px) {
     font-size: 48px;
+    line-height: calc(60 / 48);
   }
 }
 
@@ -44,6 +53,7 @@
   margin-bottom: 16px;
   max-width: 555px;
   @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1440px) {
     width: calc((100% - 32px) / 2);
@@ -51,11 +61,14 @@
 }
 
 .orderhero-text-thumb {
-  display: block;
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 32px) / 2);
     height: auto;
+    gap: 0;
   }
 
   @media screen and (min-width: 1440px) {
@@ -66,33 +79,42 @@
 }
 
 .orderhero-text {
-  margin-bottom: 16px;
+  // margin-bottom: 16px;
 
   font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 1.7;
+  font-weight: 300;
+  line-height: calc(20 / 16);
+  // line-height: 1.7;
   letter-spacing: 0.01em;
   color: #2b2b2b;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16);
   }
 
   @media screen and (min-width: 1440px) {
     margin-bottom: 0px;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: calc(23 / 18);
   }
 }
 
 .mosaic-thumb {
-  display: flex;
-  // display: block;
-  gap: 32px;
-  margin-top: 36px;
-
-  @media screen and (max-width: 1443px) {
-    display: none;
+  display: none;
+  @include desktop {
+    display: flex;
+    // display: block;
+    gap: 32px;
+    margin-top: 36px;
   }
+  // @media screen and (max-width: 1443px) {
+  //   display: none;
+  // }
 }
 
 .car > img {

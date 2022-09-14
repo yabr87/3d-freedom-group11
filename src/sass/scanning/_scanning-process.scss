@@ -78,7 +78,7 @@
 }
 
 .padding-btn {
-  @media screen and (min-width: 320px) and (max-width: 767px) {
+  @media screen and (min-width: 0px) and (max-width: 767px) {
     margin-top: 40px;
   }
 
@@ -107,7 +107,6 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 277.67px;
 
   &>a {
     display: inline;

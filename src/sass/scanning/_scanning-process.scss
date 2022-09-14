@@ -13,14 +13,14 @@
   }
 }
 
-.process{
+.process {
   @media screen and (min-width:320px)and (max-width: 767px) {
     font-size: 18px !important;
     line-height: 1.27;
     padding-left: 20px;
   }
 
-  @media screen and (min-width: 1440px){
+  @media screen and (min-width: 1440px) {
     padding-left: 117px;
   }
 
@@ -29,6 +29,7 @@
     font-size: 24px !important;
   }
 }
+
 .scanning-img {
   text-align: center;
   background: #ffffff;
@@ -39,6 +40,7 @@
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     padding: 22px 21px;
   }
+
   @media screen and (min-width: 1440px) {
     padding: 43px 36px;
   }
@@ -60,8 +62,9 @@
   justify-content: center;
 }
 
-.scanning-process > .scanning-img {
+.scanning-process>.scanning-img {
   width: calc((100% - 40px) / 2);
+
   @include tablet {
     flex-basis: calc((100% - 96px) / 4);
   }
@@ -75,17 +78,28 @@
 }
 
 .padding-btn {
-  margin-top: 40px;
-  margin-bottom: 60px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin-top: 40px;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     margin-top: 60px;
-    margin-bottom: 60px;
   }
 
   @media screen and (min-width: 1440px) {
     margin-top: 80px;
-    margin-bottom: 80px;
+  }
+}
+
+.padding-process {
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) and (max-width: 1439px) {
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-bottom: 80px;
   }
 }
 
@@ -93,41 +107,42 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  width: 277.67px;
 
-  & > a {
-    display: inline;      
+  &>a {
+    display: inline;
   }
 }
 
-.process-right{
+.process-right {
   position: absolute;
 
   @media screen and (min-width:320px)and (max-width: 767px) {
-      width: 73.65px;
-      height: 73.65px;
-      right: -20px;
-      top: 80px;
-      background: #FFFFFF;
-      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-      border-radius: 25px 0px;
-      transform: rotate(90deg);
-      z-index: -1;
-      overflow: hidden;
+    width: 73.65px;
+    height: 73.65px;
+    right: -20px;
+    top: 80px;
+    background: #FFFFFF;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 25px 0px;
+    transform: rotate(90deg);
+    z-index: -1;
+    overflow: hidden;
   }
 }
 
-.process-left{
+.process-left {
   position: absolute;
 
   @media screen and (min-width:320px)and (max-width: 767px) {
-      width: 73.65px;
-      height: 73.65px;
-      left: -20px;
-      top: 150px;
-      background: #FFFFFF;
-      box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
-      border-radius: 0px 0px 0px 35px;
-      z-index: -1;
-      overflow: hidden;
+    width: 73.65px;
+    height: 73.65px;
+    left: -20px;
+    top: 150px;
+    background: #FFFFFF;
+    box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 0px 35px;
+    z-index: -1;
+    overflow: hidden;
   }
 }

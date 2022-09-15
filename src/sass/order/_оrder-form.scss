@@ -230,7 +230,8 @@
 .dropdown__list-item {
   margin: 0;
   padding: 0;
-  border: none;
+  border: 3px solid #487996;
+  border-radius: 8px;
   border-bottom: 0px;
   padding: 10px 20px 10px 0px;
   cursor: pointer;
@@ -343,6 +344,10 @@
   }
 }
 
+.ord-pgdown a {
+  display: inline-block;
+}
+
 .ord-pict {
   // display: block;
   // margin-top: 50px;
@@ -425,4 +430,11 @@
   @include tablet {
     display: none;
   }
+}
+
+.conta-icon {
+  fill: #cdcdcd;
+}
+.text-btn:hover .conta-icon {
+  fill: #487996;
 }

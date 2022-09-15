@@ -55,6 +55,11 @@
   src: url("/src/fonts/caviardreams.woff2") format("woff2"),
     url("/src/fonts/caviardreams.woff") format("woff");
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
 }

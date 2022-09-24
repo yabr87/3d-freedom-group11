@@ -11,7 +11,6 @@
 
   @media screen and (min-width: 1440px) {
     max-width: 1440px;
-    // padding-top: 60px;
     padding-bottom: 20px;
   }
 }
@@ -28,7 +27,7 @@
   display: block;
   font-size: 16px;
   line-height: 1.25;
-  color: #2b2b2b;
+  color: var(--main-text);
   margin-bottom: 8px;
   @include desktop {
     margin-bottom: 18px;
@@ -82,7 +81,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 1.28;
-  color: #487996;
+  color: var(--main-blue);
   text-transform: uppercase;
   margin-bottom: 8px;
   @include desktop {
@@ -110,7 +109,6 @@
 }
 .contacts-form-wrapper {
   position: relative;
-  overflow: 1px solid red;
   overflow: hidden;
   @include mobile{
     overflow: visible;
@@ -124,7 +122,7 @@
     height: 144px;
     left: -10;
     bottom: 350;
-    background: #fff;
+    background: var(--bcg-white);
     box-shadow: 20px 20px 80px rgba(0, 0, 0, 0.1);
     border-radius: 72px;
   }

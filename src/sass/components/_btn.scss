@@ -5,14 +5,14 @@
   margin-right: auto;
   padding: 16px 32px;
   border: none;
-  background: #f5f5fa;
+  background: var(--bcg-footer-btn);
   font-weight: 700;
   font-size: 15px;
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #487996;
+  color: var(--main-blue);
 
   box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px rgba(72, 121, 150, 0.1),
     5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px #ffffff;
@@ -35,6 +35,6 @@
 
 .btn:hover,
 .btn:focus {
-  background-color: rgba(72, 121, 150, 0.5);
-  color: #fff;
+  background-color: var(--hover-bcg);
+  color: var(--hover-text-fill);
 }

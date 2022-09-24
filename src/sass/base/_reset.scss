@@ -52,6 +52,6 @@ ul {
 
 .link:hover,
 .link:focus {
-  color: #fff;
-  background-color: rgba(72, 121, 150, 0.5);
+  background-color: var(--hover-bcg);
+  color: var(--hover-text-fill);
 }
